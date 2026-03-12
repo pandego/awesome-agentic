@@ -25,6 +25,11 @@ Curated list of agentic tools for builders who ship.
 - **Why it stands out:** practical coding-agent workflows with active iteration.
 - **Best for:** fast-moving agentic engineering experimentation.
 
+### Goose
+- **Link:** https://github.com/block/goose
+- **Why it stands out:** open-source, extensible agent that can install, execute, edit, and test across real dev workflows.
+- **Best for:** builders who want a general-purpose coding agent with broad model flexibility.
+
 ### pi-mono
 - **Link:** https://github.com/badlogic/pi-mono
 - **Why it stands out:** lightweight terminal-style productivity + markdown-oriented workflow surfaces.
@@ -49,6 +54,11 @@ Curated list of agentic tools for builders who ship.
 - **Strength:** rapidly evolving agent workflows, model/provider integration surface.
 - **Use when:** you need speed and broad integrations in Python ecosystems.
 
+### Mem0
+- **Link:** https://github.com/mem0ai/mem0
+- **Strength:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
+- **Use when:** memory quality and durable user context matter more than one-shot interactions.
+
 ---
 
 ## Agent Frameworks (Build Fast)
@@ -57,6 +67,11 @@ Curated list of agentic tools for builders who ship.
 - **Link:** https://github.com/agno-agi/agno
 - **Why it’s great:** speed to production + pragmatic APIs.
 - **Use when:** you want to ship agent systems quickly.
+
+### PydanticAI
+- **Link:** https://github.com/pydantic/pydantic-ai
+- **Why it’s great:** typed agent framework with strong validation, tool orchestration, and Python-first ergonomics.
+- **Use when:** correctness, schema discipline, and structured agent behavior matter.
 
 ### LangGraph
 - **Link:** https://github.com/langchain-ai/langgraph
