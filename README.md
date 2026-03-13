@@ -83,6 +83,11 @@ Curated list of agentic tools for builders who ship.
 - **Why it’s great:** multi-agent collaboration patterns and team-style orchestration.
 - **Use when:** role-based agent cooperation is core.
 
+### LiveKit Agents
+- **Link:** https://github.com/livekit/agents
+- **Why it’s great:** production-oriented framework for realtime voice, video, and multimodal agent systems.
+- **Use when:** low-latency, interactive agent experiences are the product.
+
 ### VoltAgent
 - **Link:** https://github.com/VoltAgent/voltagent
 - **Why it’s great:** modern framework ergonomics for agent app development.
