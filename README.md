@@ -49,6 +49,11 @@ Opinionated picks for builders who want to ship real agent systems.
 - **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
 - **Best for:** low-latency interactive agents where realtime UX is the product.
 
+### Deep Agents
+- **Link:** https://github.com/langchain-ai/deepagents
+- **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
+- **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
+
 ### Mem0
 - **Link:** https://github.com/mem0ai/mem0
 - **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
@@ -94,6 +99,7 @@ Opinionated picks for builders who want to ship real agent systems.
 - **Want typed Python ergonomics and validation:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
+- **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need durable memory as a layer in your stack:** look at **Mem0**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
 
