@@ -5,15 +5,26 @@ Opinionated picks for builders who want to ship real agent systems.
 > Focus: coding agents, agent frameworks, and specialized layers that earn a place in a serious builder stack.
 
 ## Contents
-- [Core Picks](#core-picks)
-- [Specialized Picks](#specialized-picks)
+- [How to read this list](#how-to-read-this-list)
+- [Foundation Builders](#foundation-builders)
+- [Specialized Layers](#specialized-layers)
 - [How to choose](#how-to-choose)
 - [How entries are evaluated](#how-entries-are-evaluated)
 - [Contributing](#contributing)
 
 ---
 
-## Core Picks
+## How to read this list
+
+This is a builder-stack list, not a leaderboard.
+
+- **Foundation Builders** are the strongest starting points for most teams building agent products, coding agents, or durable orchestration systems.
+- **Specialized Layers** matter when a specific constraint becomes central, like realtime interaction, long-term memory, or a more opinionated execution harness.
+- If a project is interesting but mostly overlaps with a stronger pick, it should stay off the page until the differentiation is obvious.
+
+---
+
+## Foundation Builders
 
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
@@ -39,25 +50,6 @@ Opinionated picks for builders who want to ship real agent systems.
 - **Link:** https://github.com/openai/openai-agents-python
 - **Why it stands out:** lightweight but practical primitives for tools, handoffs, and multi-agent workflows.
 - **Best for:** Python teams that want a fast path to structured assistant behavior.
-
----
-
-## Specialized Picks
-
-### LiveKit Agents
-- **Link:** https://github.com/livekit/agents
-- **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
-- **Best for:** low-latency interactive agents where realtime UX is the product.
-
-### Deep Agents
-- **Link:** https://github.com/langchain-ai/deepagents
-- **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
-- **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
-
-### Mem0
-- **Link:** https://github.com/mem0ai/mem0
-- **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
-- **Best for:** products where durable context and memory quality matter more than one-shot interactions.
 
 ### Google ADK (Python)
 - **Link:** https://github.com/google/adk-python
@@ -88,6 +80,23 @@ Opinionated picks for builders who want to ship real agent systems.
 - **Link:** https://github.com/badlogic/pi-mono
 - **Why it stands out:** lightweight coding-agent toolkit with strong terminal, markdown, and workflow utility.
 - **Best for:** builders who want a focused, hackable toolkit rather than a heavyweight framework.
+
+## Specialized Layers
+
+### LiveKit Agents
+- **Link:** https://github.com/livekit/agents
+- **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
+- **Best for:** low-latency interactive agents where realtime UX is the product.
+
+### Deep Agents
+- **Link:** https://github.com/langchain-ai/deepagents
+- **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
+- **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
+
+### Mem0
+- **Link:** https://github.com/mem0ai/mem0
+- **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
+- **Best for:** products where durable context and memory quality matter more than one-shot interactions.
 
 ---
 
