@@ -1,30 +1,53 @@
-# Awesome Agentic Builders 🚀
+# Awesome Agentic 🚀🧠
 
-Opinionated picks for builders who want to ship real agent systems.
+Opinionated picks for people building real agentic systems.
 
-> Focus: coding agents, agent frameworks, and specialized layers that earn a place in a serious builder stack.
+This list consolidates three previously separate curation tracks into one canonical map of the stack:
+- **Builders** - frameworks, runtimes, and agent tooling
+- **RAG Systems** - retrieval systems, infra, and evaluation
+- **Memory** - long-term context, memory layers, and recall systems
+
+If you are building agents seriously, you usually need all three.
 
 ## Contents
-- [How to read this list](#how-to-read-this-list)
-- [Foundation Builders](#foundation-builders)
-- [Specialized Layers](#specialized-layers)
-- [How to choose](#how-to-choose)
+- [How to use this list](#how-to-use-this-list)
+- [Builders](#builders)
+  - [Core picks](#core-picks)
+  - [Specialized picks](#specialized-picks)
+  - [How to choose](#how-to-choose)
+- [RAG Systems](#rag-systems)
+  - [Graph RAG systems](#graph-rag-systems)
+  - [End-to-end RAG systems](#end-to-end-rag-systems)
+  - [RAG evaluation and benchmarks](#rag-evaluation-and-benchmarks)
+  - [RAG infrastructure and frameworks](#rag-infrastructure-and-frameworks)
+  - [Research directions worth watching](#research-directions-worth-watching)
+- [Memory](#memory)
+  - [Stateful agent platforms](#stateful-agent-platforms)
+  - [Memory extraction and lifecycle layers](#memory-extraction-and-lifecycle-layers)
+  - [Context engines and graph memory](#context-engines-and-graph-memory)
+  - [Local-first and personal memory](#local-first-and-personal-memory)
+  - [Memory evaluation and operations](#memory-evaluation-and-operations)
 - [How entries are evaluated](#how-entries-are-evaluated)
 - [Contributing](#contributing)
+- [Migration note](#migration-note)
 
 ---
 
-## How to read this list
+## How to use this list
 
-This is a builder-stack list, not a leaderboard.
+Treat this as a practical stack map, not a random link dump.
 
-- **Foundation Builders** are the strongest starting points for most teams building agent products, coding agents, or durable orchestration systems.
-- **Specialized Layers** matter when a specific constraint becomes central, like realtime interaction, long-term memory, or a more opinionated execution harness.
-- If a project is interesting but mostly overlaps with a stronger pick, it should stay off the page until the differentiation is obvious.
+- **Builders** help you create and operate agents.
+- **RAG systems** help agents find and synthesize external knowledge.
+- **Memory systems** help agents retain, update, and retrieve context over time.
+
+Many projects blur category boundaries. That is fine. The goal here is useful orientation for builders, not taxonomy perfection.
 
 ---
 
-## Foundation Builders
+## Builders
+
+### Core picks
 
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
@@ -50,6 +73,23 @@ This is a builder-stack list, not a leaderboard.
 - **Link:** https://github.com/openai/openai-agents-python
 - **Why it stands out:** lightweight but practical primitives for tools, handoffs, and multi-agent workflows.
 - **Best for:** Python teams that want a fast path to structured assistant behavior.
+
+### Specialized picks
+
+### LiveKit Agents
+- **Link:** https://github.com/livekit/agents
+- **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
+- **Best for:** low-latency interactive agents where realtime UX is the product.
+
+### Deep Agents
+- **Link:** https://github.com/langchain-ai/deepagents
+- **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
+- **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
+
+### Mem0
+- **Link:** https://github.com/mem0ai/mem0
+- **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
+- **Best for:** products where durable context and memory quality matter more than one-shot interactions.
 
 ### Google ADK (Python)
 - **Link:** https://github.com/google/adk-python
@@ -81,26 +121,7 @@ This is a builder-stack list, not a leaderboard.
 - **Why it stands out:** lightweight coding-agent toolkit with strong terminal, markdown, and workflow utility.
 - **Best for:** builders who want a focused, hackable toolkit rather than a heavyweight framework.
 
-## Specialized Layers
-
-### LiveKit Agents
-- **Link:** https://github.com/livekit/agents
-- **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
-- **Best for:** low-latency interactive agents where realtime UX is the product.
-
-### Deep Agents
-- **Link:** https://github.com/langchain-ai/deepagents
-- **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
-- **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
-
-### Mem0
-- **Link:** https://github.com/mem0ai/mem0
-- **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
-- **Best for:** products where durable context and memory quality matter more than one-shot interactions.
-
----
-
-## How to choose
+### How to choose
 
 - **Want an operator-style assistant product:** start with **OpenClaw**.
 - **Want a strong general-purpose coding agent:** start with **Goose**.
@@ -112,6 +133,91 @@ This is a builder-stack list, not a leaderboard.
 - **Need durable memory as a layer in your stack:** look at **Mem0**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
 
+---
+
+## RAG Systems
+
+Curated list of practical Retrieval-Augmented Generation systems, infrastructure, evaluation tooling, and notable research directions.
+
+### Graph RAG systems
+- **Microsoft GraphRAG** - https://github.com/microsoft/graphrag - modular graph-based RAG system for knowledge graph indexing and query-time synthesis.
+- **LightRAG** - https://github.com/HKUDS/LightRAG - lightweight graph-enhanced RAG focused on simple indexing and fast retrieval.
+- **Neo4j GraphRAG for Python** - https://github.com/neo4j/neo4j-graphrag-python - production-oriented GraphRAG toolkit for Python apps built on Neo4j.
+
+### End-to-end RAG systems
+- **RAGFlow** - https://github.com/infiniflow/ragflow - open-source RAG engine with document parsing, indexing, and retrieval orchestration.
+- **OpenRAG** - https://github.com/langflow-ai/openrag - packaged RAG distribution that combines Langflow, Docling, and OpenSearch into a developer-friendly agentic search stack.
+- **R2R** - https://github.com/SciPhi-AI/R2R - production-focused retrieval stack and API for agentic RAG workflows.
+- **Onyx** - https://github.com/onyx-dot-app/onyx - open-source enterprise search and chat platform with connectors, indexing, and retrieval over private knowledge bases.
+
+### RAG evaluation and benchmarks
+- **Open RAG Eval** - https://github.com/vectara/open-rag-eval - evaluates RAG quality without relying on golden-answer datasets.
+- **FlashRAG** - https://github.com/RUC-NLPIR/FlashRAG - research-oriented RAG experimentation toolkit with strong evaluation coverage across retrieval, generation, and pipeline variants.
+
+### RAG infrastructure and frameworks
+- **Pathway** - https://github.com/pathwaycom/pathway - real-time data pipeline framework commonly used to build continuously updating RAG ingestion and retrieval stacks.
+- **Haystack** - https://github.com/deepset-ai/haystack - modular LLM orchestration framework with mature retrieval pipelines, routing, and evaluation building blocks for production RAG systems.
+
+### Research directions worth watching
+- **LinearRAG** - https://github.com/DEEP-PolyU/LinearRAG - research-heavy long-context retrieval direction centered on linearized retrieval and generation flow rather than a production platform.
+
+Projects here should earn their spot by introducing a distinct retrieval pattern, evaluation insight, or systems idea that practitioners may want to watch.
+
+---
+
+## Memory
+
+Curated list of memory systems, layers, and operational patterns for AI agents.
+
+The goal is not to collect every repo that says "memory". This section favors projects that help serious builders reason about how agents remember, retrieve, update, assemble, and govern context over time.
+
+### Stateful agent platforms
+Projects where memory is part of the agent architecture, not just an attached storage API.
+
+- **Mem0** - https://github.com/mem0ai/mem0 - Widely adopted memory layer for personalized and long-term agent memory.
+- **Letta** - https://github.com/letta-ai/letta - Stateful agent platform with explicit memory management and long-horizon behavior.
+- **Cognee** - https://github.com/topoteretes/cognee - Knowledge engine that combines memory extraction and retrieval for agents.
+
+### Memory extraction and lifecycle layers
+Projects that expose memory APIs, tooling, or reusable building blocks rather than a full end-to-end platform.
+
+- **LangMem** - https://github.com/langchain-ai/langmem - Tools and background managers for extracting, updating, and searching agent memory.
+- **Memobase** - https://github.com/memodb-io/memobase - Long-term user profile memory for chatbot and assistant applications.
+- **Hindsight** - https://github.com/vectorize-io/hindsight - Practical memory patterns focused on improving recall from prior interactions.
+
+### Context engines and graph memory
+Systems that emphasize relationship-aware retrieval, temporal knowledge, or memory assembly across multiple sources.
+
+- **Zep** - https://github.com/getzep/zep - Context engineering platform with temporal graph retrieval for production agents.
+- **Redis Agent Memory Server** - https://github.com/redis/agent-memory-server - Retrieval-oriented memory service built around Redis.
+
+### Local-first and personal memory
+Projects oriented toward self-hosted, user-controlled, or assistant-facing memory experiences.
+
+- **OpenMemory** - https://github.com/CaviraOSS/OpenMemory - Local-first persistent memory for LLM apps and coding assistants.
+- **Supermemory** - https://github.com/supermemoryai/supermemory - Fast memory engine and API for search and recall across user context.
+
+### Memory evaluation and operations
+Operational concerns matter as much as raw retrieval quality.
+
+#### Evaluation
+Look for projects and papers that test:
+- recall precision
+- temporal correctness
+- relevance under long-running sessions
+- drift and stale-memory behavior
+- multi-hop retrieval quality
+
+#### Ops
+Look for tools and patterns for:
+- retention and TTL policies
+- privacy and access controls
+- auditability and traceability
+- memory compaction and cleanup
+- observability for what was stored and recalled
+
+---
+
 ## How entries are evaluated
 
 Each entry should score well on:
@@ -120,6 +226,7 @@ Each entry should score well on:
 3. **Ecosystem health** - active maintainers, PR throughput, docs quality
 4. **Extensibility** - tooling, plugin/model/provider support
 5. **Production relevance** - whether it helps teams build real systems, not just demos
+6. **Distinctiveness** - whether it adds a meaningful layer, pattern, or capability instead of repeating what is already here
 
 ---
 
@@ -129,7 +236,7 @@ PRs welcome. Please include:
 - Why this project belongs in the list
 - Category placement
 - 1-2 sentence evidence-based summary with no hype
-- Optional: benchmark or reference links
+- Optional benchmark, production reference, or comparison link
 
 ### Entry template
 ```md
@@ -138,6 +245,18 @@ PRs welcome. Please include:
 - **Why it stands out:** ...
 - **Best for:** ...
 ```
+
+---
+
+## Migration note
+
+This repo is now the canonical umbrella list.
+
+The previous focused repos:
+- `awesome-rag-systems`
+- `awesome-agentic-memory`
+
+should remain available as lightweight pointer archives or redirect repos so existing links do not break, while all active curation happens here.
 
 ---
 
