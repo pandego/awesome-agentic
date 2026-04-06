@@ -49,15 +49,14 @@ Many projects blur category boundaries. That is fine. The goal here is useful or
 
 ### Core picks
 
+### Broad frameworks and platforms
+
+These are the strongest starting points when you need a general builder stack, not just one narrow capability.
+
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
 - **Why it stands out:** open-source assistant that runs on your infra, with strong multi-channel and tool integrations for operator-style workflows.
 - **Best for:** builders who want an extensible assistant product, not just a thin agent loop.
-
-### Goose
-- **Link:** https://github.com/block/goose
-- **Why it stands out:** open-source, extensible agent that can install, execute, edit, and test across real dev workflows.
-- **Best for:** builders who want a general-purpose coding agent with broad model flexibility.
 
 ### LangGraph
 - **Link:** https://github.com/langchain-ai/langgraph
@@ -106,15 +105,24 @@ Many projects blur category boundaries. That is fine. The goal here is useful or
 - **Why it stands out:** modern TypeScript-first framework ergonomics for building agent applications quickly.
 - **Best for:** teams that want a developer-friendly TypeScript stack.
 
-### Hermes Agent
-- **Link:** https://github.com/NousResearch/hermes-agent
-- **Why it stands out:** practical coding-agent workflows with active iteration and an experimentation-friendly posture.
-- **Best for:** fast-moving builders exploring agentic engineering patterns.
-
 ### Agno
 - **Link:** https://github.com/agno-agi/agno
 - **Why it stands out:** broad production-oriented surface for building and operating agentic software.
 - **Best for:** teams that want an all-in-one platform-style framework.
+
+### Coding-agent builders
+
+These are better read as execution harnesses and coding-agent products than as general-purpose agent foundations.
+
+### Goose
+- **Link:** https://github.com/block/goose
+- **Why it stands out:** open-source, extensible agent that can install, execute, edit, and test across real dev workflows.
+- **Best for:** builders who want a general-purpose coding agent with broad model flexibility.
+
+### Hermes Agent
+- **Link:** https://github.com/NousResearch/hermes-agent
+- **Why it stands out:** practical coding-agent workflows with active iteration and an experimentation-friendly posture.
+- **Best for:** fast-moving builders exploring agentic engineering patterns.
 
 ### pi-mono
 - **Link:** https://github.com/badlogic/pi-mono
@@ -125,6 +133,7 @@ Many projects blur category boundaries. That is fine. The goal here is useful or
 
 - **Want an operator-style assistant product:** start with **OpenClaw**.
 - **Want a strong general-purpose coding agent:** start with **Goose**.
+- **Want a more experimental coding-agent harness:** compare **Hermes Agent** and **pi-mono**.
 - **Want explicit orchestration and durable workflows:** start with **LangGraph**.
 - **Want typed Python ergonomics and validation:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
