@@ -154,6 +154,11 @@ These are the terminal-first harnesses and products serious builders are actuall
 - **Why it stands out:** modern open-source coding agent with a clean terminal-first posture and growing relevance in the CLI agent stack.
 - **Best for:** builders who want a newer open-source terminal agent worth watching closely.
 
+### OpenHands
+- **Link:** https://github.com/OpenHands/OpenHands
+- **Why it stands out:** one of the strongest open-source autonomous coding-agent projects, with a real CLI mode plus broader SDK and local GUI paths for builders who want more than a thin terminal wrapper.
+- **Best for:** builders who want an open-source coding agent that spans terminal use, local operation, and more autonomous execution patterns.
+
 ### How to choose
 
 - **Want an operator-style assistant product:** start with **OpenClaw**.
@@ -163,8 +168,8 @@ These are the terminal-first harnesses and products serious builders are actuall
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
-- **Want the strongest terminal-native coding harnesses:** compare **Codex CLI**, **Claude Code**, **Gemini CLI**, **Aider**, and **OpenCode** first.
-- **Want a broader open coding-agent product rather than a pure terminal harness:** look at **Goose**.
+- **Want the strongest terminal-native coding harnesses:** compare **Codex CLI**, **Claude Code**, **Gemini CLI**, **Aider**, **OpenCode**, and **OpenHands** first.
+- **Want a broader open coding-agent product rather than a pure terminal harness:** look at **Goose** or **OpenHands**.
 - **Want a more experimental coding-agent harness:** compare **Hermes Agent** and **pi-mono**.
 
 ---
