@@ -14,6 +14,7 @@ If you are building agents seriously, you usually need all three.
 - [Builders](#builders)
   - [Core picks](#core-picks)
   - [Specialized picks](#specialized-picks)
+  - [Terminal-native coding agents](#terminal-native-coding-agents)
   - [How to choose](#how-to-choose)
 - [RAG Systems](#rag-systems)
   - [Graph RAG systems](#graph-rag-systems)
@@ -85,11 +86,6 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** a sharper harness layer on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
 - **Best for:** builders who like LangGraph's control but want a more opinionated starting point for complex agent execution.
 
-### Mem0
-- **Link:** https://github.com/mem0ai/mem0
-- **Why it stands out:** dedicated long-term memory layer for AI agents with retrieval, personalization, and cross-session recall patterns.
-- **Best for:** products where durable context and memory quality matter more than one-shot interactions.
-
 ### Google ADK (Python)
 - **Link:** https://github.com/google/adk-python
 - **Why it stands out:** fast-moving, code-first Python toolkit with broad model and provider integration surface.
@@ -129,18 +125,47 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Why it stands out:** lightweight coding-agent toolkit with strong terminal, markdown, and workflow utility.
 - **Best for:** builders who want a focused, hackable toolkit rather than a heavyweight framework.
 
+### Terminal-native coding agents
+
+These are the terminal-first harnesses and products serious builders are actually using to execute coding work, not just design flows on a whiteboard.
+
+### Codex CLI
+- **Link:** https://github.com/openai/codex
+- **Why it stands out:** benchmark-backed terminal coding agent with a strong mix of patching, repo navigation, and task execution. Current Terminal-Bench 2.0 leaderboard snapshots still place Codex-derived CLI entries among the strongest public terminal-agent results.
+- **Best for:** builders who want a high-ceiling terminal harness and care about benchmark-visible execution quality.
+
+### Claude Code
+- **Link:** https://github.com/anthropics/claude-code
+- **Why it stands out:** one of the most recognizable terminal-native coding agents, with strong real-world adoption and a very practical interactive workflow for repo exploration, edits, and iterative tasking.
+- **Best for:** builders who want a polished terminal coding UX with strong interactive steering.
+
+### Gemini CLI
+- **Link:** https://github.com/google-gemini/gemini-cli
+- **Why it stands out:** fast-moving terminal harness from Google with strong ecosystem relevance and improving benchmark visibility.
+- **Best for:** builders who want a first-party Google terminal agent in their comparison set.
+
+### Aider
+- **Link:** https://github.com/Aider-AI/aider
+- **Why it stands out:** still one of the clearest open-source references for repo-aware terminal coding workflows, especially for pair-programming style iteration and git-centric changes.
+- **Best for:** builders who want a proven open-source terminal coding assistant with a big real-user footprint.
+
+### OpenCode
+- **Link:** https://github.com/sst/opencode
+- **Why it stands out:** modern open-source coding agent with a clean terminal-first posture and growing relevance in the CLI agent stack.
+- **Best for:** builders who want a newer open-source terminal agent worth watching closely.
+
 ### How to choose
 
 - **Want an operator-style assistant product:** start with **OpenClaw**.
-- **Want a strong general-purpose coding agent:** start with **Goose**.
-- **Want a more experimental coding-agent harness:** compare **Hermes Agent** and **pi-mono**.
 - **Want explicit orchestration and durable workflows:** start with **LangGraph**.
 - **Want typed Python ergonomics and validation:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
-- **Need durable memory as a layer in your stack:** look at **Mem0**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
+- **Want the strongest terminal-native coding harnesses:** compare **Codex CLI**, **Claude Code**, **Gemini CLI**, **Aider**, and **OpenCode** first.
+- **Want a broader open coding-agent product rather than a pure terminal harness:** look at **Goose**.
+- **Want a more experimental coding-agent harness:** compare **Hermes Agent** and **pi-mono**.
 
 ---
 
