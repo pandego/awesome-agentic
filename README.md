@@ -74,6 +74,11 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** lightweight but practical primitives for tools, handoffs, and multi-agent workflows.
 - **Best for:** Python teams that want a fast path to structured assistant behavior.
 
+### Microsoft Agent Framework
+- **Link:** https://github.com/microsoft/agent-framework
+- **Why it stands out:** broad builder platform with clear first-party docs, orchestration primitives, and serious Python plus .NET support.
+- **Best for:** teams that want a cross-language agent platform with strong vendor backing and a more platform-like posture than a lightweight SDK.
+
 ### Specialized picks
 
 ### LiveKit Agents
@@ -111,14 +116,9 @@ These are the strongest starting points when you need a general builder stack, n
 These are better read as execution harnesses and coding-agent products than as general-purpose agent foundations.
 
 ### Goose
-- **Link:** https://github.com/block/goose
+- **Link:** https://github.com/aaif-goose/goose
 - **Why it stands out:** open-source, extensible agent that can install, execute, edit, and test across real dev workflows.
 - **Best for:** builders who want a general-purpose coding agent with broad model flexibility.
-
-### Hermes Agent
-- **Link:** https://github.com/NousResearch/hermes-agent
-- **Why it stands out:** practical coding-agent workflows with active iteration and an experimentation-friendly posture.
-- **Best for:** fast-moving builders exploring agentic engineering patterns.
 
 ### pi-mono
 - **Link:** https://github.com/badlogic/pi-mono
@@ -165,12 +165,13 @@ These are the terminal-first harnesses and products serious builders are actuall
 - **Want explicit orchestration and durable workflows:** start with **LangGraph**.
 - **Want typed Python ergonomics and validation:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
+- **Want a cross-language builder platform with strong vendor backing:** look at **Microsoft Agent Framework**.
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
 - **Want the strongest terminal-native coding harnesses:** compare **Codex CLI**, **Claude Code**, **Gemini CLI**, **Aider**, **OpenCode**, and **OpenHands** first.
 - **Want a broader open coding-agent product rather than a pure terminal harness:** look at **Goose** or **OpenHands**.
-- **Want a more experimental coding-agent harness:** compare **Hermes Agent** and **pi-mono**.
+- **Want a more experimental coding-agent harness:** look at **pi-mono**.
 
 ---
 
