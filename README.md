@@ -83,8 +83,8 @@ Fast recommendations if you do not want to read everything first.
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
-- **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/)
-- **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl)
+- **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
+- **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best eval/observability stack to compare first:** [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -470,6 +470,12 @@ Agents need to browse, click, extract, fill forms, and operate websites. This ca
 - **Link:** https://github.com/firecrawl/firecrawl
 - **Why it stands out:** API to search, scrape, and interact with the web for AI systems.
 - **Best for:** web extraction, crawling, and agent-readable content ingestion.
+
+### TinyFish
+- **Link:** https://www.tinyfish.ai/
+- **Why it stands out:** productized live-web infrastructure for agents, combining search, rendered fetch, web-agent execution, and hosted browser sessions behind one API. Its public positioning emphasizes production workflows such as dynamic pages, authenticated flows, structured outputs, and scale.
+- **Best for:** teams that need agents to operate the live web, not just scrape static pages.
+- **Evidence:** TinyFish reports free Search/Fetch APIs, MCP support, customer references, and an 89.9% Mind2Web web-agent accuracy claim on its product site; its GitHub org includes active agent/web extraction repos such as `tinyfish-cookbook` and `agentql`. Last checked: 2026-05-08.
 
 ---
 
