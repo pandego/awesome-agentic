@@ -87,6 +87,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
+- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [τ-bench](https://taubench.com/) for tool-agent-user workflows
 - **Best eval/observability stack to compare first:** [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
 
 ---
@@ -561,6 +562,16 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://github.com/SWE-agent/SWE-agent
 - **Why it stands out:** both a system and a research reference for issue-to-patch workflows.
 - **Best for:** hands-on benchmark experimentation.
+
+### OSWorld
+- **Link:** https://os-world.github.io/
+- **Why it stands out:** benchmark and executable environment for multimodal agents doing open-ended desktop and web tasks across real applications.
+- **Best for:** evaluating computer-use agents beyond browser-only or coding-only tasks.
+
+### τ-bench
+- **Link:** https://taubench.com/
+- **Why it stands out:** benchmark family for tool-agent-user interaction in realistic enterprise workflows, now extending into knowledge and full-duplex voice modes.
+- **Best for:** evaluating conversational agents that must follow policy, use tools, and coordinate with users across multi-turn tasks.
 
 Evaluation axes for coding agents:
 
