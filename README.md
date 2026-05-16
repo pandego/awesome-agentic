@@ -83,6 +83,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
+- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
@@ -416,6 +417,11 @@ PersonalOS is the agentic layer around a person or team: memory, tasks, notes, f
 
 This is distinct from generic agent memory. A memory system remembers. A PersonalOS helps operate.
 
+### Personal AI Infrastructure
+- **Link:** https://github.com/danielmiessler/Personal_AI_Infrastructure
+- **Why it stands out:** Claude Code-native Life Operating System with Pulse dashboard, digital-assistant identity, structured skills, workflows, hooks, and plain-text personal context.
+- **Best for:** builders designing a full personal AI infrastructure layer around goals, memory, skills, and day-to-day execution.
+
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
 - **Why it stands out:** open-source assistant product with multi-channel, tool, and operator-style workflow orientation.
@@ -430,6 +436,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/amanaiproduct/personal-os
 - **Why it stands out:** local AI-agent task-management framework with strong builder interest and active updates.
 - **Best for:** builders studying practical local-first PersonalOS workflows around tasks and execution.
+
+### Thoth
+- **Link:** https://github.com/siddsachar/Thoth
+- **Why it stands out:** local-first desktop AI assistant with personal knowledge graph, workflows, tool integrations, local model support, channels, and no hosted account requirement.
+- **Best for:** builders comparing sovereign personal assistants that combine memory, automation, developer workflows, and everyday operating surfaces.
 
 ### OpenFang
 - **Link:** https://github.com/pandego/openfang
