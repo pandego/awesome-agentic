@@ -426,6 +426,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** blueprint for managing life and work with AI-powered workflows.
 - **Best for:** people designing an opinionated personal AI operating layer.
 
+### Aman Khan's Personal OS
+- **Link:** https://github.com/amanaiproduct/personal-os
+- **Why it stands out:** local AI-agent task-management framework with strong builder interest and active updates.
+- **Best for:** builders studying practical local-first PersonalOS workflows around tasks and execution.
+
 ### OpenFang
 - **Link:** https://github.com/pandego/openfang
 - **Why it stands out:** open-source agent operating system direction.
