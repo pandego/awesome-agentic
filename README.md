@@ -45,6 +45,7 @@ If you are building agents seriously, you usually need several layers:
 - [Evaluation, benchmarks, and observability](#evaluation-benchmarks-and-observability)
   - [Agent and coding benchmarks](#agent-and-coding-benchmarks)
   - [LLM and agent eval frameworks](#llm-and-agent-eval-frameworks)
+  - [Agent security and red-teaming](#agent-security-and-red-teaming)
   - [Observability and tracing](#observability-and-tracing)
 - [How entries are evaluated](#how-entries-are-evaluated)
 - [Contributing](#contributing)
@@ -90,6 +91,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [τ-bench](https://taubench.com/) for tool-agent-user workflows
 - **Best eval/observability stack to compare first:** [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -627,6 +629,25 @@ Evaluation axes for coding agents:
 - **Link:** https://github.com/microsoft/promptflow
 - **Why it stands out:** framework for prototyping, testing, evaluating, and monitoring LLM applications.
 - **Best for:** teams already aligned with Microsoft/Azure-style LLM operations.
+
+### Agent security and red-teaming
+
+Agentic security needs its own eval loop because prompt injection, tool misuse, data exfiltration, and unsafe action chains are runtime failures, not just model failures.
+
+### AgentDojo
+- **Link:** https://github.com/ethz-spylab/agentdojo
+- **Why it stands out:** benchmark environment for prompt-injection attacks and defenses in tool-using LLM agents, with direct relevance to real assistant workflows.
+- **Best for:** teams testing whether agents can keep task utility while resisting malicious instructions in workspace, travel, and tool-use scenarios.
+
+### PyRIT
+- **Link:** https://github.com/microsoft/PyRIT
+- **Why it stands out:** Microsoft-backed open-source framework for proactive generative-AI risk identification and red-team automation.
+- **Best for:** security teams building repeatable adversarial tests for LLM apps and agentic systems.
+
+### garak
+- **Link:** https://github.com/NVIDIA/garak
+- **Why it stands out:** mature LLM vulnerability scanner with active releases and a broad probe/plugin posture.
+- **Best for:** teams that want a fast baseline scan before deeper agent-specific red teaming.
 
 ### Observability and tracing
 
