@@ -83,7 +83,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
-- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
+- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
@@ -443,9 +443,14 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Best for:** builders comparing sovereign personal assistants that combine memory, automation, developer workflows, and everyday operating surfaces.
 
 ### OpenFang
-- **Link:** https://github.com/pandego/openfang
-- **Why it stands out:** open-source agent operating system direction.
+- **Link:** https://github.com/RightNow-AI/openfang
+- **Why it stands out:** open-source agent operating system with active releases and stronger public adoption than the older mirror.
 - **Best for:** builders exploring OS-like abstractions for agents.
+
+### QwenPaw
+- **Link:** https://github.com/agentscope-ai/QwenPaw
+- **Why it stands out:** self-hostable personal AI assistant with local/cloud deployment, memory, proactive scheduling, multi-channel chat, MCP, skills, and explicit tool/file security controls.
+- **Best for:** builders comparing practical PersonalOS products that combine channels, personal memory, cron-like automations, and local control.
 
 ### Letta
 - **Link:** https://github.com/letta-ai/letta
