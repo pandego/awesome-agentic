@@ -85,7 +85,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
-- **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
+- **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
 - **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
@@ -372,6 +372,12 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 - **Why it stands out:** high-adoption open-source converter for PDFs and office documents to Markdown, JSON, chunks, and HTML, with table/form/equation handling and optional LLM-assisted accuracy boosts.
 - **Best for:** builders who want fast document-to-context conversion with hackable local control.
 
+### MinerU
+- **Link:** https://github.com/opendatalab/MinerU
+- **Why it stands out:** high-adoption document parser for PDFs, images, DOCX, PPTX, and XLSX, with Markdown/JSON outputs, layout/table/formula extraction, 109-language OCR, CLI/API/WebUI deployment, and explicit pure-CPU mode via the `pipeline` backend.
+- **Best for:** teams that need a stronger local multimodal document parser than lightweight PDF-only tools, while keeping an on-prem/self-hosted path for agentic ingestion.
+- **License note:** MinerU uses the MinerU Open Source License, based on Apache-2.0 with additional commercial-threshold and online-service attribution conditions, so do not label it plain Apache-2.0. Last checked: 2026-05-17.
+
 ### olmOCR
 - **Link:** https://github.com/allenai/olmocr
 - **Why it stands out:** Allen AI toolkit and model family for linearizing PDFs into clean text, with an explicit benchmark culture around reading order, tables, multi-column pages, headers, and document structure.
@@ -381,6 +387,12 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 - **Link:** https://www.llamaindex.ai/llamaparse
 - **Why it stands out:** production document parser from the LlamaIndex ecosystem with multimodal parsing, layout-aware extraction, enterprise-scale processing, and direct fit with RAG workflows.
 - **Best for:** teams that want a managed parser tightly connected to LlamaIndex-style context engineering.
+
+### LiteParse
+- **Link:** https://github.com/run-llama/liteparse
+- **Why it stands out:** Apache-2.0 local-first document parser from the LlamaIndex ecosystem, focused on fast PDF parsing, spatial text extraction, bounding boxes, screenshots, and Tesseract.js OCR without GPU or cloud dependency.
+- **Best for:** builders who need a lightweight open-source parser for local agent/RAG ingestion before reaching for managed OCR or heavier multimodal document stacks.
+- **Evidence:** active `run-llama/liteparse` repo, Apache-2.0 license, v1.5.3 release on 2026-04-29, and local/no-cloud README positioning. Last checked: 2026-05-17.
 
 ### ParseBench
 - **Link:** https://arxiv.org/html/2604.08538v3
