@@ -9,6 +9,7 @@ If you are building agents seriously, you usually need several layers:
 - **Builders** - frameworks, runtimes, orchestration, and agent platforms
 - **Coding systems** - terminal agents, IDEs, autonomous engineers, and app builders
 - **Context systems** - RAG, indexing, memory, and PersonalOS layers
+- **Document systems** - OCR, parsing, layout understanding, and agent-ready extraction
 - **Execution systems** - browser agents, sandboxes, MCP servers, tools, and runtime infra
 - **Quality systems** - benchmarks, evals, traces, observability, and regression tests
 
@@ -32,6 +33,7 @@ If you are building agents seriously, you usually need several layers:
   - [RAG infrastructure and frameworks](#rag-infrastructure-and-frameworks)
   - [RAG evaluation and benchmarks](#rag-evaluation-and-benchmarks)
   - [Research directions worth watching](#research-directions-worth-watching)
+- [OCR, document parsing, and multimodal extraction](#ocr-document-parsing-and-multimodal-extraction)
 - [Memory and personal context](#memory-and-personal-context)
   - [Stateful agent platforms](#stateful-agent-platforms)
   - [Memory extraction and lifecycle layers](#memory-extraction-and-lifecycle-layers)
@@ -83,6 +85,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
+- **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
 - **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
@@ -352,6 +355,37 @@ Curated list of practical Retrieval-Augmented Generation systems, infrastructure
 - **LinearRAG** - https://github.com/DEEP-PolyU/LinearRAG - research-heavy long-context retrieval direction centered on linearized retrieval and generation flow rather than a production platform.
 
 Projects here should earn their spot by introducing a distinct retrieval pattern, evaluation insight, or systems idea that practitioners may want to watch.
+
+---
+
+## OCR, document parsing, and multimodal extraction
+
+Agents that operate businesses eventually hit messy PDFs, scans, tables, slides, charts, invoices, and reports. This section favors tools that turn documents into agent-ready Markdown, JSON, chunks, or structured data, not generic OCR demos.
+
+### Docling
+- **Link:** https://github.com/docling-project/docling
+- **Why it stands out:** IBM-backed open-source parser with broad format coverage, local execution, layout/table/formula understanding, GenAI integrations, and an MCP server for agentic applications.
+- **Best for:** teams that need a self-hostable document ingestion layer for RAG, agents, and sensitive enterprise documents.
+
+### Marker
+- **Link:** https://github.com/datalab-to/marker
+- **Why it stands out:** high-adoption open-source converter for PDFs and office documents to Markdown, JSON, chunks, and HTML, with table/form/equation handling and optional LLM-assisted accuracy boosts.
+- **Best for:** builders who want fast document-to-context conversion with hackable local control.
+
+### olmOCR
+- **Link:** https://github.com/allenai/olmocr
+- **Why it stands out:** Allen AI toolkit and model family for linearizing PDFs into clean text, with an explicit benchmark culture around reading order, tables, multi-column pages, headers, and document structure.
+- **Best for:** teams evaluating OCR quality for LLM training data, scientific PDFs, and structure-preserving document pipelines.
+
+### LlamaParse
+- **Link:** https://www.llamaindex.ai/llamaparse
+- **Why it stands out:** production document parser from the LlamaIndex ecosystem with multimodal parsing, layout-aware extraction, enterprise-scale processing, and direct fit with RAG workflows.
+- **Best for:** teams that want a managed parser tightly connected to LlamaIndex-style context engineering.
+
+### ParseBench
+- **Link:** https://arxiv.org/html/2604.08538v3
+- **Why it stands out:** document parsing benchmark for AI agents that evaluates tables, charts, content faithfulness, semantic formatting, and visual grounding instead of only text similarity.
+- **Best for:** builders comparing parsers on agent-critical document failures before trusting extraction in business workflows.
 
 ---
 
