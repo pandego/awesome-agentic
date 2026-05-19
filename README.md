@@ -717,6 +717,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Why it stands out:** tracing, evaluation, and observability platform integrated with the LangChain/LangGraph ecosystem.
 - **Best for:** teams building on LangGraph or LangChain who want native observability.
 
+### agenttrace
+- **Link:** https://github.com/luoyuctl/agenttrace
+- **Why it stands out:** local TUI and report generator for AI coding agent session logs across cost, tokens, latency, failures, anomalies, and health.
+- **Best for:** builders auditing local Claude Code, Codex CLI, Gemini CLI, Aider, Cursor, OpenCode, OpenClaw, and similar coding-agent runs.
+
 ---
 
 ## How entries are evaluated
