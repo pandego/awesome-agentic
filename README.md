@@ -87,7 +87,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
-- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [AIOS](https://github.com/agiresearch/AIOS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
+- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [OpenFang](https://github.com/RightNow-AI/openfang), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [AIOS](https://github.com/agiresearch/AIOS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
@@ -492,8 +492,8 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### OpenFang
 - **Link:** https://github.com/RightNow-AI/openfang
-- **Why it stands out:** open-source agent operating system with active releases and stronger public adoption than the older mirror.
-- **Best for:** builders exploring OS-like abstractions for agents.
+- **Why it stands out:** Rust-based agent OS with scheduled autonomous "Hands," a single-binary install, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
+- **Best for:** builders exploring OS-like abstractions for always-on agents, with a pre-1.0 caveat for production use.
 
 ### AIOS
 - **Link:** https://github.com/agiresearch/AIOS
