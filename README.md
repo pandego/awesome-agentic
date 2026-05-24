@@ -93,7 +93,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows
-- **Best eval/observability stack to compare first:** [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
@@ -670,6 +670,11 @@ Evaluation axes for coding agents:
 - traceability
 
 ### LLM and agent eval frameworks
+
+### Inspect AI
+- **Link:** https://github.com/UKGovernmentBEIS/inspect_ai
+- **Why it stands out:** UK AI Security Institute framework for reproducible model and agent evaluations, with built-in tooling for agents, custom/MCP tools, sandboxes, and external coding agents.
+- **Best for:** teams building serious eval suites for coding, tool-use, cyber, and long-running agent tasks.
 
 ### DeepEval
 - **Link:** https://github.com/confident-ai/deepeval
