@@ -88,7 +88,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
 - **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [AIOS](https://github.com/agiresearch/AIOS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
-- **Best browser-agent stack to compare first:** [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
+- **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
@@ -529,7 +529,12 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ## Browser, computer-use, and web agents
 
-Agents need to browse, click, extract, fill forms, and operate websites. This category covers browser automation, hosted browser infra, and web extraction.
+Agents need to browse, click, extract, fill forms, and operate websites and desktops. This category covers computer-use agents, browser automation, hosted browser infra, and web extraction.
+
+### Agent S
+- **Link:** https://github.com/simular-ai/Agent-S
+- **Why it stands out:** open-source computer-use framework with research lineage and strong OSWorld results, including reported human-level desktop-agent performance.
+- **Best for:** builders comparing agents that operate full computer environments, not just web pages.
 
 ### Browser Use
 - **Link:** https://github.com/browser-use/browser-use
