@@ -492,8 +492,8 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### Aman Khan's Personal OS
 - **Link:** https://github.com/amanaiproduct/personal-os
-- **Why it stands out:** local AI-agent task-management framework with strong builder interest and active updates.
-- **Best for:** builders studying practical local-first PersonalOS workflows around tasks and execution.
+- **Why it stands out:** local AI-agent task-management framework built around plain-file backlog capture, goal-driven prioritization, knowledge base, session evals, and an optional MCP server.
+- **Best for:** builders studying practical local-first PersonalOS workflows around tasks, priorities, and everyday execution.
 
 ### Thoth
 - **Link:** https://github.com/siddsachar/Thoth
