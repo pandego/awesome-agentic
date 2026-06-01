@@ -87,7 +87,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best document parsing/OCR starting points:** [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [Supermemory](https://github.com/supermemoryai/supermemory)
-- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
+- **Best PersonalOS / AI OS starting points:** [Personal AI Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure), [OpenClaw](https://github.com/openclaw/openclaw), [OpenHuman](https://github.com/tinyhumansai/openhuman), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os)
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
@@ -479,6 +479,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/openclaw/openclaw
 - **Why it stands out:** open-source assistant product with multi-channel, tool, and operator-style workflow orientation.
 - **Best for:** self-hosted or productized personal/team assistant systems.
+
+### OpenHuman
+- **Link:** https://github.com/tinyhumansai/openhuman
+- **Why it stands out:** open-source desktop PersonalOS with local-first Memory Tree, Obsidian-style vault, scheduled connector sync, broad integrations, voice/video surfaces, and active beta releases.
+- **Best for:** builders comparing full personal AI assistants that combine readable memory, everyday tool context, and proactive automation.
 
 ### OpenJarvis
 - **Link:** https://github.com/open-jarvis/OpenJarvis
