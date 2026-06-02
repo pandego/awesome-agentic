@@ -505,6 +505,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** local-first desktop AI assistant with personal knowledge graph, workflows, tool integrations, local model support, channels, and no hosted account requirement.
 - **Best for:** builders comparing sovereign personal assistants that combine memory, automation, developer workflows, and everyday operating surfaces.
 
+### Aiden
+- **Link:** https://github.com/taracodlabs/aiden
+- **Why it stands out:** local-first autonomous engine with browser, shell, file, workflow, channel, trigger, recovery, and persistent-memory primitives in one installable runtime.
+- **Best for:** builders studying desktop-native PersonalOS agents that can operate files, tools, and scheduled/local events without becoming a hosted assistant product.
+
 ### OpenFang
 - **Link:** https://github.com/RightNow-AI/openfang
 - **Why it stands out:** Rust-based agent OS with scheduled autonomous "Hands," a single-binary install, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
