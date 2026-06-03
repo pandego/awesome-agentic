@@ -93,8 +93,8 @@ Fast recommendations if you do not want to read everything first.
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows
-- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Ragas](https://github.com/vibrantlabsai/ragas)
-- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -711,6 +711,11 @@ Evaluation axes for coding agents:
 - **Why it stands out:** test-style LLM evaluation framework.
 - **Best for:** teams that want CI-like evals for LLM apps and agents.
 
+### Promptfoo
+- **Link:** https://github.com/promptfoo/promptfoo
+- **Why it stands out:** CLI-first eval and red-team harness for prompts, agents, and RAG, with strong CI/CD ergonomics and active open-source releases.
+- **Best for:** teams that want declarative regression tests plus security scans before shipping agent changes.
+
 ### Ragas
 - **Link:** https://github.com/vibrantlabsai/ragas
 - **Why it stands out:** practical eval framework for RAG and LLM applications.
@@ -761,6 +766,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://www.langchain.com/langsmith
 - **Why it stands out:** tracing, evaluation, and observability platform integrated with the LangChain/LangGraph ecosystem.
 - **Best for:** teams building on LangGraph or LangChain who want native observability.
+
+### OpenLLMetry
+- **Link:** https://github.com/traceloop/openllmetry
+- **Why it stands out:** OpenTelemetry-native instrumentation for LLM and agent traces that can feed existing observability stacks instead of forcing a new platform.
+- **Best for:** teams standardizing agent telemetry around OpenTelemetry, Datadog, Honeycomb, or similar backends.
 
 ---
 
