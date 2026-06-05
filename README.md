@@ -92,7 +92,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
-- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows
+- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
@@ -687,6 +687,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://taubench.com/
 - **Why it stands out:** benchmark family for tool-agent-user interaction in realistic enterprise workflows, now extending into knowledge and full-duplex voice modes.
 - **Best for:** evaluating conversational agents that must follow policy, use tools, and coordinate with users across multi-turn tasks.
+
+### TRAIL
+- **Link:** https://github.com/patronus-ai/trail-benchmark
+- **Why it stands out:** open benchmark for trace reasoning and agentic issue localization, with 148 human-annotated long-context traces and 841 reasoning, planning, and execution errors.
+- **Best for:** teams debugging complex agent workflows where final-answer grading hides the broken step.
 
 Evaluation axes for coding agents:
 
