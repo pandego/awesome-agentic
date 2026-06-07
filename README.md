@@ -494,8 +494,8 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### Personal OS
 - **Link:** https://github.com/pandego/personal-os
-- **Why it stands out:** blueprint for managing life and work with AI-powered workflows.
-- **Best for:** people designing an opinionated personal AI operating layer.
+- **Why it stands out:** starter workspace for shaping a personal AI operating system around real life, work, priorities, memories, writing voice, and assistant workflows.
+- **Best for:** builders designing a plain-file PersonalOS that behaves like an assistant home folder instead of another app silo.
 
 ### Aman Khan's Personal OS
 - **Link:** https://github.com/amanaiproduct/personal-os
