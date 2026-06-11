@@ -91,6 +91,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
+- **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -620,6 +621,11 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 - **Link:** https://github.com/jlowin/fastmcp
 - **Why it stands out:** Pythonic way to build MCP servers and clients.
 - **Best for:** Python teams building custom tools for agents.
+
+### Backlog.md
+- **Link:** https://github.com/MrLesk/Backlog.md
+- **Why it stands out:** local Markdown task board and MCP/CLI workflow that gives coding agents explicit tasks, acceptance criteria, decisions, and review checkpoints inside the repo.
+- **Best for:** teams using Claude Code, Codex, Gemini CLI, Kiro, or Cursor who want agent work to stay spec-driven, reviewable, and offline-friendly.
 
 Good MCP/tool entries should be evaluated on:
 
