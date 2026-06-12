@@ -443,6 +443,7 @@ Projects oriented toward self-hosted, user-controlled, or assistant-facing memor
 
 - **OpenMemory** - https://github.com/CaviraOSS/OpenMemory - local-first persistent memory for LLM apps and coding assistants.
 - **Signet** - https://github.com/Signet-AI/signetai - local-first context layer for agent identity, memory, transcripts, provenance, secrets, repair, and portability across agent shells.
+- **Neurite** - https://github.com/satellitecomponent/Neurite - local visual graph workspace for notes, links, files, AI nodes, conversation history, Zettelkasten-style archives, and graph-based personal context.
 - **Supermemory** - https://github.com/supermemoryai/supermemory - fast memory engine and API for search and recall across user context.
 - **Screenpipe** - https://github.com/screenpipe/screenpipe - local desktop context capture for screen/audio memory, search, MCP access, and activity-triggered agents.
 
