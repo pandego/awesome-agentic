@@ -550,6 +550,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** mature self-hostable personal AI app that combines document/web answers, custom agents, scheduled automations, multi-surface access, and local or cloud LLM support.
 - **Best for:** builders who want a practical personal second-brain / PersonalOS layer rather than just a memory API.
 
+### PyGPT
+- **Link:** https://github.com/szczyglis-dev/py-gpt
+- **Why it stands out:** cross-platform desktop AI assistant with agents, computer use, tools, MCP, plugins, voice, RAG, memory, web search, and local/Ollama model support in one open-source app.
+- **Best for:** builders comparing desktop-native PersonalOS surfaces where chat, automation, files, local models, and everyday tooling share one UI.
+
 ### Letta
 - **Link:** https://github.com/letta-ai/letta
 - **Why it stands out:** stateful agents with memory that can learn and self-improve over time.
