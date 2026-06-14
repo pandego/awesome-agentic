@@ -94,7 +94,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
-- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
@@ -791,6 +791,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/Arize-ai/phoenix
 - **Why it stands out:** AI observability and evaluation platform with strong tracing and analysis posture.
 - **Best for:** debugging and evaluating complex LLM and RAG systems.
+
+### Opik
+- **Link:** https://github.com/comet-ml/opik
+- **Why it stands out:** open-source observability and eval platform for LLM apps, RAG, and agentic workflows, with tracing, automated evals, production dashboards, and broad agent-framework integrations.
+- **Best for:** teams that want a self-hostable trace-plus-eval loop for production agents without locking into one orchestration stack.
 
 ### LangSmith
 - **Link:** https://www.langchain.com/langsmith
