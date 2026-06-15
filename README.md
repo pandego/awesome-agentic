@@ -525,6 +525,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** local-first autonomous engine with browser, shell, file, workflow, channel, trigger, recovery, and persistent-memory primitives in one installable runtime.
 - **Best for:** builders studying desktop-native PersonalOS agents that can operate files, tools, and scheduled/local events without becoming a hosted assistant product.
 
+### LLMbasedOS
+- **Link:** https://github.com/iluxu/llmbasedos
+- **Why it stands out:** local-first runtime for tool-using agents with Docker boundaries, explicit mounted-folder scope, MCP-style narrow tools, local-model defaults, and no ambient monitoring.
+- **Best for:** privacy-sensitive builders who want an observable personal-agent runtime before giving assistants broad host, email, shell, or screen access.
+
 ### OpenFang
 - **Link:** https://github.com/RightNow-AI/openfang
 - **Why it stands out:** Rust-based agent OS with scheduled autonomous "Hands," a single-binary install, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
