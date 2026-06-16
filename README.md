@@ -95,7 +95,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
-- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -779,6 +779,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/microsoft/PyRIT
 - **Why it stands out:** Microsoft-backed open-source framework for proactive generative-AI risk identification and red-team automation.
 - **Best for:** security teams building repeatable adversarial tests for LLM apps and agentic systems.
+
+### DeepTeam
+- **Link:** https://github.com/confident-ai/deepteam
+- **Why it stands out:** open-source red-teaming framework built on DeepEval with local attack simulation, 50+ vulnerability checks, and agent-specific risks such as goal theft, indirect instructions, tool orchestration abuse, and autonomous drift.
+- **Best for:** teams that want CI-friendly penetration testing for LLM apps, RAG systems, and tool-calling agents before production rollout.
 
 ### garak
 - **Link:** https://github.com/NVIDIA/garak
