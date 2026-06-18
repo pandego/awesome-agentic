@@ -93,7 +93,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
-- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
+- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
@@ -711,6 +711,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://os-world.github.io/
 - **Why it stands out:** benchmark and executable environment for multimodal agents doing open-ended desktop and web tasks across real applications.
 - **Best for:** evaluating computer-use agents beyond browser-only or coding-only tasks.
+
+### Windows Agent Arena
+- **Link:** https://github.com/microsoft/WindowsAgentArena
+- **Why it stands out:** Microsoft-backed Windows benchmark with 150+ real OS tasks and parallelized evaluation for multimodal desktop agents.
+- **Best for:** teams evaluating whether computer-use agents can reliably operate Windows applications, not just browsers or Linux sandboxes.
 
 ### BrowserGym
 - **Link:** https://github.com/ServiceNow/BrowserGym
