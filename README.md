@@ -515,6 +515,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** local AI-agent task-management framework built around plain-file backlog capture, goal-driven prioritization, knowledge base, session evals, and an optional MCP server.
 - **Best for:** builders studying practical local-first PersonalOS workflows around tasks, priorities, and everyday execution.
 
+### Claude Context OS
+- **Link:** https://github.com/conorbronsdon/claude-context-os
+- **Why it stands out:** file-based Claude context workspace with versioned identity/project/state files, `/start`→`/end` session loops, auto-memory, and curator passes for stale or contradictory context.
+- **Best for:** builders who want a lightweight personal context operating layer across Claude Code and Claude projects without adopting a full assistant platform.
+
 ### Dex
 - **Link:** https://github.com/davekilleen/Dex
 - **Why it stands out:** role-configured Claude/Cursor PersonalOS starter kit with daily planning, meeting intelligence, relationship tracking, task sync, career evidence, and self-updating workflows.
