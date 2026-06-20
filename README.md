@@ -500,6 +500,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** self-hosted Personal AI OS that watches connected apps and agent sessions, uses a memory knowledge graph plus skills, and can act through email, Linear, GitHub, Slack, terminal, browser, Claude Code, and Codex.
 - **Best for:** builders studying ambient PersonalOS designs where the agent notices events, applies memory and policies, then either acts or asks for judgment.
 
+### Aivy OS
+- **Link:** https://github.com/Bo1202/Aivy-OS
+- **Why it stands out:** local AI companion OS with persistent memory, IDE workspace, browser automation, MCP, multichannel surfaces, proactive wakeups, and active Windows releases; note its commercial/activation-key posture.
+- **Best for:** builders comparing companion-first PersonalOS products where personality, continuity, local tools, and desktop operation are the core product rather than an add-on.
+
 ### OpenJarvis
 - **Link:** https://github.com/open-jarvis/OpenJarvis
 - **Why it stands out:** Stanford-backed local-first personal AI framework that treats on-device agents, energy/latency/cost-aware evals, and local trace learning as first-class primitives.
