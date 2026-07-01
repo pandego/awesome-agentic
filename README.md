@@ -92,6 +92,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
+- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -683,6 +684,11 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Link:** https://www.e2b.dev/
 - **Why it stands out:** sandbox infrastructure for AI agents and code execution.
 - **Best for:** safely running generated code, tools, and experiments.
+
+### Daytona
+- **Link:** https://github.com/daytonaio/daytona
+- **Why it stands out:** open-source, agent-focused sandbox runtime with fast stateful environments, SDKs, CLI/API control, filesystem/process operations, snapshots, and self-hosted or managed deployment paths.
+- **Best for:** coding agents and eval workloads that need isolated full-computer sandboxes with persistent state and operational controls.
 
 ### Modal
 - **Link:** https://modal.com/
