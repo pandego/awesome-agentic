@@ -690,6 +690,11 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Why it stands out:** open-source, agent-focused sandbox runtime with fast stateful environments, SDKs, CLI/API control, filesystem/process operations, snapshots, and self-hosted or managed deployment paths.
 - **Best for:** coding agents and eval workloads that need isolated full-computer sandboxes with persistent state and operational controls.
 
+### AgentScope Runtime
+- **Link:** https://github.com/agentscope-ai/agentscope-runtime
+- **Why it stands out:** production-oriented runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and browser-computer-use support.
+- **Best for:** teams that need more than raw sandbox execution: deployment, tool isolation, observability, and service-style agent operations in one runtime layer.
+
 ### Modal
 - **Link:** https://modal.com/
 - **Why it stands out:** serverless compute platform useful for AI workloads, tools, and scalable execution.
