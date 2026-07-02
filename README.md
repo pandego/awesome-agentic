@@ -561,6 +561,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** privacy- and security-first Agent OS with local encrypted data, WASM tool sandboxing, credential boundaries, prompt-injection defenses, MCP support, routines, and active signed releases.
 - **Best for:** builders comparing always-on PersonalOS runtimes where tool extensibility, local control, and defense-in-depth matter as much as assistant UX.
 
+### VisionClaw
+- **Link:** https://github.com/Intent-Lab/VisionClaw
+- **Why it stands out:** open-source smart-glasses agent that connects Gemini Live perception to OpenClaw execution, with user-study evidence for faster situated tasks and lower perceived difficulty.
+- **Best for:** builders watching PersonalOS move from desktop context stores toward wearable, always-on perception plus action loops.
+
 ### AIOS
 - **Link:** https://github.com/agiresearch/AIOS
 - **Why it stands out:** research-backed AI Agent Operating System that treats scheduling, context switching, memory, storage, tools, and agent SDKs as OS-level services.
