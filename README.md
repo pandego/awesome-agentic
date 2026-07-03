@@ -95,7 +95,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
-- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
@@ -857,6 +857,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/comet-ml/opik
 - **Why it stands out:** open-source observability and eval platform for LLM apps, RAG, and agentic workflows, with tracing, automated evals, production dashboards, and broad agent-framework integrations.
 - **Best for:** teams that want a self-hostable trace-plus-eval loop for production agents without locking into one orchestration stack.
+
+### Laminar
+- **Link:** https://github.com/lmnr-ai/lmnr
+- **Why it stands out:** open-source, OpenTelemetry-native observability built specifically for AI agents, with traces, evals, natural-language failure signals, SQL access, and self-hosting.
+- **Best for:** teams that need to debug agent runs, turn failures into eval datasets, and keep telemetry portable.
 
 ### LangSmith
 - **Link:** https://www.langchain.com/langsmith
