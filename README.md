@@ -90,7 +90,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best PersonalOS / AI OS starting points:** [LifeOS / Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS), [OpenClaw](https://github.com/openclaw/openclaw), [Hermes Agent](https://github.com/NousResearch/hermes-agent), [Nanobot](https://github.com/HKUDS/nanobot), [OpenHuman](https://github.com/tinyhumansai/openhuman), [CORE](https://github.com/RedPlanetHQ/core), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [IronClaw](https://github.com/nearai/ironclaw), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Thoth](https://github.com/siddsachar/Thoth), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os), [Dex](https://github.com/davekilleen/Dex)
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
-- **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/)
+- **Best tool integration layer to watch:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
@@ -654,15 +654,25 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 - **Why it stands out:** protocol for connecting AI systems to tools, data, and external context.
 - **Best for:** builders who want a standard integration surface rather than custom tool glue everywhere.
 
+### MCP Registry
+- **Link:** https://modelcontextprotocol.io/registry/about
+- **Why it stands out:** official centralized metadata repository for public MCP servers, with namespace verification, standardized install metadata, and a REST API for downstream marketplaces and clients.
+- **Best for:** teams that need MCP tool discovery to move beyond ad hoc GitHub lists without pretending registry metadata is a full security review.
+
 ### MCP Servers
 - **Link:** https://github.com/modelcontextprotocol/servers
 - **Why it stands out:** central collection of MCP servers and examples.
 - **Best for:** discovering and wiring tools into MCP-capable agents.
 
 ### FastMCP
-- **Link:** https://github.com/jlowin/fastmcp
-- **Why it stands out:** Pythonic way to build MCP servers and clients.
+- **Link:** https://github.com/PrefectHQ/fastmcp
+- **Why it stands out:** Pythonic way to build MCP servers, clients, and apps, with strong adoption and production-oriented protocol lifecycle handling.
 - **Best for:** Python teams building custom tools for agents.
+
+### mcp-agent
+- **Link:** https://github.com/lastmile-ai/mcp-agent
+- **Why it stands out:** MCP-native agent framework that pairs server lifecycle management with composable Anthropic-style agent patterns and optional Temporal durability.
+- **Best for:** teams that want MCP to be the core runtime for agent workflows, not just a connector bolted onto another framework.
 
 ### Backlog.md
 - **Link:** https://github.com/MrLesk/Backlog.md
