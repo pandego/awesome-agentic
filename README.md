@@ -487,6 +487,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** open-source assistant product with multi-channel, tool, and operator-style workflow orientation.
 - **Best for:** self-hosted or productized personal/team assistant systems.
 
+### PocketPaw
+- **Link:** https://github.com/pocketpaw/pocketpaw
+- **Why it stands out:** self-hosted personal AI with desktop installer, web dashboard, many chat channels, pluggable agent backends, memory, tools, and explicit security controls.
+- **Best for:** builders comparing installable PersonalOS agents that need local control plus Telegram/Discord/Slack/WhatsApp-style operating surfaces.
+
 ### Hermes Agent
 - **Link:** https://github.com/NousResearch/hermes-agent
 - **Why it stands out:** self-improving agent platform with persistent memory, autonomous skill creation, cross-session search, messaging gateways, cron automations, and portable execution backends.
