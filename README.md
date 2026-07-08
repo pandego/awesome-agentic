@@ -479,7 +479,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### LifeOS / Personal AI Infrastructure
 - **Link:** https://github.com/danielmiessler/LifeOS
-- **Why it stands out:** PAI's v5 LifeOS release turns the earlier scaffold into a full Claude Code-native life operating system with Pulse dashboard, digital-assistant identity, structured skills, workflows, hooks, and plain-text personal context.
+- **Why it stands out:** fast-moving Claude Code-native life operating system with Pulse dashboard, digital-assistant identity, current-to-ideal-state workflow primitives, structured skills, hooks, and plain-text personal context.
 - **Best for:** builders designing a full personal AI infrastructure layer around goals, memory, skills, and day-to-day execution.
 
 ### OpenClaw
