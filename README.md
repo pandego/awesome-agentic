@@ -96,7 +96,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
-- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -836,6 +836,16 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/ethz-spylab/agentdojo
 - **Why it stands out:** benchmark environment for prompt-injection attacks and defenses in tool-using LLM agents, with direct relevance to real assistant workflows.
 - **Best for:** teams testing whether agents can keep task utility while resisting malicious instructions in workspace, travel, and tool-use scenarios.
+
+### DecodingTrust-Agent
+- **Link:** https://github.com/AI-secure/DecodingTrust-Agent
+- **Why it stands out:** controllable red-teaming platform with 14 domains, 50+ simulation environments, autonomous attack discovery, and verifiable judges for agent outcomes.
+- **Best for:** security teams stress-testing agents against prompt, tool, skill, and environment-level injection paths.
+
+### MCP Security Bench
+- **Link:** https://github.com/dongsenzhang/MSB
+- **Why it stands out:** ICLR 2026 benchmark for MCP-specific attacks across planning, tool invocation, and response handling, with 2,000+ attack instances across 12 categories.
+- **Best for:** teams hardening MCP agents against malicious tool descriptions, parameter abuse, poisoned responses, and retrieval injection.
 
 ### Snyk Agent Scan
 - **Link:** https://github.com/snyk/agent-scan
