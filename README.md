@@ -559,7 +559,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### OpenFang
 - **Link:** https://github.com/RightNow-AI/openfang
-- **Why it stands out:** Rust-based agent OS with scheduled autonomous "Hands," a single-binary install, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
+- **Why it stands out:** single-binary Rust Agent OS with scheduled autonomous "Hands," dashboard-driven operations, knowledge-graph workflows, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
 - **Best for:** builders exploring OS-like abstractions for always-on agents, with a pre-1.0 caveat for production use.
 
 ### IronClaw
