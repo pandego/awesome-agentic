@@ -79,7 +79,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best typed Python agent framework:** [PydanticAI](https://github.com/pydantic/pydantic-ai)
 - **Best lightweight Python SDK:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python)
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
-- **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat)
+- **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
@@ -177,6 +177,11 @@ These are the strongest starting points when you need a general builder stack, n
 - **Link:** https://github.com/pipecat-ai/pipecat
 - **Why it stands out:** open-source Python framework for realtime voice and multimodal agents, with composable audio/video pipelines, broad service integrations, client SDKs, subagents, and deployment paths.
 - **Best for:** teams building voice-first agents that need low-latency orchestration across speech, tools, transports, and conversation state.
+
+### TEN Framework
+- **Link:** https://github.com/TEN-framework/ten-framework
+- **Why it stands out:** active polyglot realtime framework with graph-based multimodal composition, RTC and WebSocket transports, SIP, hardware examples, VAD, turn detection, and visual tooling in one ecosystem.
+- **Best for:** teams that want a lower-level, cross-language voice-agent runtime rather than a Python-only orchestration layer.
 
 ### Deep Agents
 - **Link:** https://github.com/langchain-ai/deepagents
@@ -778,6 +783,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://taubench.com/
 - **Why it stands out:** benchmark family for tool-agent-user interaction in realistic enterprise workflows, now extending into knowledge and full-duplex voice modes.
 - **Best for:** evaluating conversational agents that must follow policy, use tools, and coordinate with users across multi-turn tasks.
+
+### τ-voice
+- **Link:** https://arxiv.org/abs/2603.13686
+- **Why it stands out:** open, reproducible extension of τ-bench that scores 278 grounded customer-service tasks under simultaneous speech, interruptions, accents, noise, telephony degradation, and deterministic database outcomes.
+- **Best for:** testing whether realtime voice agents still complete the underlying task when clean text assumptions disappear.
 
 ### TRAIL
 - **Link:** https://github.com/patronus-ai/trail-benchmark
