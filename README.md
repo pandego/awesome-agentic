@@ -716,6 +716,11 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Why it stands out:** open-source, agent-focused sandbox runtime with fast stateful environments, SDKs, CLI/API control, filesystem/process operations, snapshots, and self-hosted or managed deployment paths.
 - **Best for:** coding agents and eval workloads that need isolated full-computer sandboxes with persistent state and operational controls.
 
+### Microsandbox
+- **Link:** https://github.com/superradcompany/microsandbox
+- **Why it stands out:** local-first, rootless microVM runtime that embeds hardware-isolated OCI sandboxes directly in Rust, Python, TypeScript, or Go applications, with MCP and coding-agent skill integrations.
+- **Best for:** builders who want agent code execution on their own Linux or Apple Silicon machine without operating a sandbox service; it is still beta software.
+
 ### AgentScope Runtime
 - **Link:** https://github.com/agentscope-ai/agentscope-runtime
 - **Why it stands out:** production-oriented runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and browser-computer-use support.
