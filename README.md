@@ -731,6 +731,11 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Why it stands out:** production-oriented runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and browser-computer-use support.
 - **Best for:** teams that need more than raw sandbox execution: deployment, tool isolation, observability, and service-style agent operations in one runtime layer.
 
+### OpenAgentRelay
+- **Link:** https://github.com/ShakespeareLabs/open-agent-relay
+- **Why it stands out:** open-source Python CLI that turns an existing local agent or automation into a keyed, request/response capability over a trusted LAN while its source, prompts, dependencies, and credentials remain on the publisher's machine.
+- **Best for:** small teams testing direct agent-to-agent or teammate-to-agent calls on a private network; the current Alpha is not intended for public-internet exposure or production write operations.
+
 ### Modal
 - **Link:** https://modal.com/
 - **Why it stands out:** serverless compute platform useful for AI workloads, tools, and scalable execution.
