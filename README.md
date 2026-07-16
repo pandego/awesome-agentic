@@ -96,7 +96,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
-- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -871,6 +871,11 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/dongsenzhang/MSB
 - **Why it stands out:** ICLR 2026 benchmark for MCP-specific attacks across planning, tool invocation, and response handling, with 2,000+ attack instances across 12 categories.
 - **Best for:** teams hardening MCP agents against malicious tool descriptions, parameter abuse, poisoned responses, and retrieval injection.
+
+### AgentDoG
+- **Link:** https://github.com/AI45Lab/AgentDoG
+- **Why it stands out:** open trajectory-level safety guardrail with lightweight models, fine-grained risk diagnosis, an online intervention path, and ATBench variants for general tool agents, OpenClaw, and Codex-style execution.
+- **Best for:** teams that need to inspect and block risky multi-step agent behavior rather than only scan prompts or final responses.
 
 ### Snyk Agent Scan
 - **Link:** https://github.com/snyk/agent-scan
