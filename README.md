@@ -93,7 +93,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best MCP tool integration and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Modal](https://modal.com/)
-- **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [SWE-agent](https://github.com/SWE-agent/SWE-agent)
+- **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
@@ -774,10 +774,10 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Why it stands out:** benchmark for resolving real software engineering issues from GitHub repositories.
 - **Best for:** evaluating autonomous coding agents and issue-resolution systems.
 
-### SWE-agent
-- **Link:** https://github.com/SWE-agent/SWE-agent
-- **Why it stands out:** both a system and a research reference for issue-to-patch workflows.
-- **Best for:** hands-on benchmark experimentation.
+### mini-SWE-agent
+- **Link:** https://github.com/SWE-agent/mini-swe-agent
+- **Why it stands out:** Princeton and Stanford's radically small bash-only coding agent pairs an inspectable linear loop with a reported 74%+ SWE-bench Verified score and active v2 releases.
+- **Best for:** reproducible coding-agent baselines, model comparisons, fine-tuning, and builders who want to understand the whole scaffold before extending it.
 
 ### OSWorld
 - **Link:** https://os-world.github.io/
