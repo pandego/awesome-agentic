@@ -508,6 +508,12 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** self-improving agent platform with persistent memory, autonomous skill creation, cross-session search, messaging gateways, cron automations, and portable execution backends.
 - **Best for:** builders comparing PersonalOS systems where learning loops, channels, scheduled work, and long-lived user context are core product primitives.
 
+### Hermes Life OS
+- **Link:** https://github.com/Lethe044/hermes-life-os
+- **Why it stands out:** MIT-licensed quantified-self PersonalOS built on Hermes patterns, with local life tracking, scheduled briefings, correlation analysis, pluggable notifications, multi-provider models, and a tested Atropos training environment.
+- **Best for:** builders studying proactive personal agents that turn longitudinal mood, sleep, habit, and focus data into recurring pattern-aware guidance.
+- **Evidence:** v1.6.0 adds Ollama, OpenAI, Anthropic, and OpenRouter support; the project reports 129 tests across its modular runtime. Last checked: 2026-07-20.
+
 ### Nanobot
 - **Link:** https://github.com/HKUDS/nanobot
 - **Why it stands out:** unusually lightweight personal-agent stack with active releases, chat-channel gateways, WebUI, MCP/CLI-app extensions, project workspaces, local-model options, and a small core that is easier to audit than full assistant platforms.
