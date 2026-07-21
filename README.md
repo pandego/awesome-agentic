@@ -94,7 +94,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
-- **Best broader agent benchmarks to track:** [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
+- **Best broader agent benchmarks to track:** [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
@@ -805,6 +805,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://github.com/microsoft/WindowsAgentArena
 - **Why it stands out:** Microsoft-backed Windows benchmark with 150+ real OS tasks and parallelized evaluation for multimodal desktop agents.
 - **Best for:** teams evaluating whether computer-use agents can reliably operate Windows applications, not just browsers or Linux sandboxes.
+
+### WebArena-Verified
+- **Link:** https://github.com/ServiceNow/webarena-verified
+- **Why it stands out:** audited, version-controlled 812-task WebArena release with deterministic scoring, offline network-trace replay, reproducible site containers, and a 258-task hard subset.
+- **Best for:** comparing browser agents on realistic multi-site workflows without relying on brittle live-web targets or LLM-as-a-judge scoring.
 
 ### BrowserGym
 - **Link:** https://github.com/ServiceNow/BrowserGym
