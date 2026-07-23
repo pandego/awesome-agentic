@@ -77,6 +77,7 @@ Fast recommendations if you do not want to read everything first.
 
 - **Best default orchestration layer:** [LangGraph](https://github.com/langchain-ai/langgraph)
 - **Best typed Python agent framework:** [PydanticAI](https://github.com/pydantic/pydantic-ai)
+- **Best full-stack TypeScript agent framework:** [Mastra](https://github.com/mastra-ai/mastra)
 - **Best lightweight Python SDK:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python)
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
@@ -120,6 +121,12 @@ These are the strongest starting points when you need a general builder stack, n
 - **Link:** https://github.com/pydantic/pydantic-ai
 - **Why it stands out:** typed agent framework with strong validation, tool orchestration, and Python-first ergonomics.
 - **Best for:** builders who care about correctness, schema discipline, and maintainability.
+
+### Mastra
+- **Link:** https://github.com/mastra-ai/mastra
+- **Why it stands out:** TypeScript-first framework that combines agents, resumable graph workflows, memory, MCP, evals, observability, and Node-compatible deployment instead of requiring a separate package for every production layer.
+- **Best for:** TypeScript teams that want an integrated path from agent prototype to deployed application.
+- **Evidence:** 26k+ GitHub stars and active July 2026 releases; the core is Apache-2.0, while `ee/` features use the Mastra Enterprise License. Last checked: 2026-07-23.
 
 ### OpenAI Agents Python SDK
 - **Link:** https://github.com/openai/openai-agents-python
@@ -227,7 +234,7 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
-- **Want TypeScript-first agent application ergonomics:** look at **VoltAgent**.
+- **Want a full-stack TypeScript agent framework:** start with **Mastra**; compare **VoltAgent** for its broader agent-engineering platform posture.
 - **Want optimization rather than prompt fiddling:** look at **DSPy**.
 - **Want visual agent/workflow building:** look at **Langflow**.
 - **Want a broader open coding-agent product rather than a pure framework:** look at **OpenHands** or **Goose**.
