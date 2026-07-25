@@ -82,7 +82,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [OpenHands](https://github.com/OpenHands/OpenHands)
-- **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Zed](https://zed.dev/)
+- **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
@@ -287,6 +287,12 @@ These are product surfaces where the editor becomes the agentic workspace.
 - **Link:** https://windsurf.com/
 - **Why it stands out:** agentic IDE focused on flow, codebase context, and AI-assisted development across larger tasks.
 - **Best for:** builders comparing IDE-native agent UX against Cursor and terminal agents.
+
+### Cline
+- **Link:** https://github.com/cline/cline
+- **Why it stands out:** Apache-2.0 coding agent that now spans VS Code, JetBrains, terminal and headless CLI use, an SDK, multi-agent teams, and human-approved file and shell actions without locking builders to one model provider.
+- **Best for:** teams that want one open agent core across editor, terminal, CI, and custom coding-agent products.
+- **Evidence:** 65k+ GitHub stars, active v4 releases through July 2026, and first-party SDK, CLI, IDE, MCP, and scheduled-agent surfaces. Last checked: 2026-07-25.
 
 ### Zed
 - **Link:** https://zed.dev/
