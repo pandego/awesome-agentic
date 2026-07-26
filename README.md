@@ -93,7 +93,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
-- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Modal](https://modal.com/)
+- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -761,6 +761,12 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Link:** https://github.com/opensandbox-group/OpenSandbox
 - **Why it stands out:** Apache-2.0 agent sandbox platform with a unified API across Docker and Kubernetes, five language SDKs, network policy, credential injection, MCP, and stronger isolation paths through gVisor, Kata Containers, and Firecracker.
 - **Best for:** platform teams that want a self-hosted execution layer spanning coding agents, browser/desktop agents, evals, and large-scale sandbox scheduling.
+
+### Kubernetes Agent Sandbox
+- **Link:** https://github.com/kubernetes-sigs/agent-sandbox
+- **Why it stands out:** Kubernetes SIG Apps project that standardizes long-running, stateful agent environments as a `Sandbox` CRD, with stable identity, persistent storage, warm pools, lifecycle controls, and pluggable isolation providers.
+- **Best for:** platform teams that want to operate agent sandboxes through Kubernetes primitives instead of adopting a separate hosted runtime.
+- **Evidence:** Apache-2.0, 3.2k+ GitHub stars, and active v0.5 releases through July 2026; it remains pre-1.0. Last checked: 2026-07-26.
 
 ### Microsandbox
 - **Link:** https://github.com/superradcompany/microsandbox
