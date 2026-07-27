@@ -177,8 +177,9 @@ These are the strongest starting points when you need a general builder stack, n
 
 ### LiveKit Agents
 - **Link:** https://github.com/livekit/agents
-- **Why it stands out:** production-oriented framework for realtime voice, video, and multimodal agent systems.
-- **Best for:** low-latency interactive agents where realtime UX is the product.
+- **Why it stands out:** Apache-2.0 Python and TypeScript framework that pairs voice-agent orchestration with WebRTC clients, telephony, job scheduling, semantic turn detection, MCP, testing, and a self-hostable media stack.
+- **Best for:** production voice and video agents that need realtime transport, client SDKs, and runtime operations in one ecosystem.
+- **Evidence:** 11.5k+ GitHub stars and active v1.6 releases through July 2026. Last checked: 2026-07-27.
 
 ### Pipecat
 - **Link:** https://github.com/pipecat-ai/pipecat
