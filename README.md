@@ -96,7 +96,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
-- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
@@ -946,6 +946,12 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Best for:** teams that want a fast baseline scan before deeper agent-specific red teaming.
 
 ### Observability and tracing
+
+### MLflow
+- **Link:** https://github.com/mlflow/mlflow
+- **Why it stands out:** Apache-2.0 AI engineering platform that now connects the traditional model lifecycle with agent tracing, evaluation, monitoring, prompt management, optimization, and model-access governance.
+- **Best for:** teams that want one self-hostable control plane across production agents, LLM applications, and existing ML workflows.
+- **Evidence:** 27k+ GitHub stars, active v3 releases through June 2026, and first-party agent tracing and scorer-based evaluation docs. Last checked: 2026-07-28.
 
 ### Langfuse
 - **Link:** https://github.com/langfuse/langfuse
