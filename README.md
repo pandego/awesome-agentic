@@ -90,7 +90,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [MemOS](https://github.com/MemTensor/MemOS), [EverOS](https://github.com/EverMind-AI/EverOS), [Signet](https://github.com/Signet-AI/signetai), [Supermemory](https://github.com/supermemoryai/supermemory), [Screenpipe](https://github.com/screenpipe/screenpipe)
 - **Best PersonalOS / AI OS starting points:** [LifeOS / Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS), [OpenClaw](https://github.com/openclaw/openclaw), [Hermes Agent](https://github.com/NousResearch/hermes-agent), [Nanobot](https://github.com/HKUDS/nanobot), [OpenHuman](https://github.com/tinyhumansai/openhuman), [CORE](https://github.com/RedPlanetHQ/core), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [IronClaw](https://github.com/nearai/ironclaw), [Row-Bot](https://github.com/siddsachar/row-bot), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os), [Dex](https://github.com/davekilleen/Dex)
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
-- **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
+- **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
@@ -654,6 +654,12 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Link:** https://github.com/simular-ai/Agent-S
 - **Why it stands out:** open-source computer-use framework with research lineage and strong OSWorld results, including reported human-level desktop-agent performance.
 - **Best for:** builders comparing agents that operate full computer environments, not just web pages.
+
+### Agent Desktop
+- **Link:** https://github.com/lahfir/agent-desktop
+- **Why it stands out:** native Rust CLI that exposes desktop apps through accessibility trees, compact snapshots, deterministic element refs, structured JSON, and traceable actions instead of relying only on screenshots and pixel coordinates.
+- **Best for:** builders giving coding or operator agents inspectable control of local desktop applications, especially on macOS; Linux and Windows support remain earlier.
+- **Evidence:** Apache-2.0, 980+ GitHub stars, and active v0.6 releases with prebuilt binaries and FFI libraries through July 2026. Last checked: 2026-07-30.
 
 ### Browser Use
 - **Link:** https://github.com/browser-use/browser-use
