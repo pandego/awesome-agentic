@@ -81,7 +81,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best lightweight Python SDK:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python)
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
-- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [OpenHands](https://github.com/OpenHands/OpenHands)
+- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi), [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx)
@@ -221,10 +221,11 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Why it stands out:** turns GitHub issues into attempted patches and is tightly connected to coding-agent benchmark culture.
 - **Best for:** builders researching autonomous issue resolution and SWE-bench-style workflows.
 
-### pi-mono
-- **Link:** https://github.com/badlogic/pi-mono
-- **Why it stands out:** lightweight coding-agent toolkit with strong terminal, markdown, and workflow utility.
-- **Best for:** builders who want a focused, hackable toolkit rather than a heavyweight framework.
+### Pi
+- **Link:** https://github.com/earendil-works/pi
+- **Why it stands out:** unusually extensible terminal coding agent whose small agent core, unified multi-provider API, TUI library, extensions, and session tooling can also serve as a kit for building custom agents.
+- **Best for:** builders who want a focused, hackable coding harness and will supply sandboxing when stronger filesystem, process, network, or credential boundaries are required.
+- **Evidence:** MIT-licensed, 81k+ GitHub stars, and active v0.83 releases through July 2026. Last checked: 2026-07-31.
 
 ### How to choose
 
