@@ -92,7 +92,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
-- **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [ToolHive](https://github.com/stacklok/toolhive)
+- **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
@@ -729,6 +729,12 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 - **Why it stands out:** Apache-2.0 gateway that federates MCP, A2A, REST, and gRPC behind one endpoint with centralized discovery, auth, guardrails, plugins, and OpenTelemetry observability.
 - **Best for:** platform teams that need a governed tool-and-agent gateway across mixed protocols rather than a local MCP server launcher.
 - **Evidence:** 4.1k+ GitHub stars and active v1.0 releases, including OAuth token exchange, vault credentials, dataplane publishing, and security hardening in v1.0.6. Last checked: 2026-07-22.
+
+### Agentgateway
+- **Link:** https://github.com/agentgateway/agentgateway
+- **Why it stands out:** Linux Foundation, Apache-2.0 proxy that governs agent-to-model, agent-to-tool, and agent-to-agent traffic across LLM, MCP, and A2A protocols, with routing, auth, policy, guardrails, and OpenTelemetry in one data plane.
+- **Best for:** platform teams that want one Kubernetes-friendly gateway for model access, MCP tools, and A2A communication instead of separate protocol proxies.
+- **Evidence:** 4.1k+ GitHub stars and active v1.4 releases through July 2026. Last checked: 2026-08-01.
 
 ### ToolHive
 - **Link:** https://github.com/stacklok/toolhive
