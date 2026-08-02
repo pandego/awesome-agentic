@@ -98,7 +98,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
-- **Best agent security/red-team starting points:** [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security, governance, and red-team starting points:** [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -948,6 +948,12 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/snyk/agent-scan
 - **Why it stands out:** security scanner for installed agent components, MCP servers, and skills, with concrete checks for prompt injection, tool poisoning, toxic flows, hidden content, and risky local capabilities.
 - **Best for:** teams auditing the agent supply chain on developer machines before trusting MCP configs, IDE agents, or shared skills.
+
+### Agent Governance Toolkit
+- **Link:** https://github.com/microsoft/agent-governance-toolkit
+- **Why it stands out:** Microsoft-backed, framework-neutral control plane that intercepts agent actions for deterministic policy enforcement, identity, tamper-evident audit, approvals, sandboxing, kill switches, and SRE controls instead of relying on prompt-level guardrails.
+- **Best for:** teams moving autonomous tool-using agents into production and needing enforceable governance across frameworks, languages, MCP, and multi-agent delegation.
+- **Evidence:** MIT-licensed public preview with 5.5k+ GitHub stars, five language SDKs, formal specifications, and active v4 releases in 2026. Last checked: 2026-08-02.
 
 ### PyRIT
 - **Link:** https://github.com/microsoft/PyRIT
