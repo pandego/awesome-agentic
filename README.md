@@ -94,7 +94,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
-- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
+- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -772,6 +772,12 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Link:** https://github.com/daytonaio/daytona
 - **Why it stands out:** open-source, agent-focused sandbox runtime with fast stateful environments, SDKs, CLI/API control, filesystem/process operations, snapshots, and self-hosted or managed deployment paths.
 - **Best for:** coding agents and eval workloads that need isolated full-computer sandboxes with persistent state and operational controls.
+
+### Fly.io Sprites
+- **Link:** https://fly.io/sprites/
+- **Why it stands out:** hardware-isolated Linux computers for agents with durable disks, idle suspend, checkpoint/restore, SDKs, and MCP support instead of disposable execution alone.
+- **Best for:** long-running coding and operator agents that need to keep installed tools, files, and working state across sessions.
+- **Evidence:** Fly.io reports 8,000+ agent-native customers and made Sprites its core agent-infrastructure focus in July 2026; official Python, JavaScript, Go, Elixir, MCP, and coding-agent integrations are actively maintained. Last checked: 2026-08-05.
 
 ### OpenSandbox
 - **Link:** https://github.com/opensandbox-group/OpenSandbox
