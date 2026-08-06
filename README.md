@@ -632,6 +632,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** mature self-hostable personal AI app that combines document/web answers, custom agents, scheduled automations, multi-surface access, and local or cloud LLM support.
 - **Best for:** builders who want a practical personal second-brain / PersonalOS layer rather than just a memory API.
 
+### Hivekeep
+- **Link:** https://github.com/MarlBurroW/hivekeep
+- **Why it stands out:** self-hosted, MIT-licensed platform to run a team of specialized AI agents with persistent memory and a web UI; agents collaborate and build their own tools, mini-apps, and plugins, reachable over Telegram, Slack, Discord, and Matrix, all in a single Bun and SQLite container.
+- **Best for:** builders who want an owned multi-agent PersonalOS where several specialized agents share memory, spawn sub-agents, and extend themselves via plugins.
+
 ### PyGPT
 - **Link:** https://github.com/szczyglis-dev/py-gpt
 - **Why it stands out:** cross-platform desktop AI assistant with agents, computer use, tools, MCP, plugins, voice, RAG, memory, web search, and local/Ollama model support in one open-source app.
