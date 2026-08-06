@@ -434,6 +434,12 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 - **Why it stands out:** document parsing benchmark for AI agents that evaluates tables, charts, content faithfulness, semantic formatting, and visual grounding instead of only text similarity.
 - **Best for:** builders comparing parsers on agent-critical document failures before trusting extraction in business workflows.
 
+### PureDocBench
+- **Link:** https://github.com/zhihengli-casia/PureDocBench
+- **Why it stands out:** source-traceable benchmark whose images and ground truth come from the same HTML/CSS sources, with clean, digitally degraded, and real-degraded tracks for text, formulas, tables, and reading order.
+- **Best for:** teams comparing parser accuracy and degradation robustness without treating noisy or saturated legacy annotations as ground truth.
+- **Evidence:** 1,475 pages, 4,425 images, 40 evaluated systems, public scoring tooling, and a correction workflow for versioned ground truth. Last checked: 2026-08-06.
+
 ---
 
 ## Memory and personal context
