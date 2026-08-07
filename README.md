@@ -948,6 +948,12 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Why it stands out:** benchmark environment for prompt-injection attacks and defenses in tool-using LLM agents, with direct relevance to real assistant workflows.
 - **Best for:** teams testing whether agents can keep task utility while resisting malicious instructions in workspace, travel, and tool-use scenarios.
 
+### ASPI
+- **Link:** https://github.com/scaleapi/aspi
+- **Why it stands out:** prompt-injection benchmark that isolates a neglected failure mode: agents becoming vulnerable when their own clarification questions open a trusted-looking channel for malicious follow-up instructions.
+- **Best for:** teams testing agents that ask users for missing information before acting, including whether defenses preserve task utility across user- and tool-delivered attacks.
+- **Evidence:** 728 task-attack scenarios across workspace, Slack, travel, and banking, an eight-condition matched design, public code and data, and evaluations across ten models. Last checked: 2026-08-07.
+
 ### DecodingTrust-Agent
 - **Link:** https://github.com/AI-secure/DecodingTrust-Agent
 - **Why it stands out:** controllable red-teaming platform with 14 domains, 50+ simulation environments, autonomous attack discovery, and verifiable judges for agent outcomes.
