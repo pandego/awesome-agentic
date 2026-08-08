@@ -552,6 +552,12 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** self-hosted Personal AI OS that watches connected apps and agent sessions, uses a memory knowledge graph plus skills, and can act through email, Linear, GitHub, Slack, terminal, browser, Claude Code, and Codex.
 - **Best for:** builders studying ambient PersonalOS designs where the agent notices events, applies memory and policies, then either acts or asks for judgment.
 
+### CoWork OS
+- **Link:** https://github.com/CoWork-OS/CoWork-OS
+- **Why it stands out:** local-first desktop and CLI PersonalOS that puts coding, email, browser work, documents, spreadsheets, presentations, automations, memory, agents, approvals, and sandbox policy in one inspectable workspace.
+- **Best for:** builders comparing broad personal work operating layers where agents produce and revise everyday artifacts, not just chat or execute code.
+- **Evidence:** MIT-licensed, 400+ GitHub stars, 3,200+ automated tests reported by the project, and active v0.5 releases through July 2026. Last checked: 2026-08-08.
+
 ### Aivy OS
 - **Link:** https://github.com/Bo1202/Aivy-OS
 - **Why it stands out:** local AI companion OS with persistent memory, IDE workspace, browser automation, MCP, multichannel surfaces, proactive wakeups, and active Windows releases; note its commercial/activation-key posture.
