@@ -88,6 +88,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best document parsing/OCR starting points:** [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [Docling](https://github.com/docling-project/docling), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [MemOS](https://github.com/MemTensor/MemOS), [EverOS](https://github.com/EverMind-AI/EverOS), [Signet](https://github.com/Signet-AI/signetai), [Supermemory](https://github.com/supermemoryai/supermemory), [Screenpipe](https://github.com/screenpipe/screenpipe)
+- **Best agent-memory benchmark to track:** [AMA-Bench](https://github.com/AMA-Bench/AMA-Bench) for long-horizon memory over real agent trajectories, not dialogue-only recall
 - **Best PersonalOS / AI OS starting points:** [LifeOS / Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS), [OpenClaw](https://github.com/openclaw/openclaw), [Hermes Agent](https://github.com/NousResearch/hermes-agent), [Nanobot](https://github.com/HKUDS/nanobot), [OpenHuman](https://github.com/tinyhumansai/openhuman), [CORE](https://github.com/RedPlanetHQ/core), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [IronClaw](https://github.com/nearai/ironclaw), [Row-Bot](https://github.com/siddsachar/row-bot), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os), [Dex](https://github.com/davekilleen/Dex)
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
@@ -486,6 +487,12 @@ Projects oriented toward self-hosted, user-controlled, or assistant-facing memor
 ### Memory evaluation and operations
 
 Operational concerns matter as much as raw retrieval quality.
+
+### AMA-Bench
+- **Link:** https://github.com/AMA-Bench/AMA-Bench
+- **Why it stands out:** evaluates recall, causal inference, state updating, and abstraction over long real-world agent trajectories rather than treating memory as dialogue lookup.
+- **Best for:** comparing memory systems on evidence accumulated through software engineering, web, tool-use, embodied, game, and text-to-SQL workflows.
+- **Evidence:** ICML 2026 benchmark with an MIT-licensed harness, public dataset and leaderboard, six task domains, and judge-consistency analysis. Last checked: 2026-08-10.
 
 Look for projects and papers that test:
 
