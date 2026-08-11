@@ -198,6 +198,12 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** an opinionated harness on top of LangGraph with planning, filesystem-backed context, subagents, and long-running task ergonomics built in.
 - **Best for:** builders who like LangGraph's control but want a sharper starting point for complex agent execution.
 
+### DeerFlow
+- **Link:** https://github.com/bytedance/deer-flow
+- **Why it stands out:** ByteDance's MIT-licensed long-horizon harness packages LangGraph orchestration with subagents, persistent memory, skills, sandboxed execution, files, messaging channels, and tracing instead of leaving those layers as integration work.
+- **Best for:** builders who want a batteries-included research-and-creation agent to run as a product or dismantle into a custom harness.
+- **Evidence:** 79k+ GitHub stars, active development, and a ground-up 2.0 release backed by 182 merged PRs. Last checked: 2026-08-11.
+
 ### Langflow
 - **Link:** https://github.com/langflow-ai/langflow
 - **Why it stands out:** visual system for building and deploying AI-powered agents and workflows.
