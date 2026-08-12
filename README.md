@@ -98,6 +98,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
+- **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best agent security, governance, and red-team starting points:** [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
@@ -909,6 +910,12 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://arxiv.org/abs/2603.13686
 - **Why it stands out:** open, reproducible extension of τ-bench that scores 278 grounded customer-service tasks under simultaneous speech, interruptions, accents, noise, telephony degradation, and deterministic database outcomes.
 - **Best for:** testing whether realtime voice agents still complete the underlying task when clean text assumptions disappear.
+
+### Artificial Analysis Speech to Speech Index
+- **Link:** https://artificialanalysis.ai/speech-to-speech
+- **Why it stands out:** independent live leaderboard that refuses to reduce native audio models to voice quality, combining speech reasoning, full-duplex turn behavior, and grounded τ-voice task completion while exposing latency and hourly input/output cost.
+- **Best for:** choosing a realtime speech-to-speech model or provider on agentic reliability and operating trade-offs rather than demos.
+- **Evidence:** the index equally weights Big Bench Audio, Full Duplex Bench, and τ-voice; models need valid results on all three to rank. Last checked: 2026-08-12.
 
 ### TRAIL
 - **Link:** https://github.com/patronus-ai/trail-benchmark
