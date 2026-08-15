@@ -94,6 +94,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
+- **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
@@ -912,6 +913,12 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://taubench.com/
 - **Why it stands out:** benchmark family for tool-agent-user interaction in realistic enterprise workflows, now extending into knowledge and full-duplex voice modes.
 - **Best for:** evaluating conversational agents that must follow policy, use tools, and coordinate with users across multi-turn tasks.
+
+### MCPMark Verified
+- **Link:** https://github.com/eval-sys/mcpmark
+- **Why it stands out:** stress-tests agents against real MCP environments for Notion, GitHub, files, Postgres, and Playwright, with version-pinned dependencies, stabilized verifiers, isolated sandboxes, and reproducible reports.
+- **Best for:** comparing model-and-harness reliability on long-horizon tool work instead of synthetic function-calling alone.
+- **Evidence:** the ICLR 2026 benchmark covers 127 tasks across five MCP environments; its Verified release supersedes earlier, non-comparable task versions. Last checked: 2026-08-15.
 
 ### τ-voice
 - **Link:** https://arxiv.org/abs/2603.13686
