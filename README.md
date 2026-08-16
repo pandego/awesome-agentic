@@ -818,6 +818,12 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Best for:** platform teams that want to operate agent sandboxes through Kubernetes primitives instead of adopting a separate hosted runtime.
 - **Evidence:** Apache-2.0, 3.2k+ GitHub stars, and active v0.5 releases through July 2026; it remains pre-1.0. Last checked: 2026-07-26.
 
+### Microsoft Execution Containers
+- **Link:** https://github.com/microsoft/mxc
+- **Why it stands out:** policy-driven execution layer that maps one JSON schema and TypeScript SDK onto native process sandboxes, containers, and experimental VM backends across Windows, Linux, and macOS.
+- **Best for:** agent builders who want filesystem, network, UI, and lifecycle controls without hard-coding one isolation primitive.
+- **Evidence:** Microsoft-backed MIT preview with 1.2k+ GitHub stars, active development, and announced adoption paths for Copilot CLI, OpenClaw, OpenShell, Hermes Agent, Codex, and Manus; its maintainers explicitly warn that current profiles are not yet security boundaries. Last checked: 2026-08-16.
+
 ### Microsandbox
 - **Link:** https://github.com/superradcompany/microsandbox
 - **Why it stands out:** local-first, rootless microVM runtime that embeds hardware-isolated OCI sandboxes directly in Rust, Python, TypeScript, or Go applications, with MCP and coding-agent skill integrations.
