@@ -144,8 +144,9 @@ These are the strongest starting points when you need a general builder stack, n
 
 ### Microsoft Agent Framework
 - **Link:** https://github.com/microsoft/agent-framework
-- **Why it stands out:** broad builder platform with clear first-party docs, orchestration primitives, and serious Python plus .NET support.
-- **Best for:** teams that want a cross-language agent platform with strong vendor backing and a more platform-like posture than a lightweight SDK.
+- **Why it stands out:** production-grade Python and .NET framework that unifies graph workflows, durable checkpoints, multi-agent patterns, middleware, memory, OpenTelemetry, MCP, and A2A behind stable 1.0 APIs.
+- **Best for:** cross-language enterprise teams that need provider flexibility and an official migration path from AutoGen or Semantic Kernel rather than a lightweight agent loop.
+- **Evidence:** MIT-licensed, 12.8k+ GitHub stars, production-ready 1.0 releases for Python and .NET, and active Python v1.14 releases through August 2026. Last checked: 2026-08-17.
 
 ### AutoGen
 - **Link:** https://github.com/microsoft/autogen
