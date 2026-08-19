@@ -287,6 +287,11 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Why it stands out:** open-source coding agent with a clean terminal-first posture and strong community signal.
 - **Best for:** builders who want an open-source terminal agent worth watching closely.
 
+### Keen Code
+- **Link:** https://github.com/mochow13/keen-code
+- **Why it stands out:** open-source, context-aware terminal coding agent written in Go. Its Turn Memory provides controllable cross-turn tool-output retention, while MCP servers are integrated through generated Agent Skills instead of loading every MCP tool definition into context upfront.
+- **Best for:** builders who want a lightweight multi-provider terminal agent with subagents, hashline edits, and explicit control over context growth.
+
 ### Agentic IDEs
 
 These are product surfaces where the editor becomes the agentic workspace.
