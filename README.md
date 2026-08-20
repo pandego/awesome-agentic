@@ -391,6 +391,7 @@ Curated list of practical Retrieval-Augmented Generation systems, infrastructure
 
 ### Research directions worth watching
 
+- **Agentic Context Engine (ACE)** - https://github.com/kayba-ai/agentic-context-engine - practical implementation of the [ACE research pattern](https://github.com/ace-agent/ace) that turns execution traces and feedback into a persistent, curated skillbook, with runners for browser-use, LangChain, Claude Code, and MCP; promising as a self-improvement layer, but still pre-1.0. Last checked: 2026-08-20.
 - **LinearRAG** - https://github.com/DEEP-PolyU/LinearRAG - research-heavy long-context retrieval direction centered on linearized retrieval and generation flow rather than a production platform.
 
 Projects here should earn their spot by introducing a distinct retrieval pattern, evaluation insight, or systems idea that practitioners may want to watch.
