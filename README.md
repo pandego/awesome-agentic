@@ -581,6 +581,12 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** local AI companion OS with persistent memory, IDE workspace, browser automation, MCP, multichannel surfaces, proactive wakeups, and active Windows releases; note its commercial/activation-key posture.
 - **Best for:** builders comparing companion-first PersonalOS products where personality, continuity, local tools, and desktop operation are the core product rather than an add-on.
 
+### Osaurus
+- **Link:** https://github.com/osaurus-ai/osaurus
+- **Why it stands out:** native Swift PersonalOS harness for Apple Silicon that combines local/cloud models, layered memory, agents, MCP, scheduling, browser use, and per-agent Linux VM sandboxes without an Electron or hosted control plane.
+- **Best for:** Mac users who want an owned, offline-capable personal agent runtime rather than a cross-platform web shell.
+- **Evidence:** MIT-licensed, 7.7k+ GitHub stars, and active v0.23 releases through August 2026; the Linux VM sandbox requires macOS 26, with Seatbelt confinement on earlier supported releases. Last checked: 2026-08-21.
+
 ### OpenJarvis
 - **Link:** https://github.com/open-jarvis/OpenJarvis
 - **Why it stands out:** Stanford-backed local-first personal AI framework that treats on-device agents, energy/latency/cost-aware evals, and local trace learning as first-class primitives.
