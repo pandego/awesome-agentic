@@ -97,7 +97,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
-- **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [SWE-bench](https://www.swebench.com/), [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
+- **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [Long-Horizon Terminal-Bench](https://github.com/zli12321/LHTB) for sustained hundred-step work, [SWE-bench](https://www.swebench.com/), [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
@@ -886,6 +886,12 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://www.tbench.ai/
 - **Why it stands out:** benchmark for terminal-agent performance on realistic terminal tasks.
 - **Best for:** comparing terminal-native coding and operator agents.
+
+### Long-Horizon Terminal-Bench
+- **Link:** https://github.com/zli12321/LHTB
+- **Why it stands out:** extends terminal evaluation to 46 containerized tasks requiring hundreds of dependent actions, with deterministic hidden verifiers and dense partial credit that exposes progress before timeout instead of collapsing hard runs into binary failures.
+- **Best for:** comparing whether agents can preserve state, recover, self-verify, and finish sustained engineering, scientific, multimodal, and professional workflows.
+- **Evidence:** Apache-2.0 benchmark with a reproducible modified Harbor harness; its July 2026 sweep evaluated 21 frontier models under one 90-minute-per-task setup, and 29 of 46 tasks remained unsolved. Last checked: 2026-08-22.
 
 ### SWE-bench
 - **Link:** https://www.swebench.com/
