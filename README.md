@@ -101,6 +101,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
+- **Best portable agent telemetry layers:** [OpenInference](https://github.com/Arize-ai/openinference) for cross-language agent/RAG instrumentation, [OpenLLMetry](https://github.com/traceloop/openllmetry) for Python-first auto-instrumentation into existing OpenTelemetry backends
 - **Best agent security, governance, and red-team starting points:** [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
@@ -1100,10 +1101,16 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Why it stands out:** tracing, evaluation, and observability platform integrated with the LangChain/LangGraph ecosystem.
 - **Best for:** teams building on LangGraph or LangChain who want native observability.
 
+### OpenInference
+- **Link:** https://github.com/Arize-ai/openinference
+- **Why it stands out:** backend-neutral OpenTelemetry conventions and instrumentors for LLM, RAG, agent, tool, and MCP traces across Python, TypeScript, Java, and Go, with adapters for major agent frameworks and existing OpenLLMetry/OpenLIT telemetry.
+- **Best for:** teams that want one portable instrumentation layer across agent stacks and OTLP-compatible backends rather than binding telemetry capture to one observability product.
+- **Evidence:** Apache-2.0, active August 2026 releases, and an OpenTelemetry-accepted code grant covering its SDK/framework instrumentation; the grant records multimillion-download monthly adoption for core Python packages. Last checked: 2026-08-23.
+
 ### OpenLLMetry
 - **Link:** https://github.com/traceloop/openllmetry
-- **Why it stands out:** OpenTelemetry-native instrumentation for LLM and agent traces that can feed existing observability stacks instead of forcing a new platform.
-- **Best for:** teams standardizing agent telemetry around OpenTelemetry, Datadog, Honeycomb, or similar backends.
+- **Why it stands out:** Python-first auto-instrumentation for LLM, vector-database, framework, and MCP calls, with a one-line SDK path and broad support for existing OpenTelemetry collectors.
+- **Best for:** Python teams that want fast agent tracing into Datadog, Honeycomb, Grafana, or another existing backend rather than a new observability platform.
 
 ---
 
