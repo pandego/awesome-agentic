@@ -102,7 +102,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best portable agent telemetry layers:** [OpenInference](https://github.com/Arize-ai/openinference) for cross-language agent/RAG instrumentation, [OpenLLMetry](https://github.com/traceloop/openllmetry) for Python-first auto-instrumentation into existing OpenTelemetry backends
-- **Best agent security, governance, and red-team starting points:** [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security, governance, and red-team starting points:** [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/), [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -1021,6 +1021,12 @@ Evaluation axes for coding agents:
 ### Agent security and red-teaming
 
 Agentic security needs its own eval loop because prompt injection, tool misuse, data exfiltration, and unsafe action chains are runtime failures, not just model failures.
+
+### OWASP Top 10 for Agentic Applications (2026)
+- **Link:** https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+- **Why it stands out:** globally peer-reviewed baseline for ten agent-specific risk classes spanning goal hijack, tool misuse, identity and privilege abuse, supply-chain compromise, unexpected code execution, poisoned context, inter-agent communication, cascading failures, human trust, and rogue behavior.
+- **Best for:** teams defining security requirements and test coverage before choosing scanners, guardrails, or red-team harnesses.
+- **Evidence:** official OWASP GenAI Security Project release developed with 100+ industry experts, researchers, and practitioners. Last checked: 2026-08-25.
 
 ### AgentDojo
 - **Link:** https://github.com/ethz-spylab/agentdojo
