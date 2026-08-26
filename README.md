@@ -78,7 +78,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best default orchestration layer:** [LangGraph](https://github.com/langchain-ai/langgraph)
 - **Best typed Python agent framework:** [PydanticAI](https://github.com/pydantic/pydantic-ai)
 - **Best full-stack TypeScript agent framework:** [Mastra](https://github.com/mastra-ai/mastra)
-- **Best lightweight Python SDK:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python)
+- **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi), [OpenHands](https://github.com/OpenHands/OpenHands)
@@ -133,10 +133,22 @@ These are the strongest starting points when you need a general builder stack, n
 - **Best for:** TypeScript teams that want an integrated path from agent prototype to deployed application.
 - **Evidence:** 26k+ GitHub stars and active July 2026 releases; the core is Apache-2.0, while `ee/` features use the Mastra Enterprise License. Last checked: 2026-07-23.
 
+### Vercel AI SDK
+- **Link:** https://github.com/vercel/ai
+- **Why it stands out:** provider-agnostic TypeScript toolkit that joins tool-loop and durable agents, approvals, timeouts, sandbox abstractions, OpenTelemetry, and typed streaming UI across major frontend frameworks.
+- **Best for:** TypeScript teams that need the agent runtime and end-user interface to share one portable SDK; compare Mastra when integrated memory, workflows, and evals matter more.
+- **Evidence:** 26k+ GitHub stars, 16M+ weekly downloads reported by Vercel, and AI SDK 7 production-agent features. Last checked: 2026-08-26.
+
 ### OpenAI Agents Python SDK
 - **Link:** https://github.com/openai/openai-agents-python
 - **Why it stands out:** lightweight but practical primitives for tools, handoffs, tracing, and multi-agent workflows.
 - **Best for:** Python teams that want a fast path to structured assistant behavior.
+
+### Strands Agents
+- **Link:** https://github.com/strands-agents/harness-sdk
+- **Why it stands out:** Apache-2.0, model-agnostic Python and TypeScript SDK with MCP, streaming, structured output, multi-agent patterns, execution limits, tracing hooks, and guardrails built into a small agent surface.
+- **Best for:** teams that want one AWS-backed production harness across Bedrock, Anthropic, OpenAI, Gemini, local models, and other providers without making Bedrock the architecture.
+- **Evidence:** 7k+ GitHub stars and active Python v1.53 and TypeScript v1.14 releases in August 2026. Last checked: 2026-08-26.
 
 ### Google ADK (Python)
 - **Link:** https://github.com/google/adk-python
@@ -148,16 +160,6 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** production-grade Python and .NET framework that unifies graph workflows, durable checkpoints, multi-agent patterns, middleware, memory, OpenTelemetry, MCP, and A2A behind stable 1.0 APIs.
 - **Best for:** cross-language enterprise teams that need provider flexibility and an official migration path from AutoGen or Semantic Kernel rather than a lightweight agent loop.
 - **Evidence:** MIT-licensed, 12.8k+ GitHub stars, production-ready 1.0 releases for Python and .NET, and active Python v1.14 releases through August 2026. Last checked: 2026-08-17.
-
-### AutoGen
-- **Link:** https://github.com/microsoft/autogen
-- **Why it stands out:** one of the most visible programming frameworks for multi-agent systems, with strong research and enterprise ecosystem gravity.
-- **Best for:** teams exploring multi-agent patterns, conversation-based coordination, and Microsoft-backed agent research.
-
-### Semantic Kernel
-- **Link:** https://github.com/microsoft/semantic-kernel
-- **Why it stands out:** mature app-integration framework for LLM workflows, planners, connectors, and enterprise-oriented AI application development.
-- **Best for:** teams building agentic features inside larger enterprise software stacks.
 
 ### CrewAI
 - **Link:** https://github.com/crewAIInc/crewAI
@@ -244,7 +246,9 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Want explicit orchestration and durable workflows:** start with **LangGraph**.
 - **Want typed Python ergonomics and validation:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
-- **Want cross-language enterprise posture:** look at **Microsoft Agent Framework** or **Semantic Kernel**.
+- **Want a model-agnostic Python and TypeScript SDK:** look at **Strands Agents**.
+- **Want TypeScript agents and streaming UI in one SDK:** look at **Vercel AI SDK**.
+- **Want cross-language enterprise posture:** look at **Microsoft Agent Framework**.
 - **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
