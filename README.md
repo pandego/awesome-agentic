@@ -93,7 +93,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
-- **Best MCP integration, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
+- **Best MCP protocol, development, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [MCP Inspector](https://github.com/modelcontextprotocol/inspector), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
@@ -749,18 +749,25 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 
 ### Model Context Protocol
 - **Link:** https://modelcontextprotocol.io/
-- **Why it stands out:** protocol for connecting AI systems to tools, data, and external context.
+- **Why it stands out:** open interoperability baseline for tools, resources, prompts, and structured agent interactions across model and application boundaries.
 - **Best for:** builders who want a standard integration surface rather than custom tool glue everywhere.
+- **Evidence:** the 2026-07-28 specification makes remote MCP stateless, cacheable, and header-routable, adds multi-round-trip interaction and formal extensions, hardens authorization, and updates the Tier 1 TypeScript, Python, Go, and C# SDKs. Last checked: 2026-08-27.
 
 ### MCP Registry
 - **Link:** https://modelcontextprotocol.io/registry/about
 - **Why it stands out:** official centralized metadata repository for public MCP servers, with namespace verification, standardized install metadata, and a REST API for downstream marketplaces and clients.
 - **Best for:** teams that need MCP tool discovery to move beyond ad hoc GitHub lists without pretending registry metadata is a full security review.
 
-### MCP Servers
+### MCP Reference Servers
 - **Link:** https://github.com/modelcontextprotocol/servers
-- **Why it stands out:** central collection of MCP servers and examples.
-- **Best for:** discovering and wiring tools into MCP-capable agents.
+- **Why it stands out:** small steering-group-maintained set of reference implementations for protocol features and official SDK patterns, not a general server catalog.
+- **Best for:** learning and test fixtures; use the MCP Registry for discovery, and do not assume these examples are production-ready.
+
+### MCP Inspector
+- **Link:** https://github.com/modelcontextprotocol/inspector
+- **Why it stands out:** official reference debugger that packages web, CLI, and TUI clients behind one binary, with shared transports, configuration, OAuth state, and protocol-era negotiation.
+- **Best for:** exploring servers, testing tools/resources/prompts, debugging auth and protocol behavior, and scripting checks from CI or coding agents.
+- **Evidence:** MIT-licensed, 10.8k+ GitHub stars, and an active v2.4.0 release on 2026-08-26 with first-party support for the 2026-07-28 protocol. Last checked: 2026-08-27.
 
 ### FastMCP
 - **Link:** https://github.com/PrefectHQ/fastmcp
