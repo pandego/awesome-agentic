@@ -96,7 +96,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best MCP protocol, development, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [MCP Inspector](https://github.com/modelcontextprotocol/inspector), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
-- **Best sandbox/runtime layers to compare first:** [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
+- **Best sandbox/runtime layers to compare first:** [NVIDIA OpenShell](https://github.com/NVIDIA/openshell), [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
 - **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [Long-Horizon Terminal-Bench](https://github.com/zli12321/LHTB) for sustained hundred-step work, [SWE-bench](https://www.swebench.com/), [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
@@ -817,6 +817,12 @@ Good MCP/tool entries should be evaluated on:
 
 Agents that execute code need isolation, process control, and safe runtime environments.
 
+### NVIDIA OpenShell
+- **Link:** https://github.com/NVIDIA/openshell
+- **Why it stands out:** Apache-2.0 agent runtime that combines sandbox lifecycle across Docker, Podman, microVM, and experimental Kubernetes drivers with declarative filesystem, process, network, and inference policy.
+- **Best for:** teams that need auditable controls around coding or personal agents, including hot-reloadable L7 egress and model routing, rather than treating a container boundary as the whole security model; it remains pre-1.0.
+- **Evidence:** 8.4k+ GitHub stars and an active v0.0.115 release on 2026-08-27, with documented support for Claude Code, Codex, Copilot, OpenClaw, and Hermes Agent. Last checked: 2026-08-28.
+
 ### E2B
 - **Link:** https://www.e2b.dev/
 - **Why it stands out:** sandbox infrastructure for AI agents and code execution.
@@ -865,10 +871,11 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Why it stands out:** serverless compute platform useful for AI workloads, tools, and scalable execution.
 - **Best for:** teams that need elastic execution for model/tool workloads.
 
-### Docker
-- **Link:** https://www.docker.com/
-- **Why it stands out:** still the default isolation primitive for many coding-agent and tool-execution stacks.
-- **Best for:** local and production sandboxing where portability matters.
+### Docker Sandboxes
+- **Link:** https://docs.docker.com/ai/sandboxes/
+- **Why it stands out:** purpose-built `sbx` runtime gives each coding agent a persistent microVM, private Docker daemon, proxied network, host-side credential injection, and MCP gateway instead of exposing the host Docker daemon.
+- **Best for:** developers who need an agent to have sudo and Docker without exposing the rest of the host or its Docker daemon; use clone mode when live workspace writes are too broad, and treat shared skills or local MCP servers as explicit host-side trust boundaries.
+- **Evidence:** Docker documents hypervisor isolation, deny-by-default network policy, and an optional read-only host mount with an in-VM repository clone; the CLI is free, while organization governance is paid. Last checked: 2026-08-28.
 
 Look for runtime systems that provide:
 
