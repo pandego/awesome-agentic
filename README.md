@@ -81,7 +81,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
-- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi), [OpenHands](https://github.com/OpenHands/OpenHands)
+- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx), [OpenViking](https://github.com/volcengine/OpenViking)
@@ -277,10 +277,22 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Why it stands out:** lightweight coding agent that runs in your terminal, with strong patching, repo navigation, and task execution posture.
 - **Best for:** builders who want a high-ceiling terminal harness and care about benchmark-visible execution quality.
 
+### GitHub Copilot CLI
+- **Link:** https://github.com/github/copilot-cli
+- **Why it stands out:** GitHub-native terminal agent that joins local plan/autopilot modes, cloud delegation, repository and pull-request context, model choice, MCP, skills, hooks, and enterprise policy in the same Copilot harness.
+- **Best for:** GitHub-centric teams that already have Copilot and want one supported agent across terminal, cloud tasks, and repository workflows.
+- **Evidence:** generally available to all Copilot subscribers, 11k+ GitHub stars, and active v1.0 releases through August 2026. Last checked: 2026-08-29.
+
 ### Gemini CLI
 - **Link:** https://github.com/google-gemini/gemini-cli
 - **Why it stands out:** open-source terminal agent from Google with strong ecosystem relevance.
 - **Best for:** builders who want a first-party Google terminal agent in their comparison set.
+
+### Qwen Code
+- **Link:** https://github.com/QwenLM/qwen-code
+- **Why it stands out:** Apache-2.0 coding agent that combines terminal and headless use with subagents, memory, skills, MCP, sandboxing, IDE/SDK surfaces, and runtime switching across Qwen, OpenAI, Anthropic, Gemini, Ollama, and other compatible providers.
+- **Best for:** teams that want an open, model-flexible coding harness without giving up the operating surface of first-party terminal agents.
+- **Evidence:** 27k+ GitHub stars and active v0.22 releases through August 2026. Last checked: 2026-08-29.
 
 ### Aider
 - **Link:** https://github.com/Aider-AI/aider
