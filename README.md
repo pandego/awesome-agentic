@@ -610,6 +610,12 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Best for:** Mac users who want an owned, offline-capable personal agent runtime rather than a cross-platform web shell.
 - **Evidence:** MIT-licensed, 7.7k+ GitHub stars, and active v0.23 releases through August 2026; the Linux VM sandbox requires macOS 26, with Seatbelt confinement on earlier supported releases. Last checked: 2026-08-21.
 
+### Sentient OS
+- **Link:** https://github.com/Sentient-OS-Labs/sentient-os
+- **Why it stands out:** Apple Silicon PersonalOS that performs nightly on-device triage over local files, screenshots, messages, and notes, distills an editable Markdown knowledge base, then turns that context into approval-gated proactive cards and computer-use tasks.
+- **Best for:** builders studying the full ambient-context-to-action loop on a Mac; compare Osaurus for a general agent harness, and treat Full Disk Access plus any external frontier-model path as explicit trust boundaries.
+- **Evidence:** AGPL-3.0, 470+ GitHub stars, active v1.3 releases, and published security/privacy engineering covering fail-closed filtering and its optional encrypted MCP relay. Last checked: 2026-09-02.
+
 ### OpenJarvis
 - **Link:** https://github.com/open-jarvis/OpenJarvis
 - **Why it stands out:** Stanford-backed local-first personal AI framework that treats on-device agents, energy/latency/cost-aware evals, and local trace learning as first-class primitives.
@@ -689,21 +695,6 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/szczyglis-dev/py-gpt
 - **Why it stands out:** cross-platform desktop AI assistant with agents, computer use, tools, MCP, plugins, voice, RAG, memory, web search, and local/Ollama model support in one open-source app.
 - **Best for:** builders comparing desktop-native PersonalOS surfaces where chat, automation, files, local models, and everyday tooling share one UI.
-
-### Letta
-- **Link:** https://github.com/letta-ai/letta
-- **Why it stands out:** stateful agents with memory that can learn and self-improve over time.
-- **Best for:** PersonalOS foundations where continuity and state are central.
-
-### Supermemory
-- **Link:** https://github.com/supermemoryai/supermemory
-- **Why it stands out:** fast memory engine and app/API for recall across user context.
-- **Best for:** personal memory and context layers.
-
-### Mem0
-- **Link:** https://github.com/mem0ai/mem0
-- **Why it stands out:** portable memory layer that can sit underneath assistants and apps.
-- **Best for:** adding personalized memory to agentic products.
 
 ---
 
