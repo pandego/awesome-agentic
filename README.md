@@ -81,6 +81,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
+- **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack behind the OpenAI Realtime protocol
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
@@ -198,6 +199,12 @@ These are the strongest starting points when you need a general builder stack, n
 - **Link:** https://github.com/TEN-framework/ten-framework
 - **Why it stands out:** active polyglot realtime framework with graph-based multimodal composition, RTC and WebSocket transports, SIP, hardware examples, VAD, turn detection, and visual tooling in one ecosystem.
 - **Best for:** teams that want a lower-level, cross-language voice-agent runtime rather than a Python-only orchestration layer.
+
+### Hugging Face Speech-to-Speech
+- **Link:** https://github.com/huggingface/speech-to-speech
+- **Why it stands out:** Apache-2.0 modular voice-agent pipeline that can run VAD, STT, LLM, and TTS locally, while exposing a tested core of OpenAI Realtime events over WebSocket and WebRTC with tool calls and Apple Silicon support.
+- **Best for:** teams that want an open-model, self-hostable voice backend compatible with standard Realtime clients; compare LiveKit or Pipecat when media infrastructure, telephony, and broader agent orchestration matter more.
+- **Evidence:** 13k+ GitHub stars, an active v0.2.12 release line, and September 2026 development; Hugging Face reports that it powers the conversation backend for thousands of Reachy Mini robots. Last checked: 2026-09-03.
 
 ### Deep Agents
 - **Link:** https://github.com/langchain-ai/deepagents
