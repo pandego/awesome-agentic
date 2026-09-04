@@ -1051,6 +1051,14 @@ Evaluation axes for coding agents:
 - **Why it stands out:** framework for prototyping, testing, evaluating, and monitoring LLM applications.
 - **Best for:** teams already aligned with Microsoft/Azure-style LLM operations.
 
+### Application-level verification
+
+### Agent QA
+- **Link:** https://github.com/vostride/agent-qa
+- **Why it stands out:** source-available QA harness that turns natural-language web and mobile regression goals into executed tests, retains scoped run memory, and retries changed UI paths within the same run through CLI, dashboard, MCP, and agent-skill interfaces.
+- **Best for:** teams verifying complete user journeys around an agentic application in development or CI; it complements model-output and trajectory evals rather than replacing them.
+- **Evidence:** 849 GitHub stars, a published npm CLI, and public documentation for browser/mobile execution, persistent memory, and MCP workflows. Last checked: 2026-08-17.
+
 ### Agent security and red-teaming
 
 Agentic security needs its own eval loop because prompt injection, tool misuse, data exfiltration, and unsafe action chains are runtime failures, not just model failures.
