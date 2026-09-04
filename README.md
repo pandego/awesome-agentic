@@ -98,8 +98,8 @@ Fast recommendations if you do not want to read everything first.
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
 - **Best sandbox/runtime layers to compare first:** [NVIDIA OpenShell](https://github.com/NVIDIA/openshell), [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
-- **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench](https://www.tbench.ai/), [Long-Horizon Terminal-Bench](https://github.com/zli12321/LHTB) for sustained hundred-step work, [SWE-bench](https://www.swebench.com/), [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
-- **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld](https://os-world.github.io/) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
+- **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench 2.1](https://github.com/harbor-framework/terminal-bench-2-1) for a reward-hardened current terminal suite, [Long-Horizon Terminal-Bench](https://github.com/zli12321/LHTB) for sustained hundred-step work, [SWE-bench](https://www.swebench.com/) for the canonical issue-resolution harness, [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
+- **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld 2.0](https://github.com/xlang-ai/OSWorld-V2) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best portable agent telemetry layers:** [OpenInference](https://github.com/Arize-ai/openinference) for cross-language agent/RAG instrumentation, [OpenLLMetry](https://github.com/traceloop/openllmetry) for Python-first auto-instrumentation into existing OpenTelemetry backends
@@ -903,6 +903,8 @@ Look for runtime systems that provide:
 
 Agentic systems need evals because demos lie. Benchmark scores are not the whole truth, but they are much better than vibes.
 
+Read every score as a result for a specific **benchmark release + agent harness + model + budget + trial count**, not as a model property. Favor pinned tasks and assets, evaluator isolation, hidden ground truth, public trajectories, and repeated runs; [OpenAI's 2026 SWE-bench Verified audit](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) shows why even a canonical suite can stop measuring the frontier.
+
 ### Agent and coding benchmarks
 
 ### Holistic Agent Leaderboard (HAL)
@@ -917,10 +919,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Best for:** builders choosing an agent-model-harness combination on real execution efficiency rather than reading model scores as product scores.
 - **Evidence:** v1.1 runs 321 public tasks from DeepSWE, Terminal-Bench v2, and SWE-Atlas-QnA three times per variant, with a published scoring and efficiency methodology. Last checked: 2026-08-09.
 
-### Terminal-Bench
-- **Link:** https://www.tbench.ai/
-- **Why it stands out:** benchmark for terminal-agent performance on realistic terminal tasks.
-- **Best for:** comparing terminal-native coding and operator agents.
+### Terminal-Bench 2.1
+- **Link:** https://github.com/harbor-framework/terminal-bench-2-1
+- **Why it stands out:** current verified iteration of the difficult containerized terminal suite, with 26 tasks corrected for bugs, resource or timeout problems, and reward-hacking weaknesses.
+- **Best for:** comparing terminal agent, model, and harness combinations on one pinned release instead of mixing scores across changing task sets.
+- **Evidence:** leaderboard runs require at least five trials per task, public Harbor jobs, automated validation, and maintainer trajectory review; community submissions are temporarily closed. Last checked: 2026-09-04.
 
 ### Long-Horizon Terminal-Bench
 - **Link:** https://github.com/zli12321/LHTB
@@ -932,6 +935,7 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Link:** https://www.swebench.com/
 - **Why it stands out:** benchmark for resolving real software engineering issues from GitHub repositories.
 - **Best for:** evaluating autonomous coding agents and issue-resolution systems.
+- **Caveat:** treat SWE-bench Verified as historical, not a frontier model selector. OpenAI stopped reporting it after finding material test or specification flaws in 59.4% of 138 frequently missed tasks plus evidence of training contamination, and now recommends SWE-bench Pro for frontier comparisons. Last checked: 2026-09-04.
 
 ### ProgramBench
 - **Link:** https://github.com/facebookresearch/ProgramBench
@@ -944,10 +948,11 @@ Agentic systems need evals because demos lie. Benchmark scores are not the whole
 - **Why it stands out:** Princeton and Stanford's radically small bash-only coding agent pairs an inspectable linear loop with a reported 74%+ SWE-bench Verified score and active v2 releases.
 - **Best for:** reproducible coding-agent baselines, model comparisons, fine-tuning, and builders who want to understand the whole scaffold before extending it.
 
-### OSWorld
-- **Link:** https://os-world.github.io/
-- **Why it stands out:** benchmark and executable environment for multimodal agents doing open-ended desktop and web tasks across real applications.
-- **Best for:** evaluating computer-use agents beyond browser-only or coding-only tasks.
+### OSWorld 2.0
+- **Link:** https://github.com/xlang-ai/OSWorld-V2
+- **Why it stands out:** long-horizon computer-use benchmark that pins code, task files, assets, provider images, and mocked websites as one release, while gating task logic and ground-truth assets to reduce leakage.
+- **Best for:** evaluating multimodal desktop agents on current reproducible releases rather than comparing results from drifting OSWorld 1.x environments.
+- **Evidence:** the recommended `2026.08.08` release is fully versioned, and verified leaderboard submissions require maintainer-run evaluation or disclosed code plus monitoring data and trajectories. Last checked: 2026-09-04.
 
 ### Windows Agent Arena
 - **Link:** https://github.com/microsoft/WindowsAgentArena
