@@ -92,7 +92,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best agent-memory benchmark to track:** [AMA-Bench](https://github.com/AMA-Bench/AMA-Bench) for long-horizon memory over real agent trajectories, not dialogue-only recall
 - **Best PersonalOS / AI OS starting points:** [LifeOS / Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS), [OpenClaw](https://github.com/openclaw/openclaw), [Hermes Agent](https://github.com/NousResearch/hermes-agent), [Nanobot](https://github.com/HKUDS/nanobot), [OpenHuman](https://github.com/tinyhumansai/openhuman), [CORE](https://github.com/RedPlanetHQ/core), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [IronClaw](https://github.com/nearai/ironclaw), [Row-Bot](https://github.com/siddsachar/row-bot), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os), [Dex](https://github.com/davekilleen/Dex)
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
-- **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
+- **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Skyvern](https://github.com/Skyvern-AI/skyvern), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
 - **Best MCP protocol, development, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [MCP Inspector](https://github.com/modelcontextprotocol/inspector), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
@@ -724,6 +724,12 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Link:** https://github.com/browser-use/browser-use
 - **Why it stands out:** popular open-source browser automation layer for AI agents.
 - **Best for:** giving agents practical website interaction ability.
+
+### Skyvern
+- **Link:** https://github.com/Skyvern-AI/skyvern
+- **Why it stands out:** AGPL-3.0, self-hostable workflow stack that layers natural-language actions and AI fallback onto Playwright, then adds structured extraction, validation, downloads, credential support, and a no-code builder.
+- **Best for:** teams automating logged-in, write-heavy business workflows that need reusable workflows rather than a lightweight browser-agent loop; compare Browser Use for experimentation and Stagehand for a smaller SDK abstraction.
+- **Evidence:** 22.9k+ GitHub stars and an active v1.0.52 release; its co-authored WebBench reports 64.4% overall and leading WRITE-task performance. Last checked: 2026-09-05.
 
 ### Agent Browser
 - **Link:** https://github.com/vercel-labs/agent-browser
