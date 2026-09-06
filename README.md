@@ -411,6 +411,7 @@ Curated list of practical Retrieval-Augmented Generation systems, infrastructure
 - **Ragas** - https://github.com/vibrantlabsai/ragas - evaluation framework for LLM and RAG applications.
 - **DeepEval** - https://github.com/confident-ai/deepeval - LLM evaluation framework with test-style workflows.
 - **Open RAG Eval** - https://github.com/vectara/open-rag-eval - evaluates RAG quality without relying only on golden-answer datasets.
+- **GraphRAG-Bench** - https://github.com/GraphRAG-Bench/GraphRAG-Benchmark - ICLR 2026, MIT-licensed benchmark with public data, standardized code, and literary/medical leaderboards across graph construction, retrieval, and generation; use it to test whether GraphRAG's added complexity actually beats vanilla RAG. Last checked: 2026-09-06.
 - **FlashRAG** - https://github.com/RUC-NLPIR/FlashRAG - research-oriented RAG experimentation toolkit with strong evaluation coverage across retrieval, generation, and pipeline variants.
 
 ### Research directions worth watching
