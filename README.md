@@ -103,7 +103,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
 - **Best eval/observability stack to compare first:** [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), [MLflow](https://github.com/mlflow/mlflow), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix), [Opik](https://github.com/comet-ml/opik), [Laminar](https://github.com/lmnr-ai/lmnr), [DeepEval](https://github.com/confident-ai/deepeval), [Promptfoo](https://github.com/promptfoo/promptfoo), [Ragas](https://github.com/vibrantlabsai/ragas)
 - **Best portable agent telemetry layers:** [OpenInference](https://github.com/Arize-ai/openinference) for cross-language agent/RAG instrumentation, [OpenLLMetry](https://github.com/traceloop/openllmetry) for Python-first auto-instrumentation into existing OpenTelemetry backends
-- **Best agent security, governance, and red-team starting points:** [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/), [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
+- **Best agent security, governance, and red-team starting points:** [OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/), [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [OS-Harm](https://github.com/tml-epfl/os-harm), [DecodingTrust-Agent](https://github.com/AI-secure/DecodingTrust-Agent), [MCP Security Bench](https://github.com/dongsenzhang/MSB), [AgentDoG](https://github.com/AI45Lab/AgentDoG), [Snyk Agent Scan](https://github.com/snyk/agent-scan), [DeepTeam](https://github.com/confident-ai/deepteam), [Promptfoo](https://github.com/promptfoo/promptfoo), [PyRIT](https://github.com/microsoft/PyRIT), [garak](https://github.com/NVIDIA/garak)
 
 ---
 
@@ -1078,6 +1078,12 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/ethz-spylab/agentdojo
 - **Why it stands out:** benchmark environment for prompt-injection attacks and defenses in tool-using LLM agents, with direct relevance to real assistant workflows.
 - **Best for:** teams testing whether agents can keep task utility while resisting malicious instructions in workspace, travel, and tool-use scenarios.
+
+### OS-Harm
+- **Link:** https://github.com/tml-epfl/os-harm
+- **Why it stands out:** OSWorld-based safety benchmark that scores what computer-use agents actually do across deliberate misuse, prompt injection, and unintended misbehavior instead of judging only their text.
+- **Best for:** teams testing whether browser and desktop agents remain safe while operating real applications without losing legitimate task capability.
+- **Evidence:** NeurIPS 2025 Spotlight with an Apache-2.0 harness, 150 public tasks across browser, email, code, and other desktop apps, released trajectories and human annotations, and an automated judge validated against humans. Last checked: 2026-09-08.
 
 ### ASPI
 - **Link:** https://github.com/scaleapi/aspi
