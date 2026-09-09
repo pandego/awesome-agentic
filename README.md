@@ -312,6 +312,12 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Why it stands out:** open-source coding agent with a clean terminal-first posture and strong community signal.
 - **Best for:** builders who want an open-source terminal agent worth watching closely.
 
+### 3code
+- **Link:** https://github.com/capocasa/3code
+- **Why it stands out:** the only terminal coding agent that treats token budget as a first-class constraint — chunked context, supersede-aware compaction, and aggressive caching; benchmarked at 75% fewer tokens than OpenCode on a 10-task SWE-bench Verified subset with more tasks resolved.
+- **Best for:** builders on free tiers, flat-rate plans, or pay-per-token APIs who want more work per token; works with any OpenAI-compatible endpoint.
+- **Evidence:** public benchmark methodology and per-task data at 3code.capocasa.dev/swe. Last checked: 2026-09-09.
+
 ### Agentic IDEs
 
 These are product surfaces where the editor becomes the agentic workspace.
