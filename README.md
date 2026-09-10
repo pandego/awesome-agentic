@@ -80,6 +80,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best full-stack TypeScript agent framework:** [Mastra](https://github.com/mastra-ai/mastra)
 - **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
+- **Best eval-driven optimizer for prompts and agent systems:** [GEPA](https://github.com/gepa-ai/gepa) for trace-reflective search over prompts, tool descriptions, RAG pipelines, and other measurable text parameters
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack behind the OpenAI Realtime protocol
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
@@ -184,6 +185,12 @@ These are the strongest starting points when you need a general builder stack, n
 - **Best for:** builders who want systematic prompt/program optimization for RAG and agent pipelines.
 
 ### Specialized frameworks
+
+### GEPA
+- **Link:** https://github.com/gepa-ai/gepa
+- **Why it stands out:** reads full execution traces and evaluator feedback to evolve prompts and other textual system parameters with reflective, Pareto-aware search instead of reducing each rollout to one scalar reward.
+- **Best for:** teams with reliable task-level evals and expensive agent rollouts that want to optimize prompts, tool descriptions, RAG pipelines, or agent configurations without training model weights.
+- **Evidence:** MIT-licensed, ICLR 2026 Oral, 6.5k+ GitHub stars, active September 2026 development, and built-in DSPy, LangChain, RAG, MCP, and Terminal-Bench adapters; the paper reports higher held-out scores than GRPO across six tasks with up to 35x fewer rollouts. Last checked: 2026-09-10.
 
 ### LiveKit Agents
 - **Link:** https://github.com/livekit/agents
