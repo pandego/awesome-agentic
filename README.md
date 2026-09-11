@@ -24,6 +24,7 @@ If you are building agents seriously, you usually need several layers:
   - [How to choose](#how-to-choose)
 - [Coding agents and agentic IDEs](#coding-agents-and-agentic-ides)
   - [Terminal-native coding agents](#terminal-native-coding-agents)
+  - [Coding-agent orchestration](#coding-agent-orchestration)
   - [Agentic IDEs](#agentic-ides)
   - [Autonomous software engineers](#autonomous-software-engineers)
   - [App builders](#app-builders)
@@ -84,6 +85,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack behind the OpenAI Realtime protocol
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
+- **Best coding-agent session manager:** [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) for parallel persistent sessions, agent-aware status, worktrees, optional container isolation, and TUI/web/mobile control
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
 - **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx), [OpenViking](https://github.com/volcengine/OpenViking)
@@ -318,6 +320,14 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Link:** https://github.com/anomalyco/opencode
 - **Why it stands out:** open-source coding agent with a clean terminal-first posture and strong community signal.
 - **Best for:** builders who want an open-source terminal agent worth watching closely.
+
+### Coding-agent orchestration
+
+### Agent of Empires
+- **Link:** https://github.com/agent-of-empires/agent-of-empires
+- **Why it stands out:** wraps existing coding agents in persistent tmux sessions with agent-aware status, Git worktrees, optional Docker/Podman/Apple Containers isolation, TUI/web/HTTP control, and diff review.
+- **Best for:** Linux and macOS builders running Claude Code, Codex CLI, Gemini CLI, OpenCode, Pi, Copilot CLI, or Droid in parallel; native Windows requires WSL2.
+- **Evidence:** MIT-licensed, 3.2k+ GitHub stars, active v1.16 releases, and community maintenance with support from Mozilla.ai. Last checked: 2026-09-11.
 
 ### Agentic IDEs
 
