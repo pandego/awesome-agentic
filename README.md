@@ -94,7 +94,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best document parsing benchmarks to track:** [OmniDocBench](https://github.com/opendatalab/OmniDocBench) for reproducible end-to-end and component scoring, [PureDocBench](https://github.com/zhihengli-casia/PureDocBench) for clean-to-degraded robustness, [ParseBench](https://arxiv.org/html/2604.08538v3) for agent-critical semantics and visual grounding
 - **Best memory starting points:** [Mem0](https://github.com/mem0ai/mem0), [Letta](https://github.com/letta-ai/letta), [Cognee](https://github.com/topoteretes/cognee), [Zep](https://github.com/getzep/zep), [ReMe](https://github.com/agentscope-ai/ReMe), [MemOS](https://github.com/MemTensor/MemOS), [EverOS](https://github.com/EverMind-AI/EverOS), [Signet](https://github.com/Signet-AI/signetai), [Supermemory](https://github.com/supermemoryai/supermemory), [Screenpipe](https://github.com/screenpipe/screenpipe)
 - **Best agent-memory benchmarks to track:** [AMA-Bench](https://github.com/AMA-Bench/AMA-Bench) for long-horizon memory over diverse real agent trajectories, [LongMemEval-V2](https://github.com/xiaowu0162/LongMemEval-V2) for operating knowledge learned from multimodal web and enterprise trajectories
-- **Best PersonalOS / AI OS starting points:** [LifeOS / Personal AI Infrastructure](https://github.com/danielmiessler/LifeOS), [OpenClaw](https://github.com/openclaw/openclaw), [Hermes Agent](https://github.com/NousResearch/hermes-agent), [Nanobot](https://github.com/HKUDS/nanobot), [OpenHuman](https://github.com/tinyhumansai/openhuman), [CORE](https://github.com/RedPlanetHQ/core), [OpenJarvis](https://github.com/open-jarvis/OpenJarvis), [OpenFang](https://github.com/RightNow-AI/openfang), [IronClaw](https://github.com/nearai/ironclaw), [Row-Bot](https://github.com/siddsachar/row-bot), [QwenPaw](https://github.com/agentscope-ai/QwenPaw), [Khoj](https://github.com/khoj-ai/khoj), [AIOS](https://github.com/agiresearch/AIOS), [OpenDAN](https://github.com/fiatrete/OpenDAN-Personal-AI-OS), [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os), [Dex](https://github.com/davekilleen/Dex)
+- **Best PersonalOS / AI OS starting points by workflow:** [Aman Khan's Personal OS](https://github.com/amanaiproduct/personal-os) for plain-file task prioritization (see license note), [LifeOS](https://github.com/danielmiessler/LifeOS) for personal context and skills atop an existing harness, [OpenClaw](https://github.com/openclaw/openclaw) for chat-channel operation, [Osaurus](https://github.com/osaurus-ai/osaurus) for native Apple Silicon agents, [OpenFang](https://github.com/RightNow-AI/openfang) for scheduled autonomous work (pre-1.0)
 - **Best PersonalOS benchmark to track:** [π-Bench](https://github.com/Simplified-Reasoning/Pi-Bench) for proactive help across long-horizon, multi-session workflows
 - **Best browser/computer-use stack to compare first:** [Agent S](https://github.com/simular-ai/Agent-S), [Agent Desktop](https://github.com/lahfir/agent-desktop), [Agent Browser](https://github.com/vercel-labs/agent-browser), [Browser Use](https://github.com/browser-use/browser-use), [Skyvern](https://github.com/Skyvern-AI/skyvern), [Stagehand](https://github.com/browserbase/stagehand), [Browserbase](https://www.browserbase.com/), [TinyFish](https://www.tinyfish.ai/)
 - **Best web extraction layer for agents:** [Firecrawl](https://github.com/firecrawl/firecrawl) for open crawling, [TinyFish](https://www.tinyfish.ai/) for live search/fetch plus browser-agent execution
@@ -592,8 +592,9 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### LifeOS / Personal AI Infrastructure
 - **Link:** https://github.com/danielmiessler/LifeOS
-- **Why it stands out:** fast-moving Claude Code-native life operating system with Pulse dashboard, digital-assistant identity, current-to-ideal-state workflow primitives, structured skills, hooks, and plain-text personal context.
-- **Best for:** builders designing a full personal AI infrastructure layer around goals, memory, skills, and day-to-day execution.
+- **Why it stands out:** personal context and skill layer that adds goals, identity, persistent memory, routing, and current-to-ideal-state workflows on top of an existing coding-agent harness rather than replacing it.
+- **Best for:** builders shaping a personal AI workspace around life and work; it is harness-agnostic by design, but Claude Code remains the maintainer's most-tested path.
+- **Evidence:** the official README documents installation through capable coding agents and a self-contained skill library, while distinguishing portability goals from the primary Claude Code development path. Last checked: 2026-09-12.
 
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
@@ -668,6 +669,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/amanaiproduct/personal-os
 - **Why it stands out:** local AI-agent task-management framework built around plain-file backlog capture, goal-driven prioritization, knowledge base, session evals, and an optional MCP server.
 - **Best for:** builders studying practical local-first PersonalOS workflows around tasks, priorities, and everyday execution.
+- **License note:** [CC BY-NC-SA 4.0](https://github.com/amanaiproduct/personal-os/blob/main/LICENSE); the repository explicitly permits internal work/business use but prohibits commercial sale of the template or derivatives and requires attribution and share-alike for shared modifications. Last checked: 2026-09-12.
 
 ### Claude Context OS
 - **Link:** https://github.com/conorbronsdon/claude-context-os
