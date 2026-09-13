@@ -1168,13 +1168,15 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 
 ### Langfuse
 - **Link:** https://github.com/langfuse/langfuse
-- **Why it stands out:** open-source LLM engineering platform for observability, metrics, evals, prompt management, datasets, and traces.
-- **Best for:** production LLM/agent teams that need traceability and evaluation loops.
+- **Why it stands out:** self-hostable LLM engineering platform that connects production traces and sessions to versioned prompts, datasets, experiments, code/LLM evaluators, and human feedback.
+- **Best for:** teams that want a shared trace-to-eval-to-prompt workflow across engineering and human reviewers, with managed or self-hosted deployment.
+- **License note:** [MIT core](https://github.com/langfuse/langfuse/blob/main/LICENSE), with designated `ee` directories governed by a separate commercial enterprise license. Last checked: 2026-09-13.
 
 ### Phoenix
 - **Link:** https://github.com/Arize-ai/phoenix
-- **Why it stands out:** AI observability and evaluation platform with strong tracing and analysis posture.
-- **Best for:** debugging and evaluating complex LLM and RAG systems.
+- **Why it stands out:** self-hostable OpenTelemetry/OpenInference platform combining traces, retrieval/response evals, versioned datasets, and experiments with CLI, skills, and a built-in remote MCP endpoint for coding-agent-driven debugging.
+- **Best for:** teams that want a local experimentation and troubleshooting loop accessible to both humans and coding agents; compare Langfuse for collaborative production prompt/eval workflows.
+- **License note:** source-available under [Elastic License 2.0](https://github.com/Arize-ai/phoenix/blob/main/LICENSE), which prohibits offering third parties a hosted or managed service exposing a substantial set of its features. Last checked: 2026-09-13.
 
 ### Opik
 - **Link:** https://github.com/comet-ml/opik
