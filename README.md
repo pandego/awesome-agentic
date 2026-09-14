@@ -101,7 +101,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best MCP protocol, development, gateway, and runtime layers:** [Model Context Protocol](https://modelcontextprotocol.io/), [MCP Registry](https://modelcontextprotocol.io/registry/about), [MCP Inspector](https://github.com/modelcontextprotocol/inspector), [FastMCP](https://github.com/PrefectHQ/fastmcp), [mcp-agent](https://github.com/lastmile-ai/mcp-agent), [ContextForge](https://github.com/IBM/mcp-context-forge), [Agentgateway](https://github.com/agentgateway/agentgateway), [ToolHive](https://github.com/stacklok/toolhive)
 - **Best MCP tool-use benchmark to track:** [MCPMark Verified](https://github.com/eval-sys/mcpmark) for reproducible work across real Notion, GitHub, filesystem, Postgres, and browser tools
 - **Best agent-native project/task layer:** [Backlog.md](https://github.com/MrLesk/Backlog.md)
-- **Best sandbox/runtime layers to compare first:** [NVIDIA OpenShell](https://github.com/NVIDIA/openshell), [E2B](https://www.e2b.dev/), [Daytona](https://github.com/daytonaio/daytona), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/)
+- **Best sandbox/runtime layers to compare first:** [NVIDIA OpenShell](https://github.com/NVIDIA/openshell), [E2B](https://github.com/e2b-dev/E2B), [Daytona](https://github.com/daytona) (private core; see maintenance note), [Fly.io Sprites](https://fly.io/sprites/), [OpenSandbox](https://github.com/opensandbox-group/OpenSandbox), [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox), [Modal](https://modal.com/docs/guide/sandbox)
 - **Best coding/terminal benchmarks to track:** [Artificial Analysis Coding Agent Index](https://artificialanalysis.ai/agents/coding-agents) for harness, cost, and runtime comparisons, [Terminal-Bench 2.1](https://github.com/harbor-framework/terminal-bench-2-1) for a reward-hardened current terminal suite, [Long-Horizon Terminal-Bench](https://github.com/zli12321/LHTB) for sustained hundred-step work, [SWE-bench](https://www.swebench.com/) for the canonical issue-resolution harness, [ProgramBench](https://github.com/facebookresearch/ProgramBench) for building whole programs from scratch, and [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) as a minimal reproducible baseline
 - **Best broader agent benchmarks to track:** [HAL](https://hal.cs.princeton.edu/) for cost-aware comparisons across benchmark families, [WebArena-Verified](https://github.com/ServiceNow/webarena-verified) for reproducible browser workflows, [WebBench](https://github.com/Halluminate/WebBench) for live-web read/write tasks and infrastructure failures, [OSWorld 2.0](https://github.com/xlang-ai/OSWorld-V2) and [Windows Agent Arena](https://github.com/microsoft/WindowsAgentArena) for real computer-use tasks, [BrowserGym](https://github.com/ServiceNow/BrowserGym) for web-agent benchmark harnesses, [τ-bench](https://taubench.com/) for tool-agent-user workflows, [TRAIL](https://github.com/patronus-ai/trail-benchmark) for debugging long agent traces
 - **Best realtime voice-model leaderboard:** [Artificial Analysis Speech to Speech Index](https://artificialanalysis.ai/speech-to-speech) for reasoning, conversational dynamics, grounded tool-use completion, latency, and price in one comparison
@@ -873,14 +873,16 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Evidence:** 8.4k+ GitHub stars and an active v0.0.115 release on 2026-08-27, with documented support for Claude Code, Codex, Copilot, OpenClaw, and Hermes Agent. Last checked: 2026-08-28.
 
 ### E2B
-- **Link:** https://www.e2b.dev/
-- **Why it stands out:** sandbox infrastructure for AI agents and code execution.
-- **Best for:** safely running generated code, tools, and experiments.
+- **Link:** https://github.com/e2b-dev/E2B
+- **Why it stands out:** open-source cloud sandbox infrastructure with Python and JavaScript SDKs, plus dedicated Code Interpreter and Desktop APIs for code execution and computer use.
+- **Best for:** teams that want agent-facing execution APIs with a self-hosting path rather than a broader serverless compute platform; self-hosting involves operating Terraform-managed infrastructure.
+- **Evidence:** the Apache-2.0 repository documents command execution, code-interpreter sessions, desktop control, and self-hosting. Last checked: 2026-09-14.
 
 ### Daytona
-- **Link:** https://github.com/daytonaio/daytona
-- **Why it stands out:** open-source, agent-focused sandbox runtime with fast stateful environments, SDKs, CLI/API control, filesystem/process operations, snapshots, and self-hosted or managed deployment paths.
-- **Best for:** coding agents and eval workloads that need isolated full-computer sandboxes with persistent state and operational controls.
+- **Link:** https://github.com/daytona
+- **Why it stands out:** agent-focused sandbox service with stateful environments, SDKs, CLI/API control, filesystem/process operations, and snapshots.
+- **Best for:** coding agents and eval workloads that need managed execution and persistent state; compare E2B or OpenSandbox when an actively maintained open-source core is a requirement.
+- **Maintenance note:** the [legacy repository](https://github.com/daytonaio/daytona) says core development moved private in June 2026 and it receives no further updates, fixes, or releases; public clients, guides, and integrations now live under `daytona`. Do not treat the legacy core as a maintained self-hosting option. Last checked: 2026-09-14.
 
 ### Fly.io Sprites
 - **Link:** https://fly.io/sprites/
@@ -916,15 +918,18 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Best for:** teams that need more than raw sandbox execution: deployment, tool isolation, observability, and service-style agent operations in one runtime layer.
 
 ### Modal
-- **Link:** https://modal.com/
-- **Why it stands out:** serverless compute platform useful for AI workloads, tools, and scalable execution.
-- **Best for:** teams that need elastic execution for model/tool workloads.
+- **Link:** https://modal.com/docs/guide/sandbox
+- **Why it stands out:** managed serverless platform with a dedicated Sandbox API for untrusted code, configurable container environments and GPU resources, command execution, lifecycle controls, and filesystem snapshots.
+- **Best for:** teams combining agent execution with elastic model/tool compute; configure egress explicitly rather than assuming sandbox isolation blocks exfiltration.
+- **Security note:** [networking docs](https://modal.com/docs/guide/sandbox-networking) allow outbound connections to public IPs by default, with full blocking, CIDR allowlists, and beta TLS-domain allowlists available. Last checked: 2026-09-14.
 
 ### Docker Sandboxes
 - **Link:** https://docs.docker.com/ai/sandboxes/
 - **Why it stands out:** purpose-built `sbx` runtime gives each coding agent a persistent microVM, private Docker daemon, proxied network, host-side credential injection, and MCP gateway instead of exposing the host Docker daemon.
 - **Best for:** developers who need an agent to have sudo and Docker without exposing the rest of the host or its Docker daemon; use clone mode when live workspace writes are too broad, and treat shared skills or local MCP servers as explicit host-side trust boundaries.
 - **Evidence:** Docker documents hypervisor isolation, deny-by-default network policy, and an optional read-only host mount with an in-VM repository clone; the CLI is free, while organization governance is paid. Last checked: 2026-08-28.
+
+For benchmark workloads, check the harness adapter as well as the provider: [Harbor's sandbox guide](https://www.harborframework.com/docs/run-jobs/cloud-sandboxes) supports multi-container tasks on Daytona, but currently limits its E2B and Modal adapters to single-container tasks. This is a harness compatibility distinction, not a provider performance ranking. Last checked: 2026-09-14.
 
 Look for runtime systems that provide:
 
