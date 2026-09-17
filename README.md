@@ -1114,8 +1114,9 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 
 ### AgentDojo
 - **Link:** https://github.com/ethz-spylab/agentdojo
-- **Why it stands out:** benchmark environment for prompt-injection attacks and defenses in tool-using LLM agents, with direct relevance to real assistant workflows.
-- **Best for:** teams testing whether agents can keep task utility while resisting malicious instructions in workspace, travel, and tool-use scenarios.
+- **Why it stands out:** extensible prompt-injection benchmark for tool-using agents that reports clean-task utility, utility under attack, and targeted attack success separately, with inspectable trajectories.
+- **Best for:** teams comparing defenses without mistaking blocked legitimate work for safety; pin the task version, model, defense, and attack because task verifiers have changed.
+- **Scope note:** the [official results page](https://agentdojo.spylab.ai/results/) explicitly is not a leaderboard: models were not tested against every attack/defense combination. Compare matched configurations, not rows as a universal security ranking. Last checked: 2026-09-17.
 
 ### OS-Harm
 - **Link:** https://github.com/tml-epfl/os-harm
