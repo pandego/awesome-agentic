@@ -124,13 +124,15 @@ These are the strongest starting points when you need a general builder stack, n
 
 ### LangGraph
 - **Link:** https://github.com/langchain-ai/langgraph
-- **Why it stands out:** stateful graph-based orchestration with explicit control over branching, retries, state, and durable execution flow.
-- **Best for:** teams building complex, long-running, or production-oriented agent systems.
+- **Why it stands out:** low-level orchestration with explicit branching, checkpoints, human interrupts, and thread-scoped or cross-thread memory; usable without LangChain.
+- **Best for:** teams that need control over state and execution flow rather than a ready-made agent harness; compare Deep Agents when planning, subagents, and filesystem tooling should come assembled.
+- **Operational note:** use a [persistent checkpointer](https://docs.langchain.com/oss/python/langgraph/persistence) for restart recovery, not the in-memory examples. The [Functional API replays from checkpoint boundaries](https://docs.langchain.com/oss/python/langgraph/functional-api), so isolate side effects in tasks and make writes idempotent; unfinished tasks can run again. Last checked: 2026-09-18.
 
 ### PydanticAI
 - **Link:** https://github.com/pydantic/pydantic-ai
-- **Why it stands out:** typed agent framework with strong validation, tool orchestration, and Python-first ergonomics.
-- **Best for:** builders who care about correctness, schema discipline, and maintainability.
+- **Why it stands out:** model-flexible Python SDK with validated outputs, typed tools and dependencies, composable capabilities, OpenTelemetry instrumentation, and first-party durable-execution integrations.
+- **Best for:** Python teams that want typed application code and can use Temporal, DBOS, Prefect, or Restate for durable work rather than adopting graph-first orchestration.
+- **Scope note:** durability comes through an execution-engine integration, not a plain agent call; the official [durability guide](https://github.com/pydantic/pydantic-ai/blob/main/docs/durable_execution/overview.md) distinguishes crash recovery for one run from storing conversations across sessions. Last checked: 2026-09-18.
 
 ### Mastra
 - **Link:** https://github.com/mastra-ai/mastra
@@ -157,8 +159,9 @@ These are the strongest starting points when you need a general builder stack, n
 
 ### Google ADK (Python)
 - **Link:** https://github.com/google/adk-python
-- **Why it stands out:** code-first Python toolkit for building, evaluating, and deploying agents with broad model and provider integration surface.
-- **Best for:** builders who want flexibility and momentum in Python ecosystems.
+- **Why it stands out:** Apache-2.0 framework combining graph workflows, structured agent-to-agent delegation, MCP/OpenAPI tools, human confirmation, local debugging, evals, and container deployment.
+- **Best for:** teams that want an integrated build/evaluate/deploy path optimized for Gemini and Google Cloud while retaining model and deployment flexibility.
+- **Migration note:** ADK 2.x changes the agent API, event model, and session schema. Its README says 2.0 sessions are readable by 1.28+ with extra fields ignored, but incompatible with older 1.x versions; pin versions and test persisted-session upgrades. Last checked: 2026-09-18.
 
 ### Microsoft Agent Framework
 - **Link:** https://github.com/microsoft/agent-framework
@@ -261,8 +264,9 @@ These are better read as execution harnesses and coding-agent products than as g
 
 - **Want an operator-style assistant product:** start with **OpenClaw**.
 - **Want explicit orchestration and durable workflows:** start with **LangGraph**.
-- **Want typed Python ergonomics and validation:** start with **PydanticAI**.
+- **Want typed Python agents with an existing durable engine:** start with **PydanticAI**.
 - **Want lightweight Python primitives for tools and handoffs:** start with **OpenAI Agents Python SDK**.
+- **Want integrated agent workflows, evals, and Google Cloud deployment:** compare **Google ADK**.
 - **Want a model-agnostic Python and TypeScript SDK:** look at **Strands Agents**.
 - **Want TypeScript agents and streaming UI in one SDK:** look at **Vercel AI SDK**.
 - **Want cross-language enterprise posture:** look at **Microsoft Agent Framework**.
