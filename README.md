@@ -759,8 +759,9 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 
 ### Browser Use
 - **Link:** https://github.com/browser-use/browser-use
-- **Why it stands out:** popular open-source browser automation layer for AI agents.
-- **Best for:** giving agents practical website interaction ability.
+- **Why it stands out:** MIT-licensed Python browser-agent library with model choice, custom tools, structured output, and local or cloud browsers, alongside a CLI for existing agents and a fully hosted agent API.
+- **Best for:** builders who want to own the browser-agent loop and choose how much infrastructure to outsource; a cloud browser hosts the browser, while the hosted API runs the agent too.
+- **Benchmark note:** the maintainer-run [BU Bench V2](https://github.com/browser-use/benchmark) contains 200 tasks, but published results use an earlier 60-task subset. Do not read those scores as full-suite results or an independent ranking. Last checked: 2026-09-20.
 
 ### Skyvern
 - **Link:** https://github.com/Skyvern-AI/skyvern
@@ -772,11 +773,13 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Link:** https://github.com/vercel-labs/agent-browser
 - **Why it stands out:** fast Rust CLI that exposes browser snapshots, stable element refs, CDP control, session state, traces, screenshots, and action policies directly to coding agents without requiring a framework.
 - **Best for:** Claude Code, Codex, Cursor, and other terminal agents that need a scriptable local browser or one command surface across local and hosted browser providers.
+- **Security note:** its [security controls](https://github.com/vercel-labs/agent-browser#security) are opt-in: enable domain restrictions, action policies, and confirmations explicitly. Domain allowlisting rejects existing CDP/profile sessions where equivalent containment cannot be installed; page-content delimiters are not a prompt-injection security boundary. Last checked: 2026-09-20.
 
 ### Stagehand
 - **Link:** https://github.com/browserbase/stagehand
-- **Why it stands out:** SDK for browser agents with a developer-oriented abstraction layer.
-- **Best for:** teams building browser agents on top of reliable browser infrastructure.
+- **Why it stands out:** MIT-licensed TypeScript, Python, and Go browser SDK combining Playwright-style page/locator control with natural-language actions, element discovery, and schema-validated extraction.
+- **Best for:** teams mixing explicit browser code with AI-assisted steps inside an existing agent or workflow rather than adopting a complete browser-agent loop.
+- **Deployment note:** local Chrome is supported; the official README documents managed Model Gateway routing and server-side action caching on the Browserbase path, not as guarantees of a local run. Last checked: 2026-09-20.
 
 ### Browserbase
 - **Link:** https://www.browserbase.com/
