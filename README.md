@@ -602,8 +602,9 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### OpenClaw
 - **Link:** https://github.com/openclaw/openclaw
-- **Why it stands out:** open-source assistant product with multi-channel, tool, and operator-style workflow orientation.
-- **Best for:** self-hosted or productized personal/team assistant systems.
+- **Why it stands out:** self-hosted assistant whose local Gateway connects chat channels, device actions, sessions, tools, and swappable model/harness providers in one operating surface.
+- **Best for:** personal assistants or mutually trusting teams that want chat-channel operation and local control; use isolated deployments for users who must not share authority.
+- **Trust boundary:** the [official security model](https://docs.openclaw.ai/gateway/security/trust-model) treats one Gateway as one trust domain, not hostile multi-tenant isolation. The main session's tools run on the host unless sandboxing is configured; self-hosting does not prevent prompts reaching configured model providers and chat platforms. Last checked: 2026-09-21.
 
 ### PocketPaw
 - **Link:** https://github.com/pocketpaw/pocketpaw
@@ -702,8 +703,9 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### OpenFang
 - **Link:** https://github.com/RightNow-AI/openfang
-- **Why it stands out:** single-binary Rust Agent OS with scheduled autonomous "Hands," dashboard-driven operations, knowledge-graph workflows, active releases, and enough adoption to compare beside OpenClaw rather than treat as a fringe experiment.
-- **Best for:** builders exploring OS-like abstractions for always-on agents, with a pre-1.0 caveat for production use.
+- **Why it stands out:** single-binary Rust Agent OS with scheduled autonomous "Hands" that package tools, operating instructions, settings, and approval gates for recurring research, collection, and browser work.
+- **Best for:** builders who want packaged autonomous jobs and dashboard control rather than assembling a scheduler and agent harness; it remains pre-1.0.
+- **Evidence caveat:** the README recommends pinning a commit because minor versions may break compatibility. Its startup, memory, and security-feature comparisons are maintainer-published, not independent task-success or security evaluations. Last checked: 2026-09-21.
 
 ### IronClaw
 - **Link:** https://github.com/nearai/ironclaw
@@ -1064,6 +1066,7 @@ Read every score as a result for a specific **benchmark release + agent harness 
 - **Link:** https://github.com/Simplified-Reasoning/Pi-Bench
 - **Why it stands out:** evaluates proactive personal assistants on 100 multi-turn tasks across five personas, with hidden intents, inter-task dependencies, persistent workspaces, and separate proactivity and completeness scores.
 - **Best for:** testing whether a PersonalOS can anticipate unstated needs and finish useful work across sessions instead of only recalling context.
+- **Scope note:** the released harness builds on AppWorld and NanoBot and requests three repeats for leaderboard-style reporting. Its model leaderboard is not a head-to-head comparison of PersonalOS products; preserve the harness, user simulator, judge, and repeat count when comparing results. Last checked: 2026-09-21.
 
 Evaluation axes for coding agents:
 
