@@ -325,6 +325,12 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Why it stands out:** open-source coding agent with a clean terminal-first posture and strong community signal.
 - **Best for:** builders who want an open-source terminal agent worth watching closely.
 
+### molt
+- **Link:** https://github.com/solvyxtech/molt
+- **Why it stands out:** refuses to say done on a false claim — runs project `.molt/done.yml` checks against the real disk and writes receipts for both accepts and refusals; terminal and desktop; OpenAI-compatible or Anthropic.
+- **Best for:** builders who want a verification-gated coding agent rather than chat that claims completion unchecked.
+- **Evidence:** Apache-2.0, active v0.2.0 releases for terminal and desktop. Last checked: 2026-09-22.
+
 ### Coding-agent orchestration
 
 ### Agent of Empires
