@@ -462,8 +462,9 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 
 ### Marker
 - **Link:** https://github.com/datalab-to/marker
-- **Why it stands out:** high-adoption open-source converter for PDFs and office documents to Markdown, JSON, chunks, and HTML, with table/form/equation handling and optional LLM-assisted accuracy boosts.
-- **Best for:** builders who want fast document-to-context conversion with hackable local control.
+- **Why it stands out:** configurable PDF/office-document converter to Markdown, JSON, chunks, and HTML, with fast text-layer extraction, balanced VLM parsing, and optional LLM refinement.
+- **Best for:** builders tuning document-to-context accuracy against local compute; its VLM path uses vLLM on NVIDIA GPUs or llama.cpp on CPU/Apple Silicon, while `--disable_ocr` skips scanned-page and equation recognition.
+- **Deployment note:** Apache-2.0 code does not imply unrestricted model weights; review the separate [model license](https://github.com/datalab-to/marker/blob/master/MODEL_LICENSE). Its olmOCR-bench comparisons are maintainer-run, and optional `--use_llm` defaults to a cloud Gemini backend unless reconfigured. Last checked: 2026-09-25.
 
 ### MinerU
 - **Link:** https://github.com/opendatalab/MinerU
@@ -480,7 +481,8 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 ### olmOCR
 - **Link:** https://github.com/allenai/olmocr
 - **Why it stands out:** Allen AI toolkit and model family for linearizing PDFs into clean text, with an explicit benchmark culture around reading order, tables, multi-column pages, headers, and document structure.
-- **Best for:** teams evaluating OCR quality for LLM training data, scientific PDFs, and structure-preserving document pipelines.
+- **Best for:** teams building scientific-document or training-data pipelines that want a self-hostable parser and a reusable OCR regression suite, not just a managed extraction API.
+- **Deployment note:** the documented local inference path requires a recent NVIDIA GPU with at least 12 GB VRAM and 30 GB disk space. The lightweight client avoids GPU dependencies by using a remote vLLM server; that moves inference rather than eliminating its compute or data-boundary requirements. Last checked: 2026-09-25.
 
 ### LlamaParse
 - **Link:** https://www.llamaindex.ai/llamaparse
@@ -497,7 +499,7 @@ Agents that operate businesses eventually hit messy PDFs, scans, tables, slides,
 - **Link:** https://github.com/opendatalab/OmniDocBench
 - **Why it stands out:** CVPR 2025 benchmark with public annotations and evaluation code for end-to-end parsing, layout, text, tables, formulas, and reading order across varied real-world documents.
 - **Best for:** comparing pipeline parsers, specialized OCR models, and general VLMs on one shared suite; pair it with PureDocBench when scan degradation is a deployment risk.
-- **Evidence:** Apache-2.0, 2k+ GitHub stars, 1,651 annotated PDF pages, and an active v1.7 benchmark with Docker and EvalScope evaluation paths. Last checked: 2026-09-09.
+- **Scope note:** pin the evaluator and parser versions: matching logic has changed, and the README limits text evaluation to Chinese and English. The code is Apache-2.0, but the [dataset copyright statement](https://github.com/opendatalab/OmniDocBench#copyright-statement) specifies research-only, noncommercial use; do not conflate code and data permissions. Last checked: 2026-09-25.
 
 ### ParseBench
 - **Link:** https://arxiv.org/html/2604.08538v3
