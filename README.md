@@ -1205,13 +1205,15 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 
 ### Opik
 - **Link:** https://github.com/comet-ml/opik
-- **Why it stands out:** open-source observability and eval platform for LLM apps, RAG, and agentic workflows, with tracing, automated evals, production dashboards, and broad agent-framework integrations.
-- **Best for:** teams that want a self-hostable trace-plus-eval loop for production agents without locking into one orchestration stack.
+- **Why it stands out:** Apache-2.0 observability and evaluation platform combining multi-step agent traces, datasets, experiments, prompt management, online evals, and agent optimization, with SDK and OpenTelemetry ingestion.
+- **Best for:** teams that want a self-hostable trace-to-eval-to-optimization workflow across frameworks and can operate their own access boundary.
+- **Security note:** the [official security policy](https://github.com/comet-ml/opik/blob/main/SECURITY.md) says open-source deployments have authentication disabled; built-in authentication is Enterprise-only. Do not expose a stock Compose or Helm install to the internet: protect it with an authenticating proxy, VPN, or network boundary, and treat API reachability as administrator access. Last checked: 2026-09-26.
 
 ### Laminar
 - **Link:** https://github.com/lmnr-ai/lmnr
-- **Why it stands out:** open-source, OpenTelemetry-native observability built specifically for AI agents, with traces, evals, natural-language failure signals, SQL access, and self-hosting.
-- **Best for:** teams that need to debug agent runs, turn failures into eval datasets, and keep telemetry portable.
+- **Why it stands out:** OpenTelemetry-native agent observability with local/CI evals, natural-language failure monitoring, SQL access to traces, and query-driven dataset creation.
+- **Best for:** teams that want to investigate agent failures with SQL and turn production traces into regression datasets while keeping instrumentation portable.
+- **Deployment note:** the [self-hosting instructions](https://github.com/lmnr-ai/lmnr#self-hosting-with-docker-compose) distinguish the lightweight default Compose stack from the full production configuration. AI-assisted trace/SQL features and server-side AI workers require a configured LLM provider; self-hosted telemetry alone does not make those features offline. Last checked: 2026-09-26.
 
 ### LangSmith
 - **Link:** https://www.langchain.com/langsmith
