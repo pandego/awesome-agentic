@@ -84,7 +84,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best eval-driven optimizer for prompts and agent systems:** [GEPA](https://github.com/gepa-ai/gepa) for trace-reflective search over prompts, tool descriptions, RAG pipelines, and other measurable text parameters
 - **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
 - **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack behind the OpenAI Realtime protocol
-- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
+- **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Antigravity CLI / Gemini CLI](#antigravity-cli--gemini-cli) (check account eligibility), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
 - **Best coding-agent session manager:** [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) for parallel persistent sessions, agent-aware status, worktrees, optional container isolation, and TUI/web/mobile control
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
@@ -302,12 +302,13 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Link:** https://github.com/github/copilot-cli
 - **Why it stands out:** GitHub-native terminal agent that joins local plan/autopilot modes, cloud delegation, repository and pull-request context, model choice, MCP, skills, hooks, and enterprise policy in the same Copilot harness.
 - **Best for:** GitHub-centric teams that already have Copilot and want one supported agent across terminal, cloud tasks, and repository workflows.
-- **Evidence:** generally available to all Copilot subscribers, 11k+ GitHub stars, and active v1.0 releases through August 2026. Last checked: 2026-08-29.
+- **Sandbox note:** [local sandboxing](https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes/using-local-sandboxing) is an opt-in experimental feature, not implied by tool approvals. Its defaults permit internet/private-network access and expose GitHub credentials for authenticated Git/`gh` operations; inspect `/sandbox status` and `/sandbox policy` and tighten those settings before unattended execution. Last checked: 2026-09-27.
 
-### Gemini CLI
-- **Link:** https://github.com/google-gemini/gemini-cli
-- **Why it stands out:** open-source terminal agent from Google with strong ecosystem relevance.
-- **Best for:** builders who want a first-party Google terminal agent in their comparison set.
+### Antigravity CLI / Gemini CLI
+- **Links:** [Antigravity CLI](https://github.com/google-antigravity/antigravity-cli), [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+- **Why it stands out:** Google's terminal-agent paths: Antigravity CLI shares its agent engine with the desktop product, while Gemini CLI remains relevant for its open-source harness and unaffected enterprise/API-key access.
+- **Best for:** Google-centric builders choosing by authentication and workflow, not assuming the two CLIs are interchangeable.
+- **Migration note:** Google's [June 18, 2026 announcement](https://github.com/google-gemini/gemini-cli/discussions/28017) ended Gemini CLI service for free-tier, Google AI Pro, and Google AI Ultra individual accounts, directing them to Antigravity CLI; Gemini Code Assist enterprise licenses and API-key authentication were unaffected. The [migration guide](https://antigravity.google/docs/cli/gcli-migration/) preserves context rules but changes skills paths and MCP configuration; validate migrated workflows rather than assuming full parity. Last checked: 2026-09-27.
 
 ### Qwen Code
 - **Link:** https://github.com/QwenLM/qwen-code
