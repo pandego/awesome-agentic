@@ -679,10 +679,11 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Best for:** builders studying practical local-first PersonalOS workflows around tasks, priorities, and everyday execution.
 - **License note:** [CC BY-NC-SA 4.0](https://github.com/amanaiproduct/personal-os/blob/main/LICENSE); the repository explicitly permits internal work/business use but prohibits commercial sale of the template or derivatives and requires attribution and share-alike for shared modifications. Last checked: 2026-09-12.
 
-### Claude Context OS
-- **Link:** https://github.com/conorbronsdon/claude-context-os
-- **Why it stands out:** file-based Claude context workspace with versioned identity/project/state files, `/start`→`/end` session loops, auto-memory, and curator passes for stale or contradictory context.
-- **Best for:** builders who want a lightweight personal context operating layer across Claude Code and Claude projects without adopting a full assistant platform.
+### Context OS
+- **Link:** https://github.com/conorbronsdon/agent-context-os
+- **Why it stands out:** Git-backed context and workflow layer with shared Markdown state, reviewed session handoffs, and hash-checked proposal/apply transitions across coding-agent adapters rather than one vendor's chat history.
+- **Best for:** builders carrying personal or project context across Claude Code, Codex, OpenClaw, and OpenCode without adopting a full assistant runtime.
+- **Scope note:** formerly Claude Context OS; the [host-support matrix](https://github.com/conorbronsdon/agent-context-os#host-support) marks Hermes, Cursor, and Devin adapters experimental. Native agent memories remain separate, and browser-project sync is manual, not automatic cross-product memory synchronization. Last checked: 2026-09-28.
 
 ### Dex
 - **Link:** https://github.com/davekilleen/Dex
