@@ -88,7 +88,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best coding-agent session manager:** [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) for parallel persistent sessions, agent-aware status, worktrees, optional container isolation, and TUI/web/mobile control
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
 - **Best autonomous software engineer reference:** [Devin](https://devin.ai/) and [OpenHands](https://github.com/OpenHands/OpenHands)
-- **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [R2R](https://github.com/SciPhi-AI/R2R), [Onyx](https://github.com/onyx-dot-app/onyx), [OpenViking](https://github.com/volcengine/OpenViking)
+- **Best RAG/context starting points:** [LlamaIndex](https://github.com/run-llama/llama_index), [Haystack](https://github.com/deepset-ai/haystack), [RAGFlow](https://github.com/infiniflow/ragflow), [Onyx](https://github.com/onyx-dot-app/onyx), [OpenViking](https://github.com/volcengine/OpenViking)
 - **Best GraphRAG starting points:** [Microsoft GraphRAG](https://github.com/microsoft/graphrag), [LightRAG](https://github.com/HKUDS/LightRAG), [Neo4j GraphRAG for Python](https://github.com/neo4j/neo4j-graphrag-python)
 - **Best document parsing/OCR starting points:** [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), [Docling](https://github.com/docling-project/docling), [OpenDataLoader PDF](https://github.com/opendataloader-project/opendataloader-pdf), [Marker](https://github.com/datalab-to/marker), [MinerU](https://github.com/opendatalab/MinerU), [LiteParse](https://github.com/run-llama/liteparse), [olmOCR](https://github.com/allenai/olmocr), [LlamaParse](https://www.llamaindex.ai/llamaparse)
 - **Best document parsing benchmarks to track:** [OmniDocBench](https://github.com/opendatalab/OmniDocBench) for reproducible end-to-end and component scoring, [PureDocBench](https://github.com/zhihengli-casia/PureDocBench) for clean-to-degraded robustness, [ParseBench](https://arxiv.org/html/2604.08538v3) for agent-critical semantics and visual grounding
@@ -416,8 +416,8 @@ Curated list of practical Retrieval-Augmented Generation systems, infrastructure
 
 ### End-to-end RAG systems
 
-- **RAGFlow** - https://github.com/infiniflow/ragflow - open-source RAG engine with document parsing, indexing, retrieval orchestration, and agent capabilities.
-- **R2R** - https://github.com/SciPhi-AI/R2R - production-focused retrieval stack and API for agentic RAG workflows.
+- **RAGFlow** - https://github.com/infiniflow/ragflow - integrated document ingestion, retrieval, and agent-workflow platform rather than a lightweight library. Its [self-hosting guide](https://github.com/infiniflow/ragflow#-self-hosting) lists at least 4 CPU cores, 16 GB RAM, and 50 GB disk; prebuilt Docker images are x86-only, with ARM64 requiring a custom build. Last checked: 2026-09-29.
+- **R2R** - https://github.com/SciPhi-AI/R2R - API-first retrieval stack with hybrid search, knowledge graphs, and agentic RAG. **Maintenance caution:** the latest [release](https://github.com/SciPhi-AI/R2R/releases) is v3.6.5 (2025-06-06), and the latest [main-branch commit](https://github.com/SciPhi-AI/R2R/commits/main) is dated 2025-11-07. Retained as a reference, not a default for new deployments; assess dependency and support ownership before adopting. Last checked: 2026-09-29.
 - **Onyx** - https://github.com/onyx-dot-app/onyx - open-source enterprise search and chat platform with connectors, indexing, and retrieval over private knowledge bases.
 - **OpenRAG** - https://github.com/langflow-ai/openrag - packaged RAG distribution that combines Langflow, Docling, and OpenSearch into a developer-friendly agentic search stack.
 
