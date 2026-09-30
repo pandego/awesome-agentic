@@ -819,6 +819,7 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 - **Link:** https://modelcontextprotocol.io/registry/about
 - **Why it stands out:** official centralized metadata repository for public MCP servers, with namespace verification, standardized install metadata, and a REST API for downstream marketplaces and clients.
 - **Best for:** teams that need MCP tool discovery to move beyond ad hoc GitHub lists without pretending registry metadata is a full security review.
+- **Scope note:** the official registry is a preview metadata upstream for aggregators, not a private-server catalog or supported self-hosted registry. Namespace verification establishes publisher ownership, not code safety; security scanning is delegated to package registries and downstream aggregators. Last checked: 2026-09-30.
 
 ### MCP Reference Servers
 - **Link:** https://github.com/modelcontextprotocol/servers
@@ -833,13 +834,15 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 
 ### FastMCP
 - **Link:** https://github.com/PrefectHQ/fastmcp
-- **Why it stands out:** Pythonic way to build MCP servers, clients, and apps, with strong adoption and production-oriented protocol lifecycle handling.
-- **Best for:** Python teams building custom tools for agents.
+- **Why it stands out:** Python application framework for MCP servers, clients, and interactive apps, with generated schemas, validation, authentication integrations, and transport/protocol lifecycle handling.
+- **Best for:** Python teams building custom agent tools and MCP applications; compare mcp-agent when the missing layer is agent orchestration rather than server authoring.
+- **Migration note:** the [FastMCP 4 upgrade guide](https://gofastmcp.com/getting-started/upgrading/from-fastmcp-3) documents an MCP Python SDK v2 rebuild, higher dependency floors, and an `httpx2` migration that also changes exception types. Background tools require the tasks extension; server-initiated elicitation requires legacy connections or a rewrite for the modern protocol. Test these paths before upgrading existing servers. Last checked: 2026-09-30.
 
 ### mcp-agent
 - **Link:** https://github.com/lastmile-ai/mcp-agent
 - **Why it stands out:** MCP-native agent framework that pairs server lifecycle management with composable Anthropic-style agent patterns and optional Temporal durability.
 - **Best for:** teams that want MCP to be the core runtime for agent workflows, not just a connector bolted onto another framework.
+- **Deployment note:** the quickstart uses `asyncio`; durable pause/resume, retries, and history require the [Temporal backend](https://github.com/lastmile-ai/mcp-agent#durable-execution) and a running worker, or the managed cloud runtime. MCP connectivity alone does not make an agent restart-safe. Last checked: 2026-09-30.
 
 ### ContextForge
 - **Link:** https://github.com/IBM/mcp-context-forge
