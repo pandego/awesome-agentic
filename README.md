@@ -368,6 +368,11 @@ These products and systems try to own larger chunks of software work, not just a
 - **Why it stands out:** category-defining commercial autonomous software engineer product.
 - **Best for:** teams evaluating delegated engineering work beyond pair-programming.
 
+### Hoplite
+- **Link:** https://hoplite.sh/
+- **Why it stands out:** runs coding tasks in isolated cloud environments and returns pull requests for human review, with parallel tasks running independently.
+- **Best for:** teams delegating repository work that can continue after closing their laptops.
+
 ### OpenHands
 - **Link:** https://github.com/OpenHands/OpenHands
 - **Why it stands out:** open-source autonomous development system with real repo execution workflows.
