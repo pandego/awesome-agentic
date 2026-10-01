@@ -913,9 +913,10 @@ Agents that execute code need isolation, process control, and safe runtime envir
 
 ### Kubernetes Agent Sandbox
 - **Link:** https://github.com/kubernetes-sigs/agent-sandbox
-- **Why it stands out:** Kubernetes SIG Apps project that standardizes long-running, stateful agent environments as a `Sandbox` CRD, with stable identity, persistent storage, warm pools, lifecycle controls, and pluggable isolation providers.
+- **Why it stands out:** Kubernetes SIG Apps sandbox orchestrator with a `Sandbox` CRD, stable identity, persistent storage, warm pools, and lifecycle controls; low-level isolation comes from the configured runtime, not the controller itself.
 - **Best for:** platform teams that want to operate agent sandboxes through Kubernetes primitives instead of adopting a separate hosted runtime.
-- **Evidence:** Apache-2.0, 3.2k+ GitHub stars, and active v0.5 releases through July 2026; it remains pre-1.0. Last checked: 2026-07-26.
+- **Deployment note:** the [threat model](https://github.com/kubernetes-sigs/agent-sandbox/blob/main/docs/security/threat_model.md) calls for gVisor or Kata via `RuntimeClass`. Template-managed network and service-account defaults do not imply equivalent protection for bare `Sandbox` resources; the optional router defaults to `AllowAll` authorization, so configure an authorizer before relying on tenant access boundaries.
+- **Evidence:** Apache-2.0 with a [v1.0.4 release](https://github.com/kubernetes-sigs/agent-sandbox/releases/tag/v1.0.4) on 2026-09-24. A 1.0 release does not remove the operator's isolation and access-control responsibilities. Last checked: 2026-10-01.
 
 ### Microsoft Execution Containers
 - **Link:** https://github.com/microsoft/mxc
@@ -945,7 +946,7 @@ Agents that execute code need isolation, process control, and safe runtime envir
 - **Best for:** developers who need an agent to have sudo and Docker without exposing the rest of the host or its Docker daemon; use clone mode when live workspace writes are too broad, and treat shared skills or local MCP servers as explicit host-side trust boundaries.
 - **Evidence:** Docker documents hypervisor isolation, deny-by-default network policy, and an optional read-only host mount with an in-VM repository clone; the CLI is free, while organization governance is paid. Last checked: 2026-08-28.
 
-For benchmark workloads, check the harness adapter as well as the provider: [Harbor's sandbox guide](https://www.harborframework.com/docs/run-jobs/cloud-sandboxes) supports multi-container tasks on Daytona, but currently limits its E2B and Modal adapters to single-container tasks. This is a harness compatibility distinction, not a provider performance ranking. Last checked: 2026-09-14.
+For benchmark workloads, check the harness adapter and task mode as well as the provider: [Harbor's capability matrix](https://docs.harborframework.com/core-concepts/sandboxes/pre-integrated-sandboxes) now lists Docker Compose support for both Daytona and Modal, but not E2B. Daytona and Modal network allowlists remain single-container-only, so Compose support does not imply equivalent egress-policy coverage. Pin Harbor and verify the capabilities required by your task; this is harness compatibility, not a provider performance ranking. Last checked: 2026-10-01.
 
 Look for runtime systems that provide:
 
