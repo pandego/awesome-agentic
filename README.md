@@ -82,8 +82,8 @@ Fast recommendations if you do not want to read everything first.
 - **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
 - **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
 - **Best eval-driven optimizer for prompts and agent systems:** [GEPA](https://github.com/gepa-ai/gepa) for trace-reflective search over prompts, tool descriptions, RAG pipelines, and other measurable text parameters
-- **Best realtime voice/multimodal agent frameworks:** [LiveKit Agents](https://github.com/livekit/agents), [Pipecat](https://github.com/pipecat-ai/pipecat), [TEN Framework](https://github.com/TEN-framework/ten-framework)
-- **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack behind the OpenAI Realtime protocol
+- **Best realtime voice/multimodal frameworks by architecture:** [LiveKit Agents](https://github.com/livekit/agents) for integrated WebRTC and telephony, [Pipecat](https://github.com/pipecat-ai/pipecat) for composable Python pipelines and agent coordination, [TEN Framework](https://github.com/TEN-framework/ten-framework) for graph-based, cross-language composition
+- **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack with a tested core Realtime protocol subset; explicitly choose a local LLM backend for offline use
 - **Best terminal coding agents to compare first:** [Claude Code](https://github.com/anthropics/claude-code), [Codex CLI](https://github.com/openai/codex), [GitHub Copilot CLI](https://github.com/github/copilot-cli), [Antigravity CLI / Gemini CLI](#antigravity-cli--gemini-cli) (check account eligibility), [Qwen Code](https://github.com/QwenLM/qwen-code), [Aider](https://github.com/Aider-AI/aider), [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi)
 - **Best coding-agent session manager:** [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) for parallel persistent sessions, agent-aware status, worktrees, optional container isolation, and TUI/web/mobile control
 - **Best agentic IDEs to compare first:** [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Cline](https://github.com/cline/cline), [Zed](https://zed.dev/)
@@ -201,12 +201,12 @@ These are the strongest starting points when you need a general builder stack, n
 - **Link:** https://github.com/livekit/agents
 - **Why it stands out:** Apache-2.0 Python and TypeScript framework that pairs voice-agent orchestration with WebRTC clients, telephony, job scheduling, semantic turn detection, MCP, testing, and a self-hostable media stack.
 - **Best for:** production voice and video agents that need realtime transport, client SDKs, and runtime operations in one ecosystem.
-- **Evidence:** 11.5k+ GitHub stars and active v1.6 releases through July 2026. Last checked: 2026-07-27.
+- **Deployment note:** self-hosting the media server and agent worker does not make inference local. [LiveKit Inference](https://docs.livekit.io/agents/models/inference/) is a Cloud service; provider plugins instead send requests directly to their configured providers. Choose model endpoints separately from transport and worker hosting. Last checked: 2026-10-03.
 
 ### Pipecat
 - **Link:** https://github.com/pipecat-ai/pipecat
-- **Why it stands out:** open-source Python framework for realtime voice and multimodal agents, with composable audio/video pipelines, broad service integrations, client SDKs, subagents, and deployment paths.
-- **Best for:** teams building voice-first agents that need low-latency orchestration across speech, tools, transports, and conversation state.
+- **Why it stands out:** Python framework that composes speech, models, tools, and transports into pipelines, with built-in Flows for structured conversations and multi-agent handoff, parallel fan-out, and sidecar workers over a shared bus.
+- **Best for:** teams that want fine-grained pipeline and conversation control across local or distributed agents; compare LiveKit Agents when integrated media infrastructure and session operations are the stronger requirement. Last checked: 2026-10-03.
 
 ### TEN Framework
 - **Link:** https://github.com/TEN-framework/ten-framework
@@ -217,7 +217,7 @@ These are the strongest starting points when you need a general builder stack, n
 - **Link:** https://github.com/huggingface/speech-to-speech
 - **Why it stands out:** Apache-2.0 modular voice-agent pipeline that can run VAD, STT, LLM, and TTS locally, while exposing a tested core of OpenAI Realtime events over WebSocket and WebRTC with tool calls and Apple Silicon support.
 - **Best for:** teams that want an open-model, self-hostable voice backend compatible with standard Realtime clients; compare LiveKit or Pipecat when media infrastructure, telephony, and broader agent orchestration matter more.
-- **Evidence:** 13k+ GitHub stars, an active v0.2.12 release line, and September 2026 development; Hugging Face reports that it powers the conversation backend for thousands of Reachy Mini robots. Last checked: 2026-09-03.
+- **Deployment note:** the [quickstart](https://github.com/huggingface/speech-to-speech#quickstart) distinguishes fully local configurations from local speech with a hosted LLM, which sends transcripts, instructions, and conversation history to a provider. Offline use requires an explicitly local LLM backend or endpoint plus cached model assets; Realtime compatibility covers a tested core subset, not full API parity. Last checked: 2026-10-03.
 
 ### Deep Agents
 - **Link:** https://github.com/langchain-ai/deepagents
@@ -270,7 +270,7 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Want a model-agnostic Python and TypeScript SDK:** look at **Strands Agents**.
 - **Want TypeScript agents and streaming UI in one SDK:** look at **Vercel AI SDK**.
 - **Want cross-language enterprise posture:** look at **Microsoft Agent Framework**.
-- **Need realtime voice or multimodal experiences:** look at **LiveKit Agents**.
+- **Need integrated realtime media and telephony:** start with **LiveKit Agents**; compare **Pipecat** for composable Python pipelines and **TEN Framework** for cross-language graphs.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
 - **Need role-based multi-agent teamwork:** look at **CrewAI**.
 - **Want a full-stack TypeScript agent framework:** start with **Mastra**; compare **VoltAgent** for its broader agent-engineering platform posture.
