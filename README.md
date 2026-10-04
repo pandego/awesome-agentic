@@ -1165,14 +1165,15 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 
 ### Snyk Agent Scan
 - **Link:** https://github.com/snyk/agent-scan
-- **Why it stands out:** security scanner for installed agent components, MCP servers, and skills, with concrete checks for prompt injection, tool poisoning, toxic flows, hidden content, and risky local capabilities.
-- **Best for:** teams auditing the agent supply chain on developer machines before trusting MCP configs, IDE agents, or shared skills.
+- **Why it stands out:** discovers installed agent components, MCP servers, and skills, combining local checks with API-backed analysis of prompt injection, sensitive-data exposure, destructive capabilities, and malicious skills.
+- **Best for:** teams auditing developer-machine agent supply chains that can permit external analysis; not an offline scanner or runtime isolation layer.
+- **Deployment note:** the [security warning](https://github.com/snyk/agent-scan#security-warning) says MCP discovery can execute configured stdio commands or contact remote servers; sandbox untrusted configs. Analysis sends component metadata and skill content to the Agent Scan API with secret redaction. CLI output remains experimental, so do not assume stable risk names or JSON fields for production integrations. Last checked: 2026-10-04.
 
 ### Agent Governance Toolkit
 - **Link:** https://github.com/microsoft/agent-governance-toolkit
-- **Why it stands out:** Microsoft-backed, framework-neutral control plane that intercepts agent actions for deterministic policy enforcement, identity, tamper-evident audit, approvals, sandboxing, kill switches, and SRE controls instead of relying on prompt-level guardrails.
-- **Best for:** teams moving autonomous tool-using agents into production and needing enforceable governance across frameworks, languages, MCP, and multi-agent delegation.
-- **Evidence:** MIT-licensed public preview with 5.5k+ GitHub stars, five language SDKs, formal specifications, and active v4 releases in 2026. Last checked: 2026-08-02.
+- **Why it stands out:** Microsoft-backed, MIT-licensed application middleware for deterministic action policies, identity, approvals, audit trails, and reliability controls across agent frameworks instead of prompt-only guardrails.
+- **Best for:** teams adding governance to tool-using agents while retaining separate execution isolation; it remains a public preview with possible breaking changes.
+- **Trust boundary:** the [security model](https://github.com/microsoft/agent-governance-toolkit#security) places agents and policy enforcement in the same process, not an OS-level boundary. Pair it with container or VM isolation. [Kill-switch semantics](https://github.com/microsoft/agent-governance-toolkit/blob/main/docs/LIMITATIONS.md#13-kill-switch-semantics-across-sdks) differ across SDKs: a recorded kill is not proof that a process stopped; verify termination in the execution runtime. Last checked: 2026-10-04.
 
 ### PyRIT
 - **Link:** https://github.com/microsoft/PyRIT
