@@ -597,6 +597,8 @@ PersonalOS is the agentic layer around a person or team: memory, tasks, notes, f
 
 This is distinct from generic agent memory. A memory system remembers. A PersonalOS helps operate.
 
+**Choose the operating layer first:** [Personal OS](#personal-os) and [Aman Khan's Personal OS](#aman-khans-personal-os) are file-based workspaces for an existing assistant; [LifeOS](#lifeos--personal-ai-infrastructure) adds context, skills, and routing atop a harness. Choose OpenClaw for a running chat-channel assistant or OpenFang for packaged scheduled jobs. A local workspace is not a local model: check the host agent's inference provider before adding private context.
+
 ### LifeOS / Personal AI Infrastructure
 - **Link:** https://github.com/danielmiessler/LifeOS
 - **Why it stands out:** personal context and skill layer that adds goals, identity, persistent memory, routing, and current-to-ideal-state workflows on top of an existing coding-agent harness rather than replacing it.
@@ -670,13 +672,13 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 
 ### Personal OS
 - **Link:** https://github.com/pandego/personal-os
-- **Why it stands out:** starter workspace for shaping a personal AI operating system around real life, work, priorities, memories, writing voice, and assistant workflows.
-- **Best for:** builders designing a plain-file PersonalOS that behaves like an assistant home folder instead of another app silo.
+- **Why it stands out:** MIT-licensed assistant workspace separating personal, business, and content domains, with guided onboarding, editable user/setup memories, writing-voice samples, and shared skills under `.agents/skills/`.
+- **Best for:** builders who want an adaptable assistant home folder, not a standalone agent runtime; supply the host agent and point its runtime-specific skill folders at the shared skills. Last checked: 2026-10-05.
 
 ### Aman Khan's Personal OS
 - **Link:** https://github.com/amanaiproduct/personal-os
-- **Why it stands out:** local AI-agent task-management framework built around plain-file backlog capture, goal-driven prioritization, knowledge base, session evals, and an optional MCP server.
-- **Best for:** builders studying practical local-first PersonalOS workflows around tasks, priorities, and everyday execution.
+- **Why it stands out:** plain-file task workflow that turns a backlog into goal-ranked tasks, with explicit focus limits of three P0 tasks for today and seven P1 tasks for the week, plus a knowledge base and session evals.
+- **Best for:** builders who want prioritization inside an existing AI assistant rather than an always-on agent service. The [quickstart](https://github.com/amanaiproduct/personal-os#quick-start) needs only Bash for basic setup; Python 3.10+ is required only for the optional MCP server. Last checked: 2026-10-05.
 - **License note:** [CC BY-NC-SA 4.0](https://github.com/amanaiproduct/personal-os/blob/main/LICENSE); the repository explicitly permits internal work/business use but prohibits commercial sale of the template or derivatives and requires attribution and share-alike for shared modifications. Last checked: 2026-09-12.
 
 ### Context OS
