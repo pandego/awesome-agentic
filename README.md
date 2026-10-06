@@ -1233,12 +1233,13 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/Arize-ai/openinference
 - **Why it stands out:** backend-neutral OpenTelemetry conventions and instrumentors for LLM, RAG, agent, tool, and MCP traces across Python, TypeScript, Java, and Go, with adapters for major agent frameworks and existing OpenLLMetry/OpenLIT telemetry.
 - **Best for:** teams that want one portable instrumentation layer across agent stacks and OTLP-compatible backends rather than binding telemetry capture to one observability product.
-- **Evidence:** Apache-2.0, active August 2026 releases, and an OpenTelemetry-accepted code grant covering its SDK/framework instrumentation; the grant records multimillion-download monthly adoption for core Python packages. Last checked: 2026-08-23.
+- **Privacy note:** the [configuration spec](https://arize-ai.github.io/openinference/spec/configuration.html) defaults content-hiding flags to false. Configure input/output masking explicitly and review separate controls for embeddings, completion prompts, and invocation parameters; hiding messages alone is not blanket redaction. Verify exported spans for your instrumentor and version before tracing private agent context. Last checked: 2026-10-06.
 
 ### OpenLLMetry
 - **Link:** https://github.com/traceloop/openllmetry
 - **Why it stands out:** Python-first auto-instrumentation for LLM, vector-database, framework, and MCP calls, with a one-line SDK path and broad support for existing OpenTelemetry collectors.
 - **Best for:** Python teams that want fast agent tracing into Datadog, Honeycomb, Grafana, or another existing backend rather than a new observability platform.
+- **Privacy note:** the [official guide](https://www.traceloop.com/docs/openllmetry/privacy/traces) says prompts, completions, and embeddings are logged by default. Set `TRACELOOP_TRACE_CONTENT=false` when content should stay out of spans, and audit workflow/context overrides that can re-enable capture; a self-hosted collector does not itself minimize captured data. Last checked: 2026-10-06.
 
 ---
 
