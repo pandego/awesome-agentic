@@ -80,7 +80,7 @@ Fast recommendations if you do not want to read everything first.
 - **Best typed Python agent framework:** [PydanticAI](https://github.com/pydantic/pydantic-ai)
 - **Best full-stack TypeScript agent framework:** [Mastra](https://github.com/mastra-ai/mastra)
 - **Best first-party agent SDKs to compare first:** [OpenAI Agents Python SDK](https://github.com/openai/openai-agents-python) for lightweight Python, [Strands Agents](https://github.com/strands-agents/harness-sdk) for model-agnostic Python and TypeScript, [Vercel AI SDK](https://github.com/vercel/ai) for TypeScript agents plus streaming UI
-- **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI)
+- **Best role-based multi-agent framework:** [CrewAI](https://github.com/crewAIInc/crewAI), with Flows for explicit production control and Crews for delegated collaboration
 - **Best eval-driven optimizer for prompts and agent systems:** [GEPA](https://github.com/gepa-ai/gepa) for trace-reflective search over prompts, tool descriptions, RAG pipelines, and other measurable text parameters
 - **Best realtime voice/multimodal frameworks by architecture:** [LiveKit Agents](https://github.com/livekit/agents) for integrated WebRTC and telephony, [Pipecat](https://github.com/pipecat-ai/pipecat) for composable Python pipelines and agent coordination, [TEN Framework](https://github.com/TEN-framework/ten-framework) for graph-based, cross-language composition
 - **Best local/open-model voice-agent pipeline:** [Hugging Face Speech-to-Speech](https://github.com/huggingface/speech-to-speech) for a self-hostable VAD → STT → LLM → TTS stack with a tested core Realtime protocol subset; explicitly choose a local LLM backend for offline use
@@ -171,13 +171,15 @@ These are the strongest starting points when you need a general builder stack, n
 
 ### CrewAI
 - **Link:** https://github.com/crewAIInc/crewAI
-- **Why it stands out:** strong team-style abstractions for role-based, multi-agent collaboration.
-- **Best for:** business workflows where explicit roles, tasks, and crews are the main mental model.
+- **Why it stands out:** Python framework combining role-based agent collaboration through Crews with event-driven Flows for state, branching, and explicit application control.
+- **Best for:** business workflows mixing deterministic Python steps with delegated agent teams, rather than making every step autonomous.
+- **Architecture note:** the official [production guide](https://docs.crewai.com/en/concepts/production-architecture) recommends starting with a Flow and invoking focused Crews as units of work. Configure persistence explicitly with `@persist`; having Flow state alone is not database-backed recovery. Last checked: 2026-10-07.
 
 ### Agno
 - **Link:** https://github.com/agno-agi/agno
-- **Why it stands out:** broad production-oriented surface for building, running, and managing agent platforms.
-- **Best for:** teams that want an all-in-one platform-style framework.
+- **Why it stands out:** combines an agent SDK, AgentOS API runtime, and management UI with database-backed sessions, memory, knowledge, and traces.
+- **Best for:** teams that want to serve and operate an agent platform with their own data store rather than assemble a runtime around a thin agent loop.
+- **Deployment note:** the [security guide](https://docs.agno.com/agent-os/security/overview) distinguishes central authentication from authorization: without JWT or security-key configuration there is no central credential requirement, and JWT environment variables alone do not enable JWT scope checks. Set `authorization=True` for scope enforcement and review MCP, webhook, and public-route policies separately before exposing the service. Last checked: 2026-10-07.
 
 ### VoltAgent
 - **Link:** https://github.com/VoltAgent/voltagent
@@ -272,7 +274,7 @@ These are better read as execution harnesses and coding-agent products than as g
 - **Want cross-language enterprise posture:** look at **Microsoft Agent Framework**.
 - **Need integrated realtime media and telephony:** start with **LiveKit Agents**; compare **Pipecat** for composable Python pipelines and **TEN Framework** for cross-language graphs.
 - **Want a more opinionated harness on top of LangGraph:** look at **Deep Agents**.
-- **Need role-based multi-agent teamwork:** look at **CrewAI**.
+- **Need role-based teams inside controlled business workflows:** look at **CrewAI**, starting with a Flow around focused Crews.
 - **Want a full-stack TypeScript agent framework:** start with **Mastra**; compare **VoltAgent** for its broader agent-engineering platform posture.
 - **Want optimization rather than prompt fiddling:** look at **DSPy**.
 - **Want visual agent/workflow building:** look at **Langflow**.
