@@ -800,6 +800,7 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Link:** https://github.com/firecrawl/firecrawl
 - **Why it stands out:** API to search, scrape, and interact with the web for AI systems.
 - **Best for:** web extraction, crawling, and agent-readable content ingestion.
+- **Deployment note:** the [source-aligned self-hosting guide](https://github.com/firecrawl/firecrawl/blob/main/SELF_HOST.md) says the default API is unauthenticated and the root Compose stack defines no persistent volumes for its queue/state stores. Pin a release, add authentication, TLS and network policy before external exposure, and test persistence and recovery before production; toggling the authentication variable alone is insufficient. Last checked: 2026-10-08.
 
 ### TinyFish
 - **Link:** https://www.tinyfish.ai/
@@ -1026,8 +1027,9 @@ Read every score as a result for a specific **benchmark release + agent harness 
 
 ### WebArena-Verified
 - **Link:** https://github.com/ServiceNow/webarena-verified
-- **Why it stands out:** audited, version-controlled 812-task WebArena release with deterministic scoring, offline network-trace replay, reproducible site containers, and a 258-task hard subset.
+- **Why it stands out:** audited, version-controlled 812-task WebArena release with deterministic scoring, offline re-evaluation of captured traces, reproducible site containers, and a 258-task hard subset.
 - **Best for:** comparing browser agents on realistic multi-site workflows without relying on brittle live-web targets or LLM-as-a-judge scoring.
+- **Evaluation note:** the [official evaluator guide](https://github.com/ServiceNow/webarena-verified/blob/main/docs/evaluation/index.md) requires a structured final response for every task, with network-event checks depending on the operation; retrieval tasks may have none. Offline scoring reuses captured traces, not a replacement for website environments during agent execution. Last checked: 2026-10-08.
 
 ### BrowserGym
 - **Link:** https://github.com/ServiceNow/BrowserGym
