@@ -925,14 +925,15 @@ Agents that execute code need isolation, process control, and safe runtime envir
 
 ### Microsoft Execution Containers
 - **Link:** https://github.com/microsoft/mxc
-- **Why it stands out:** policy-driven execution layer that maps one JSON schema and TypeScript SDK onto native process sandboxes, containers, and experimental VM backends across Windows, Linux, and macOS.
-- **Best for:** agent builders who want filesystem, network, UI, and lifecycle controls without hard-coding one isolation primitive.
-- **Evidence:** Microsoft-backed MIT preview with 1.2k+ GitHub stars, active development, and announced adoption paths for Copilot CLI, OpenClaw, OpenShell, Hermes Agent, Codex, and Manus; its maintainers explicitly warn that current profiles are not yet security boundaries. Last checked: 2026-08-16.
+- **Why it stands out:** embeddable execution SDK with Rust, .NET, and Node packages, versioned policies, lifecycle APIs, and platform-specific process, container, and VM backends.
+- **Best for:** agent builders who want filesystem, network, UI, and lifecycle controls inside an application rather than a hosted sandbox service; backend capabilities differ, with Seatbelt on macOS and Bubblewrap as the Linux default.
+- **Security note:** the [diagnostics guide](https://github.com/microsoft/mxc/blob/main/docs/logging-access-denied.md) distinguishes deny-and-record from permissive audit mode. `--audit` relaxes enforcement to discover required access; never use it for untrusted workloads. Select and validate the backend and policy instead of assuming one SDK provides identical isolation everywhere. Last checked: 2026-10-10.
 
 ### Microsandbox
 - **Link:** https://github.com/superradcompany/microsandbox
-- **Why it stands out:** local-first, rootless microVM runtime that embeds hardware-isolated OCI sandboxes directly in Rust, Python, TypeScript, or Go applications, with MCP and coding-agent skill integrations.
-- **Best for:** builders who want agent code execution on their own Linux or Apple Silicon machine without operating a sandbox service; it is still beta software.
+- **Why it stands out:** local-first microVM runtime that embeds hardware-isolated OCI sandboxes in applications without a setup server or long-running daemon, with live forking, snapshots, MCP, and coding-agent integrations.
+- **Best for:** builders who want agent execution and reusable working environments on their own machines rather than operating a sandbox service.
+- **Deployment note:** the [host requirements](https://github.com/superradcompany/microsandbox#getting-started) specify Apple Silicon for macOS, KVM for Linux, and Windows Hypervisor Platform (WHP) for Windows. It remains beta software with possible breaking changes; first-run image downloads are separate from the maintainer's guest-boot timing claim. Last checked: 2026-10-10.
 
 ### AgentScope Runtime
 - **Link:** https://github.com/agentscope-ai/agentscope-runtime
