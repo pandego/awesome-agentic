@@ -336,6 +336,12 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Best for:** Linux and macOS builders running Claude Code, Codex CLI, Gemini CLI, OpenCode, Pi, Copilot CLI, or Droid in parallel; native Windows requires WSL2.
 - **Evidence:** MIT-licensed, 3.2k+ GitHub stars, active v1.16 releases, and community maintenance with support from Mozilla.ai. Last checked: 2026-09-11.
 
+### Sillage
+- **Link:** https://github.com/MarlBurroW/sillage
+- **Why it stands out:** self-hosted, mobile-first web UI that drives the native Claude Code and Codex CLIs on your own machine, with sessions that outlive the client (server-side event journal), full-text search over every conversation, an IDE panel (file explorer, editor, diffs, terminal), worktrees, and a board the agents read through its own MCP server.
+- **Best for:** builders who want to launch and steer their local coding-agent sessions from a phone or browser instead of a terminal, as an installable PWA with push.
+- **Evidence:** MIT-licensed, TypeScript, single Docker container (ghcr.io/marlburrow/sillage, port 7317), active development. Last checked: 2026-10-07.
+
 ### Agentic IDEs
 
 These are product surfaces where the editor becomes the agentic workspace.
