@@ -337,6 +337,11 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Best for:** Linux and macOS builders running Claude Code, Codex CLI, Gemini CLI, OpenCode, Pi, Copilot CLI, or Droid in parallel; native Windows requires WSL2.
 - **Evidence:** MIT-licensed, 3.2k+ GitHub stars, active v1.16 releases, and community maintenance with support from Mozilla.ai. Last checked: 2026-09-11.
 
+### Orkas
+- **Link:** https://github.com/Orkas-AI/Orkas
+- **Why it stands out:** MIT-licensed desktop workspace combining goal-based specialist coordination, local project context, and separately installed coding CLIs.
+- **Best for:** developers who want to connect repository work, research, and editable deliverables in one conversation, using supported model providers or managed models.
+
 ### Agentic IDEs
 
 These are product surfaces where the editor becomes the agentic workspace.
