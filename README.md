@@ -238,6 +238,11 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** visual system for building and deploying AI-powered agents and workflows.
 - **Best for:** teams that want a low-code or visual workflow surface without losing connection to real agent stacks.
 
+### AGBoss
+- **Link:** https://github.com/agbossjs/agboss
+- **Why it stands out:** Apache-2.0 TypeScript framework on top of LangGraph with constructor dependency injection, declarative typed workflow routing, compile-time structural graph verification (`agboss check`), and deterministic isolated testing.
+- **Best for:** TypeScript teams building multi-agent LangGraph workflows that want static structural verification and testable component boundaries before runtime execution.
+
 ### Coding-agent builders
 
 These are better read as execution harnesses and coding-agent products than as general-purpose agent foundations.
