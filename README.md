@@ -295,11 +295,13 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Link:** https://github.com/anthropics/claude-code
 - **Why it stands out:** one of the most recognizable terminal-native coding agents, with strong real-world adoption and a practical interactive workflow for repo exploration, edits, and git operations.
 - **Best for:** builders who want a polished terminal coding UX with strong interactive steering.
+- **Sandbox note:** the [local sandbox](https://code.claude.com/docs/en/sandboxing) is opt-in and covers shell commands, not built-in file tools, MCP servers, or hooks. For fail-closed shell execution, enable it, set `sandbox.failIfUnavailable=true`, disable unsandboxed retries, and review excluded commands. Use an outer container or VM when the entire agent needs one isolation boundary. Last checked: 2026-10-28.
 
 ### Codex CLI
 - **Link:** https://github.com/openai/codex
 - **Why it stands out:** lightweight coding agent that runs in your terminal, with strong patching, repo navigation, and task execution posture.
 - **Best for:** builders who want a high-ceiling terminal harness and care about benchmark-visible execution quality.
+- **Network note:** the [approval and security guide](https://learn.chatgpt.com/docs/agent-approvals-security#network-isolation) separates granting command network access from restricting destinations. User-configured domain rules require `features.network_proxy` to be enabled; with network access on and the proxy off, commands have unrestricted direct outbound access. The proxy does not filter model requests, web search, MCP connections, or browser tools; configure those surfaces separately. Last checked: 2026-10-28.
 
 ### GitHub Copilot CLI
 - **Link:** https://github.com/github/copilot-cli
