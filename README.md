@@ -648,6 +648,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/RedPlanetHQ/core
 - **Why it stands out:** self-hosted Personal AI OS that watches connected apps and agent sessions, uses a memory knowledge graph plus skills, and can act through email, Linear, GitHub, Slack, terminal, browser, Claude Code, and Codex.
 - **Best for:** builders studying ambient PersonalOS designs where the agent notices events, applies memory and policies, then either acts or asks for judgment.
+- **Deployment note:** the [embedding guide](https://docs.getcore.me/self-hosting/embeddings) requires `QUEUE_PROVIDER=bullmq` for end-to-end in-process local embeddings; that path does not work through Trigger workers. Cache model weights before offline use, and configure chat inference separately. Switching embedding models requires re-embedding existing content even when vector dimensions match; self-hosted storage alone does not make all model processing local. Last checked: 2026-10-29.
 
 ### CoWork OS
 - **Link:** https://github.com/CoWork-OS/CoWork-OS
