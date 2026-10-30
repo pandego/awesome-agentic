@@ -778,7 +778,8 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Link:** https://github.com/browser-use/browser-use
 - **Why it stands out:** MIT-licensed Python browser-agent library with model choice, custom tools, structured output, and local or cloud browsers, alongside a CLI for existing agents and a fully hosted agent API.
 - **Best for:** builders who want to own the browser-agent loop and choose how much infrastructure to outsource; a cloud browser hosts the browser, while the hosted API runs the agent too.
-- **Benchmark note:** the maintainer-run [BU Bench V2](https://github.com/browser-use/benchmark) contains 200 tasks, but published results use an earlier 60-task subset. Do not read those scores as full-suite results or an independent ranking. Last checked: 2026-09-20.
+- **Benchmark note:** the maintainer-run [BU Bench V2.1](https://github.com/browser-use/benchmark) scores 200 tasks with LLM-judged weighted rubrics, not a binary task-success rate. The repository's chart still shows historical 60-task results, and judge changes do not automatically recalculate them. Pin the dataset, executor, judge, and budget; do not read the chart as current full-suite results or an independent ranking.
+- **Comparison note:** the [default benchmark runner](https://github.com/browser-use/benchmark#running-bu-bench-v21-default) uses BrowserCode, not the Python Browser Use agent. Its paid fetch service defaults on for Cloud browsers and off for local Chrome; set the same `--fetch-use` or `--no-fetch-use` policy in both arms before attributing a score difference to browser infrastructure. Last checked: 2026-10-30.
 
 ### Skyvern
 - **Link:** https://github.com/Skyvern-AI/skyvern
