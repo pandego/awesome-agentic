@@ -1172,6 +1172,7 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Why it stands out:** extensible prompt-injection benchmark for tool-using agents that reports clean-task utility, utility under attack, and targeted attack success separately, with inspectable trajectories.
 - **Best for:** teams comparing defenses without mistaking blocked legitimate work for safety; pin the task version, model, defense, and attack because task verifiers have changed.
 - **Scope note:** the [official results page](https://agentdojo.spylab.ai/results/) explicitly is not a leaderboard: models were not tested against every attack/defense combination. Compare matched configurations, not rows as a universal security ranking. Last checked: 2026-09-17.
+- **Dynamic-task companion:** [AgentDyn](https://github.com/SaFo-Lab/AgentDyn) extends AgentDojo with 60 open-ended tasks and 560 injection cases across shopping, GitHub, and daily life. Its [research design](https://arxiv.org/abs/2602.03117) includes helpful third-party instructions and dynamic planning, making it useful for testing over-blocking as well as attack resistance. Treat it as a complementary research suite, not production certification or a score directly comparable with AgentDojo. Last checked: 2026-10-31.
 
 ### OS-Harm
 - **Link:** https://github.com/tml-epfl/os-harm
