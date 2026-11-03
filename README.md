@@ -434,6 +434,7 @@ Curated list of practical Retrieval-Augmented Generation systems, infrastructure
 - **Pathway** - https://github.com/pathwaycom/pathway - real-time data pipeline framework commonly used for continuously updating RAG ingestion and retrieval stacks.
 - **OpenViking** - https://github.com/volcengine/OpenViking - agent-native context database unifying resources, memories, and skills in a virtual filesystem with tiered loading and session-memory extraction; AGPL-3.0 and still pre-1.0. The [authentication guide](https://github.com/volcengine/OpenViking/blob/main/docs/en/guides/04-authentication.md) distinguishes unauthenticated, loopback-only development from authenticated deployments. In API-key mode, use account-bound user/admin keys for tenant data; the root key manages deployment administration, not memory access. Last checked: 2026-10-21.
 - **LangChain** - https://github.com/langchain-ai/langchain - broad LLM application framework with retrieval, tools, integrations, and agent ecosystem gravity.
+- **Moss** - https://docs.moss.dev/docs/integrate/storage-persistence - commercial retrieval SDK with cloud-managed indexes loaded into the application process for local semantic, keyword, and hybrid queries; useful when query placement matters, with per-process memory, initial loading, and cloud refresh requirements.
 
 ### RAG evaluation and benchmarks
 
