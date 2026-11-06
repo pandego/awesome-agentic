@@ -809,6 +809,11 @@ Agents need to browse, click, extract, fill forms, and operate websites and desk
 - **Why it stands out:** hosted browser infrastructure for agents and web automation.
 - **Best for:** production browser-agent workloads where reliability and scale matter.
 
+### Cloudbrowser
+- **Link:** https://cloudbrowser.tv/
+- **Why it stands out:** managed Chrome browsers for agents with persistent profiles, scoped CDP access, a REST API for browser lifecycle control, and a read-only live view.
+- **Best for:** agent workflows that need reusable cloud-browser sessions and CDP compatibility without bundling a model or agent runtime.
+
 ### Firecrawl
 - **Link:** https://github.com/firecrawl/firecrawl
 - **Why it stands out:** API to search, scrape, and interact with the web for AI systems.
