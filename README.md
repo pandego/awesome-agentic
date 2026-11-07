@@ -1152,6 +1152,7 @@ Evaluation axes for coding agents:
 - **Link:** https://github.com/promptfoo/promptfoo
 - **Why it stands out:** CLI-first eval and red-team harness for prompts, agents, and RAG, with strong CI/CD ergonomics and active open-source releases.
 - **Best for:** teams that want declarative regression tests plus security scans before shipping agent changes.
+- **Execution and privacy note:** the [security policy](https://github.com/promptfoo/promptfoo/blob/main/SECURITY.md#security-model) treats configs and code-executing extensions as trusted, unsandboxed code. Isolate untrusted eval inputs and scope credentials. The [data-handling guide](https://github.com/promptfoo/promptfoo/blob/main/site/docs/red-team/troubleshooting/data-handling.md) separates target calls, attack generation, and grading; hosted grading can receive target prompts and responses, and some plugins require hosted inference. `PROMPTFOO_DISABLE_REMOTE_GENERATION=true` is not an egress firewall. Configure each provider and enforce network policy before treating local execution as private processing. Last checked: 2026-11-07.
 
 ### Ragas
 - **Link:** https://github.com/vibrantlabsai/ragas
@@ -1229,6 +1230,7 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Link:** https://github.com/microsoft/PyRIT
 - **Why it stands out:** Microsoft-backed open-source framework for proactive generative-AI risk identification and red-team automation.
 - **Best for:** security teams building repeatable adversarial tests for LLM apps and agentic systems.
+- **Evaluation note:** the official [adversarial-model study](https://github.com/microsoft/PyRIT/blob/main/doc/blog/2026_09_03_adversarial_model_selection.md) shows why harmful-looking output and achieved attack objectives need different scoring. Its task-achievement rerun changed model ordering, but also changed harness grouping and generated fresh responses, so it does not isolate scorer effects. Pin objectives, target, attack technique, scorer, and retry policy; inspect per-technique outcomes rather than selecting an attacker from aggregate success rates. Last checked: 2026-11-07.
 
 ### DeepTeam
 - **Link:** https://github.com/confident-ai/deepteam
