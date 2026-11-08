@@ -676,7 +676,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Link:** https://github.com/Sentient-OS-Labs/sentient-os
 - **Why it stands out:** Apple Silicon PersonalOS that performs nightly on-device triage over local files, screenshots, messages, and notes, distills an editable Markdown knowledge base, then turns that context into approval-gated proactive cards and computer-use tasks.
 - **Best for:** builders studying the full ambient-context-to-action loop on a Mac; compare Osaurus for a general agent harness, and treat Full Disk Access plus any external frontier-model path as explicit trust boundaries.
-- **Evidence:** AGPL-3.0, 470+ GitHub stars, active v1.3 releases, and published security/privacy engineering covering fail-closed filtering and its optional encrypted MCP relay. Last checked: 2026-09-02.
+- **Privacy note:** the [security model](https://github.com/Sentient-OS-Labs/sentient-os/blob/main/SECURITY.md#your-choice-of-inference) separates local source analysis from feature-specific inference. Selecting a local Sidekick model does not localize Double Tap (separate provider), Summarize/Proofread (cloud relay), or voice dictation (ElevenLabs). Choose local providers where supported, avoid cloud-only actions, disable optional MCP sharing, and review diagnostics separately before using sensitive context. The sharing relay decrypts knowledge in memory for authorized requests; encrypted storage is not a relay-blind boundary. Last checked: 2026-11-08.
 
 ### OpenJarvis
 - **Link:** https://github.com/open-jarvis/OpenJarvis
