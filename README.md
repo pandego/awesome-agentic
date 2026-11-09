@@ -139,6 +139,7 @@ These are the strongest starting points when you need a general builder stack, n
 - **Why it stands out:** TypeScript-first framework that combines agents, resumable graph workflows, memory, MCP, evals, observability, and Node-compatible deployment instead of requiring a separate package for every production layer.
 - **Best for:** TypeScript teams that want an integrated path from agent prototype to deployed application.
 - **Evidence:** 26k+ GitHub stars and active July 2026 releases; the core is Apache-2.0, while `ee/` features use the Mastra Enterprise License. Last checked: 2026-07-23.
+- **Durability note:** the beta [durable-agent guide](https://mastra.ai/docs/harness/durable-agents) distinguishes stream reconnection from crash recovery: stored agents with `durable: true` get resumable streams, not checkpoint recovery. For in-process `createDurableAgent()` runs, configure persistent storage and `recovery.durableAgents: 'auto'`, or explicitly persist `running` snapshots and recover manually; the default skips those checkpoints until shutdown. Recovery can repeat tool calls, including whole sub-agent delegations, so deduplicate external effects. Test process termination and restart, not just client reconnection. Last checked: 2026-11-09.
 
 ### Vercel AI SDK
 - **Link:** https://github.com/vercel/ai
