@@ -1126,6 +1126,12 @@ Read every score as a result for a specific **benchmark release + agent harness 
 
 **Execution-correctness companion:** [AppWorld](https://github.com/StonyBrookNLP/appworld) checks task completion and unintended database changes with state-based tests across simulated everyday apps. Pair it with π-Bench to distinguish executing requested work correctly from anticipating needs; neither validates live-service or GUI reliability. Keep test ground truth hidden from the agent, pin code/data versions and task splits, and disclose checkpoint rollback: the official guide warns that agents allowed to rewind world state are not comparable with agents that cannot. Last checked: 2026-11-02.
 
+### EC²-Bench (EC2-Bench)
+- **Link:** https://github.com/OpenBMB/EC2-Bench
+- **Why it stands out:** evaluates long-horizon edge-cloud agent collaboration on 128 executable digital-workspace tasks, jointly measuring task performance, cloud cost, and privacy exposure; 100 tasks include privacy annotations.
+- **Best for:** builders comparing when and how an on-device agent should consult a cloud model, without treating lower cloud cost as evidence of lower privacy exposure.
+- **Evidence:** the [paper](https://arxiv.org/abs/2610.17816) and [project page](https://passionate11.github.io/ec2-bench-project-page/) compare query routing, per-step routing, edge-controlled delegation, and edge-controlled advisory under a shared evaluation setup. Last checked: 2026-11-11.
+
 Evaluation axes for coding agents:
 
 - task completion rate
