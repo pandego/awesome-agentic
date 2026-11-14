@@ -341,6 +341,12 @@ These are the terminal-first harnesses and products serious builders use to exec
 - **Best for:** Linux and macOS builders running Claude Code, Codex CLI, Gemini CLI, OpenCode, Pi, Copilot CLI, or Droid in parallel; native Windows requires WSL2.
 - **Evidence:** MIT-licensed, 3.2k+ GitHub stars, active v1.16 releases, and community maintenance with support from Mozilla.ai. Last checked: 2026-09-11.
 
+### Althar
+- **Link:** https://github.com/AltharIDE/althar
+- **Why it stands out:** Desktop ADE with a project coordinator that splits requests into tasks, assigns coding agents, and sends their changes to another model for review.
+- **Best for:** Developers who want to delegate implementation and review to different agents using their existing Claude Code or Codex accounts.
+- **Evidence:** Apache-2.0 license and [public desktop releases](https://github.com/AltharIDE/althar/releases).
+
 ### Agentic IDEs
 
 These are product surfaces where the editor becomes the agentic workspace.
