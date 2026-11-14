@@ -728,6 +728,7 @@ This is distinct from generic agent memory. A memory system remembers. A Persona
 - **Why it stands out:** single-binary Rust Agent OS with scheduled autonomous "Hands" that package tools, operating instructions, settings, and approval gates for recurring research, collection, and browser work.
 - **Best for:** builders who want packaged autonomous jobs and dashboard control rather than assembling a scheduler and agent harness; it remains pre-1.0.
 - **Evidence caveat:** the README recommends pinning a commit because minor versions may break compatibility. Its startup, memory, and security-feature comparisons are maintainer-published, not independent task-success or security evaluations. Last checked: 2026-09-21.
+- **Deployment note:** the [dashboard guide](https://github.com/RightNow-AI/openfang/blob/main/docs/configuration.md#exposing-the-dashboard) defaults to loopback access and documents fail-closed authenticated routes on non-loopback binds without credentials; public health, static, and OAuth callback routes remain reachable. Configure API-key or dashboard authentication, or use a loopback tunnel, rather than enabling `OPENFANG_ALLOW_NO_AUTH=1` to resolve remote-access failures. Last checked: 2026-11-14.
 
 ### IronClaw
 - **Link:** https://github.com/nearai/ironclaw
