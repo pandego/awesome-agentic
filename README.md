@@ -1194,6 +1194,14 @@ Agentic security needs its own eval loop because prompt injection, tool misuse, 
 - **Scope note:** the [official results page](https://agentdojo.spylab.ai/results/) explicitly is not a leaderboard: models were not tested against every attack/defense combination. Compare matched configurations, not rows as a universal security ranking. Last checked: 2026-09-17.
 - **Dynamic-task companion:** [AgentDyn](https://github.com/SaFo-Lab/AgentDyn) extends AgentDojo with 60 open-ended tasks and 560 injection cases across shopping, GitHub, and daily life. Its [research design](https://arxiv.org/abs/2602.03117) includes helpful third-party instructions and dynamic planning, making it useful for testing over-blocking as well as attack resistance. Treat it as a complementary research suite, not production certification or a score directly comparable with AgentDojo. Last checked: 2026-10-31.
 
+### AgentLeak (research benchmark)
+- **Link:** https://github.com/Privatris/AgentLeak
+- **Why it stands out:** evaluates privacy leakage through internal multi-agent coordination channels, including inter-agent messages and shared memory, alongside final outputs rather than treating a clean final answer as sufficient evidence.
+- **Best for:** teams designing channel-aware privacy evaluations for coordinator-worker systems; a research reference, not a production privacy guarantee or runtime enforcement layer.
+- **Evidence and scope:** [IEEE Access paper](https://arxiv.org/abs/2602.11510v3) with public code and data; large-scale analysis covers final outputs, inter-agent messages and shared memory, while other channels have sampled or integration-study coverage. Internal over-sharing is not necessarily an external breach. This is distinct from the separate AgentLeak SDK. Last checked: 2026-11-16.
+
+
+
 ### OS-Harm
 - **Link:** https://github.com/tml-epfl/os-harm
 - **Why it stands out:** OSWorld-based safety benchmark that scores what computer-use agents actually do across deliberate misuse, prompt injection, and unintended misbehavior instead of judging only their text.
