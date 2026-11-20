@@ -572,6 +572,8 @@ Projects oriented toward self-hosted, user-controlled, or assistant-facing memor
 - **Screenpipe** - https://github.com/screenpipe/screenpipe - local desktop context capture for screen/audio memory, search, MCP access, and activity-triggered agents.
 - **MIRIX** - https://github.com/Mirix-AI/MIRIX - Apache-2.0 personal memory system that turns screen activity and conversation into six typed local memory stores, with explicit consolidation and published multimodal/long-conversation evaluations.
 
+- **Zortex** - https://zortex.me/en/install - local personal context for existing assistants. Sync selected app data to local storage and use it as a source when an assistant answers questions in a new session.
+
 ### Memory evaluation and operations
 
 Operational concerns matter as much as raw retrieval quality.
