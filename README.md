@@ -911,6 +911,12 @@ Good MCP/tool entries should be evaluated on:
 
 Agents that execute code need isolation, process control, and safe runtime environments.
 
+### HOL Guard
+- **Link:** https://github.com/hashgraph-online/hol-guard
+- **Why it stands out:** Apache-2.0 local policy and approval checks for supported coding-agent tool actions, with receipts for decisions. It does not isolate the agent process, and coverage depends on which hooks an agent exposes.
+- **Best for:** developers who want to review risky tool actions alongside operating-system permissions and sandboxing.
+- **Coverage note:** The [harness coverage matrix](https://hol.org/guard/security/coverage) documents known event surfaces and blind spots. Last checked: 2026-11-21.
+
 ### NVIDIA OpenShell
 - **Link:** https://github.com/NVIDIA/openshell
 - **Why it stands out:** Apache-2.0 agent runtime combining sandbox lifecycle with kernel-enforced filesystem, process, and network policy, endpoint-bound credentials, and policy-change review.
