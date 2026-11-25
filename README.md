@@ -883,6 +883,12 @@ Tooling is where agents cross from text into action. MCP is becoming a standard 
 - **Best for:** platform teams that want one Kubernetes-friendly gateway for model access, MCP tools, and A2A communication instead of separate protocol proxies.
 - **Evidence:** 4.1k+ GitHub stars and active v1.4 releases through July 2026. Last checked: 2026-08-01.
 
+### Open Agent API
+- **Link:** https://github.com/jiangxingfan1-coder/Open-Agent-API
+- **Why it stands out:** Apache-2.0 gateway that gives an existing application an OpenAI-compatible HTTP endpoint for calling configured ACP coding agents. Callers can start runs under a key that cannot approve the actions they trigger.
+- **Best for:** developers who want to use coding agents they already run from an app or script, rather than routing raw model requests or building one subprocess integration per agent.
+- **Evidence:** listed as a connector in the [official ACP clients directory](https://agentclientprotocol.com/get-started/clients#connectors); the [public quickstart](https://github.com/jiangxingfan1-coder/Open-Agent-API#running-in-three-minutes) exercises a deterministic sample without a model account. Last checked: 2026-11-21.
+
 ### ToolHive
 - **Link:** https://github.com/stacklok/toolhive
 - **Why it stands out:** Apache-2.0 MCP platform that combines an isolated server runtime, gateway, registry, access policies, audit logs, OpenTelemetry, and a Kubernetes operator instead of leaving production governance as custom glue.
